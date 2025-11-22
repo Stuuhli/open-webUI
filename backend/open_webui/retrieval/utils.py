@@ -57,7 +57,11 @@ from langchain_core.retrievers import BaseRetriever
 from sentence_transformers import CrossEncoder
 import torch
 
-model_name = "Qwen/Qwen3-Reranker-0.6B" # Oder der exakte Name von HuggingFace
+
+model_name = os.getenv("RAG_RERANKING_MODEL", "BAAI/bge-reranker-v2-m3")
+if not model_name or model_name.strip() == "":
+    model_name = "BAAI/bge-reranker-v2-m3"
+
 device = "cuda" if torch.cuda.is_available() else "cpu"
 log.info(f"Reranker Device Check: {device}")
 
@@ -66,7 +70,7 @@ _GLOBAL_RANKER = CrossEncoder(
     model_name, 
     device=device, 
     trust_remote_code=True,
-    automodel_args={"torch_dtype": "auto"})
+    model_kwargs={"dtype": "auto"})
 
 
 if _GLOBAL_RANKER.tokenizer.pad_token is None:
