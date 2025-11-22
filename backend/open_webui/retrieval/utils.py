@@ -264,7 +264,7 @@ def query_doc_with_hybrid_search(
         
         # 6. Ergebnisaufbereitung (Slicing auf k)
         final_results = ranked_results[:k]
-        
+
         distances = []
         documents = []
         metadatas = []
@@ -273,8 +273,8 @@ def query_doc_with_hybrid_search(
             # FlashRank liefert einen Score (0-1), wir speichern ihn als "distance"
             # (Hinweis: OpenWebUI erwartet oft Distanzen, aber für die Anzeige ist der Score okay)
             distances.append(float(res['score']))
-            documents.append(res['text'])
-            metadatas.append(res['meta'])
+            documents.append(res['doc'].page_content)
+            metadatas.append(res['doc'].metadata)
 
         result = {
             "distances": [distances],
