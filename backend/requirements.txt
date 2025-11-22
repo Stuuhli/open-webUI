@@ -51,6 +51,8 @@ fake-useragent==2.2.0
 chromadb==1.1.0
 opensearch-py==2.8.0
 
+flashrank
+
 transformers
 sentence-transformers==5.1.1
 accelerate
@@ -82,7 +84,7 @@ opencv-python-headless==4.11.0.86
 rapidocr-onnxruntime==1.4.4
 rank-bm25==0.2.2
 
-onnxruntime==1.20.1
+onnxruntime-gpu
 faster-whisper==1.1.1
 
 

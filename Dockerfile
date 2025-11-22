@@ -189,3 +189,6 @@ ENV WEBUI_BUILD_VERSION=${BUILD_HASH}
 ENV DOCKER=true
 
 CMD [ "bash", "start.sh"]
+
+RUN pip uninstall -y torch torchvision torchaudio
+RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121

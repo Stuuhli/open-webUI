@@ -105,12 +105,15 @@ from open_webui.env import (
     SENTENCE_TRANSFORMERS_MODEL_KWARGS,
     SENTENCE_TRANSFORMERS_CROSS_ENCODER_BACKEND,
     SENTENCE_TRANSFORMERS_CROSS_ENCODER_MODEL_KWARGS,
+    DATA_DIR,
 )
 
 from open_webui.constants import ERROR_MESSAGES
 
 log = logging.getLogger(__name__)
 log.setLevel(SRC_LOG_LEVELS["RAG"])
+
+CHUNK_LOG_FILE = DATA_DIR / "chunk_logs.md"
 
 ##########################################
 #
@@ -212,6 +215,34 @@ def get_rf(
                     log.warning(f"Failed to adjust pad_token_id on CrossEncoder: {e2}")
 
     return rf
+
+
+def append_chunks_to_markdown(previews: List[str]) -> None:
+    if not previews:
+        return
+
+    CHUNK_LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+
+    existing_entries = set()
+    if CHUNK_LOG_FILE.exists():
+        with open(CHUNK_LOG_FILE, "r", encoding="utf-8") as file:
+            for line in file:
+                if not line.strip():
+                    continue
+
+                line_content = line.strip()
+                if line_content.startswith("- "):
+                    line_content = line_content[2:].strip()
+
+                existing_entries.add(line_content)
+
+    new_entries = [preview for preview in previews if preview not in existing_entries]
+    if not new_entries:
+        return
+
+    with open(CHUNK_LOG_FILE, "a", encoding="utf-8") as file:
+        for entry in new_entries:
+            file.write(f"- {entry}\n")
 
 
 ##########################################
@@ -1324,74 +1355,93 @@ def save_docs_to_vector_db(
                 raise ValueError(ERROR_MESSAGES.DUPLICATE_CONTENT)
 
     if split:
-        if request.app.state.config.TEXT_SPLITTER in ["", "character"]:
-            text_splitter = RecursiveCharacterTextSplitter(
-                chunk_size=request.app.state.config.CHUNK_SIZE,
-                chunk_overlap=request.app.state.config.CHUNK_OVERLAP,
-                add_start_index=True,
-            )
-            docs = text_splitter.split_documents(docs)
-        elif request.app.state.config.TEXT_SPLITTER == "token":
-            log.info(
-                f"Using token text splitter: {request.app.state.config.TIKTOKEN_ENCODING_NAME}"
-            )
+        log.info("Starting optimized structure-aware chunking for Policies...")
+        
+        # SCHRITT 1: Logische Trennung anhand von Markdown-Überschriften
+        # Docling liefert Markdown. Wir nutzen das, um Kapitel sauber zu trennen.
+        # Das verhindert, dass Kapitel 5 und Kapitel 6 im selben Chunk landen.
+        headers_to_split_on = [
+            ("#", "Header 1"),
+            ("##", "Header 2"),
+            ("###", "Header 3"),
+            ('####', "Header 4"),
+            ('#####', "Header 5"),
+        ]
+        
+        markdown_splitter = MarkdownHeaderTextSplitter(
+            headers_to_split_on=headers_to_split_on, 
+            strip_headers=False # Wichtig: Header im Text lassen, damit der Kontext lesbar bleibt
+        )
+        
+        # Da 'docs' eine Liste ist, müssen wir den Content erst zusammenfügen oder iterieren.
+        # Meist liefert der Loader pro Seite ein Doc. Wir wollen aber fließenden Text.
+        full_text = "\n\n".join([d.page_content for d in docs])
+        
+        # Hier entstehen Chunks, die EXAKT einem Kapitel entsprechen (z.B. nur 5.1.2)
+        md_header_splits = markdown_splitter.split_text(full_text)
+        
+        # SCHRITT 2: Größenbegrenzung
+        # Falls ein Kapitel riesig ist, müssen wir es trotzdem unterteilen.
+        # RecursiveCharacter ist besser als Token, weil er erst an Absätzen (\n\n) trennt.
+        
+        # Wir nehmen hier 800 Zeichen (nicht Token!) als Zielgröße, 
+        # das entspricht etwa 200-250 Tokens. Das ist für Richtlinien oft besser ("Atomare Regeln").
+        # Du kannst hier auch request.app.state.config.CHUNK_SIZE nutzen, aber 
+        # pass auf, dass das UI nicht auf "Token" eingestellt ist, wenn wir Character nutzen.
+        
+        text_splitter = RecursiveCharacterTextSplitter(
+            chunk_size=request.app.state.config.CHUNK_SIZE, # Stelle im UI sicherheitshalber 1000-1500 ein (Zeichen)
+            chunk_overlap=request.app.state.config.CHUNK_OVERLAP,
+            separators=["\n\n", "\n", ". ", " ", ""], # Priorität der Trennung
+            add_start_index=True,
+        )
+        
+        raw_chunks = text_splitter.split_documents(md_header_splits)
+        enriched_docs = []
 
-            tiktoken.get_encoding(str(request.app.state.config.TIKTOKEN_ENCODING_NAME))
-            text_splitter = TokenTextSplitter(
-                encoding_name=str(request.app.state.config.TIKTOKEN_ENCODING_NAME),
-                chunk_size=request.app.state.config.CHUNK_SIZE,
-                chunk_overlap=request.app.state.config.CHUNK_OVERLAP,
-                add_start_index=True,
-            )
-            docs = text_splitter.split_documents(docs)
-        elif request.app.state.config.TEXT_SPLITTER == "markdown_header":
-            log.info("Using markdown header text splitter")
+        # SCHRITT 3: Contextual Enrichment (wie zuvor besprochen)
+        for chunk in raw_chunks:
+            meta = chunk.metadata
+            
+            # Die Original-Metadaten des ersten Docs retten (Dateiname etc.)
+            # Da wir oben alles gemerged haben, nehmen wir die Meta vom ersten Original-Doc
+            base_meta = docs[0].metadata.copy() if docs else {}
+            
+            # Metadaten kombinieren (Header-Infos aus Step 1 + Datei-Infos)
+            combined_meta = {**base_meta, **meta}
+            chunk.metadata = combined_meta
+            
+            source_name = combined_meta.get("name", combined_meta.get("source", "Unknown Doc"))
+            
+            # Header Context auslesen (kommt vom MarkdownSplitter)
+            header_context_list = []
+            for h_key in ["Header 1", "Header 2", "Header 3", "Header 4", "Header 5"]:
+                if h_key in combined_meta:
+                    header_context_list.append(combined_meta[h_key])
+            
+            header_context_str = " > ".join(header_context_list)
+            
+            # Prefix bauen
+            context_prefix = f"Document: {source_name}"
+            if header_context_str:
+                context_prefix += f" | Section: {header_context_str}"
+            context_prefix += "\n---\n"
+            
+            # In den Text schreiben
+            chunk.page_content = context_prefix + chunk.page_content
+            
+            enriched_docs.append(chunk)
 
-            # Define headers to split on - covering most common markdown header levels
-            headers_to_split_on = [
-                ("#", "Header 1"),
-                ("##", "Header 2"),
-                ("###", "Header 3"),
-                ("####", "Header 4"),
-                ("#####", "Header 5"),
-                ("######", "Header 6"),
-            ]
+        docs = enriched_docs
+        log.info(f"Created {len(docs)} structured chunks based on Markdown headers.")
 
-            markdown_splitter = MarkdownHeaderTextSplitter(
-                headers_to_split_on=headers_to_split_on,
-                strip_headers=False,  # Keep headers in content for context
-            )
 
-            md_split_docs = []
-            for doc in docs:
-                md_header_splits = markdown_splitter.split_text(doc.page_content)
-                text_splitter = RecursiveCharacterTextSplitter(
-                    chunk_size=request.app.state.config.CHUNK_SIZE,
-                    chunk_overlap=request.app.state.config.CHUNK_OVERLAP,
-                    add_start_index=True,
-                )
-                md_header_splits = text_splitter.split_documents(md_header_splits)
+    chunk_previews = []
+    for doc in docs:
+        preview = doc.page_content.replace("\n", " ")
+        chunk_previews.append(preview)
 
-                # Convert back to Document objects, preserving original metadata
-                for split_chunk in md_header_splits:
-                    headings_list = []
-                    # Extract header values in order based on headers_to_split_on
-                    for _, header_meta_key_name in headers_to_split_on:
-                        if header_meta_key_name in split_chunk.metadata:
-                            headings_list.append(
-                                split_chunk.metadata[header_meta_key_name]
-                            )
-
-                    md_split_docs.append(
-                        Document(
-                            page_content=split_chunk.page_content,
-                            metadata={**doc.metadata, "headings": headings_list},
-                        )
-                    )
-
-            docs = md_split_docs
-        else:
-            raise ValueError(ERROR_MESSAGES.DEFAULT("Invalid text splitter"))
+    append_chunks_to_markdown(chunk_previews)
 
     if len(docs) == 0:
         raise ValueError(ERROR_MESSAGES.EMPTY_CONTENT)

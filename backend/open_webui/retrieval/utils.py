@@ -54,6 +54,27 @@ from langchain_core.callbacks import CallbackManagerForRetrieverRun
 from langchain_core.retrievers import BaseRetriever
 
 
+from sentence_transformers import CrossEncoder
+import torch
+
+model_name = "Qwen/Qwen3-Reranker-0.6B" # Oder der exakte Name von HuggingFace
+device = "cuda" if torch.cuda.is_available() else "cpu"
+log.info(f"Reranker Device Check: {device}")
+
+log.info(f"Loading Reranker: {model_name} on {device}...")
+_GLOBAL_RANKER = CrossEncoder(
+    model_name, 
+    device=device, 
+    trust_remote_code=True,
+    automodel_args={"torch_dtype": "auto"})
+
+
+if _GLOBAL_RANKER.tokenizer.pad_token is None:
+    log.info("Fixing missing pad_token for Qwen model...")
+    _GLOBAL_RANKER.tokenizer.pad_token = _GLOBAL_RANKER.tokenizer.eos_token
+    _GLOBAL_RANKER.model.config.pad_token_id = _GLOBAL_RANKER.tokenizer.eos_token_id
+
+
 def is_youtube_url(url: str) -> bool:
     youtube_regex = r"^(https?://)?(www\.)?(youtube\.com|youtu\.be)/.+$"
     return re.match(youtube_regex, url) is not None
@@ -160,6 +181,7 @@ def query_doc_with_hybrid_search(
     hybrid_bm25_weight: float,
 ) -> dict:
     try:
+        # 1. Prüfung: Gibt es überhaupt Dokumente?
         if (
             not collection_result
             or not hasattr(collection_result, "documents")
@@ -172,60 +194,83 @@ def query_doc_with_hybrid_search(
 
         log.debug(f"query_doc_with_hybrid_search:doc {collection_name}")
 
+        # 2. DEFINITION DER RETRIEVER (Das fehlte vorher)
+        # Wir initialisieren BM25 mit den Texten aus der Collection
         bm25_retriever = BM25Retriever.from_texts(
             texts=collection_result.documents[0],
             metadatas=collection_result.metadatas[0],
         )
-        bm25_retriever.k = k
-
+        
+        # Wir initialisieren den Vektor-Retriever
         vector_search_retriever = VectorSearchRetriever(
             collection_name=collection_name,
             embedding_function=embedding_function,
-            top_k=k,
+            top_k=k, # Wird gleich überschrieben
         )
 
-        if hybrid_bm25_weight <= 0:
-            ensemble_retriever = EnsembleRetriever(
-                retrievers=[vector_search_retriever], weights=[1.0]
-            )
-        elif hybrid_bm25_weight >= 1:
-            ensemble_retriever = EnsembleRetriever(
-                retrievers=[bm25_retriever], weights=[1.0]
-            )
-        else:
-            ensemble_retriever = EnsembleRetriever(
-                retrievers=[bm25_retriever, vector_search_retriever],
-                weights=[hybrid_bm25_weight, 1.0 - hybrid_bm25_weight],
-            )
+        # 3. Initial Retrieval Setup (Optimierung)
+        # Wir wollen mehr Kandidaten für den Reranker holen (z.B. 30), 
+        # auch wenn der User nur 5 (k) sehen will.
+        top_k_initial = k_reranker if k_reranker > k else 30
+        
+        bm25_retriever.k = top_k_initial
+        vector_search_retriever.top_k = top_k_initial
 
-        compressor = RerankCompressor(
-            embedding_function=embedding_function,
-            top_n=k_reranker,
-            reranking_function=reranking_function,
-            r_score=r,
+        # 4. Ensemble (Kombination)
+        # Hier kombinieren wir Keyword-Suche (BM25) mit Vektor-Suche.
+        # Gewichte: 0.4 BM25 / 0.6 Vector ist ein guter Startwert für Richtlinien.
+        ensemble_retriever = EnsembleRetriever(
+            retrievers=[bm25_retriever, vector_search_retriever],
+            weights=[0.4, 0.6], 
         )
 
-        compression_retriever = ContextualCompressionRetriever(
-            base_compressor=compressor, base_retriever=ensemble_retriever
+        # Dokumente abrufen
+        initial_docs = ensemble_retriever.invoke(query)
+        
+        if not initial_docs:
+            return {"documents": [], "metadatas": [], "distances": []}
+
+        # 5. HuggingFace Cross-Encoder Reranking
+        log.info(f"Reranking {len(initial_docs)} documents with CrossEncoder...")
+        
+        # CrossEncoder erwartet Paare: [Query, DocumentText]
+        prediction_pairs = [[query, doc.page_content] for doc in initial_docs]
+        
+        # Scores berechnen (das läuft auf der GPU)
+        scores = _GLOBAL_RANKER.predict(
+            prediction_pairs,
+            batch_size=16,
+            convert_to_numpy=True,
+            convert_to_tensor=True,
         )
 
-        result = compression_retriever.invoke(query)
-
-        distances = [d.metadata.get("score") for d in result]
-        documents = [d.page_content for d in result]
-        metadatas = [d.metadata for d in result]
-
-        # retrieve only min(k, k_reranker) items, sort and cut by distance if k < k_reranker
-        if k < k_reranker:
-            sorted_items = sorted(
-                zip(distances, metadatas, documents), key=lambda x: x[0], reverse=True
-            )
-            sorted_items = sorted_items[:k]
-
-            if sorted_items:
-                distances, documents, metadatas = map(list, zip(*sorted_items))
-            else:
-                distances, documents, metadatas = [], [], []
+        if isinstance(scores, torch.Tensor):
+            scores = scores.cpu().numpy()
+        
+        # Ergebnisse mit Scores verknüpfen
+        ranked_results = []
+        for i, doc in enumerate(initial_docs):
+            ranked_results.append({
+                "score": float(scores[i]), # Wichtig: float() für JSON Serialization
+                "doc": doc
+            })
+            
+        # Sortieren nach Score (höchster zuerst)
+        ranked_results.sort(key=lambda x: x["score"], reverse=True)
+        
+        # 6. Ergebnisaufbereitung (Slicing auf k)
+        final_results = ranked_results[:k]
+        
+        distances = []
+        documents = []
+        metadatas = []
+        
+        for res in final_results:
+            # FlashRank liefert einen Score (0-1), wir speichern ihn als "distance"
+            # (Hinweis: OpenWebUI erwartet oft Distanzen, aber für die Anzeige ist der Score okay)
+            distances.append(float(res['score']))
+            documents.append(res['text'])
+            metadatas.append(res['meta'])
 
         result = {
             "distances": [distances],
@@ -235,9 +280,10 @@ def query_doc_with_hybrid_search(
 
         log.info(
             "query_doc_with_hybrid_search:result "
-            + f'{result["metadatas"]} {result["distances"]}'
+            + f'{len(documents)} docs found'
         )
         return result
+
     except Exception as e:
         log.exception(f"Error querying doc {collection_name} with hybrid search: {e}")
         raise e
