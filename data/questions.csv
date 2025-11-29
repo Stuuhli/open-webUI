@@ -1,187 +1,145 @@
-Frage,Antwort,Referenz
-Was ist das Ziel eines internen oder externen Audits im ISMS/BCMS-Kontext?,,Audit Guideline – 1.1 Motivation
-Warum führt KISTERS interne und externe Audits durch und welches Ziel verfolgt das Auditprogramm?,,Audit Guideline – 1.1 Motivation and Objectives / 2 Audit Programme
-"Was gehört zum Auditprogramm, das halbjährlich überprüft werden muss?",,Audit Guideline – 2 Audit Programme
-Wie wird eine Audit-ID gebildet und wozu wird sie verwendet?,,Audit Guideline – 2 Audit Programme (Audit-ID „ISAyyyymm_“)
-"Welche Themen fallen typischerweise in den Scope eines Audits bei KISTERS (z. B. ISMS, BCMS, technische Prüfungen)?",,Audit Guideline – 2.2 Audit scopes
-"Was wird von mir als Teilnehmer eines Audits bei der Vorbereitung erwartet (z. B. Dokumente, Verfügbarkeit, Zuständigkeiten)?",,Audit Guideline – 2.3.1 Preparation (Participant)
-"Wie soll ich mich während der Durchführung eines Audits verhalten, insbesondere im Hinblick auf Offenheit und Nachweise?",,Audit Guideline – 2.3.2 Execution (Participant)
-"Wie laufen die nächsten Schritte nach einem Audit ab, wenn ich als Verantwortlicher einen Auditbericht erhalte?",,Audit Guideline – 2.3.3 Report / 3 Management of audit findings
-Welche Arten von Abweichungen (Findings) gibt es bei Audits?,,Audit Guideline – 2.4 Findings
-Wodurch unterscheidet sich eine „Major deviation“ von einer „Minor deviation“ im Auditkontext?,,Audit Guideline – 2.4.1 Major deviation / 2.4.2 Minor deviation
-Was ist mit „Opportunity for improvement“ gemeint und wie verbindlich ist deren Abarbeitung?,,Audit Guideline – 2.4.3 Opportunity for improvement
-Wie wird ein Audit-Befund im Ticketsystem dokumentiert?,,Audit Guideline – 3.1 Audit Tickets
-Wie wird aus einem Audit-Finding ein Ticket und welche Rolle spielt dabei das „Audit Summary Ticket“?,,Audit Guideline – 3.1 Organization of audit tickets
-Wie werden aus Audits stammende Tickets priorisiert (z. B. Major Deviation vs. Minor Deviation) und welche Ziel-Umsetzungsfristen gelten dafür?,,Audit Guideline – 3.2.1 Standard audit ratings
-"Wie ist die Zuordnung von Risiko-Ratings (Very High, High, Medium, …) zu Jira-Prioritäten und Bearbeitungsfristen?",,Audit Guideline – 3.2.2 Risk-based ratings
-"Was muss ich beachten, wenn ein Audit-Befund in mehreren Teams Maßnahmen erfordert – wie sollen Tickets angelegt werden?",,Audit Guideline – 3.3.2 Multiple Audit Action Tickets per finding
-"Wie gehe ich vor, wenn ein bereits existierendes Ticket ein neues Audit-Finding inhaltlich mit abdeckt?",,Audit Guideline – 3.3.3 Re-use of existing tickets
-"Was ist zu tun, wenn ein Kunde einen Vendor Audit bei KISTERS anfragt oder eigenständig Sicherheitsprüfungen durchführt?",,Audit Guideline – 3.4 Special case: vendor audits by clients
-Wer überprüft regelmäßig den Status der Audit-Aktionen und wie wird diese Überprüfung dokumentiert?,,Audit Guideline – 4 Review of audit actions
-Wofür ist das Business Continuity Handbook gedacht und wen betreffen seine Regelungen?,,BCM Handbook – 1.1 Objective / 1.2 Scope
-Für welche Situationen ist das Business Continuity Handbook gedacht und für welche Bereiche der KISTERS Gruppe gilt es verbindlich?,,BCM Handbook – 1.1 Objective / 1.2 Scope
-Wie wird im BCM-Handbuch der Unterschied zwischen „Disruption“ und „Critical Disruption“ beschrieben?,,BCM Handbook – 1.3.1 Disruption / 1.3.2 Critical Disruption
-Wann spricht KISTERS von einer Emergency und wann von einer Crisis?,,BCM Handbook – 1.3.3 / 1.3.4
-"Welche Kriterien müssen erfüllt sein, damit ein Vorfall bei KISTERS als „Emergency“ eingestuft wird?",,BCM Handbook – 1.3.3 Emergency
-Ab wann spricht KISTERS von einer „Emergency“ und wodurch unterscheidet sich diese von einer „Crisis“?,,BCM Handbook – 1.3.3 Emergency / 1.3.4 Crisis
-"Welche Grundprinzipien muss ich bei allgemeinen Sofortmaßnahmen in einer Gefahrensituation beachten (z. B. Evakuierung, Erste Hilfe)?",,BCM Handbook – 2.1 General Immediate Measures
-"Was muss ich tun, wenn ich einen Cyberangriff bemerke (z. B. Ransomware)?",,BCM Handbook – 2.2.1 Cyber Attack
-"Welche Sofortmaßnahmen soll ein Mitarbeiter ergreifen, wenn er einen Cyberangriff bemerkt?",,BCM Handbook – 2.2.1 Cyber Attack Immediate Measures
-"Was soll ich als Mitarbeiter konkret tun, wenn bei mir eine Ransomware-Meldung auf dem Bildschirm erscheint?",,BCM Handbook – 2.2.1 Immediate Measures in the Event of Cyber Attack (Ransomware/Malware)
-"Wie gehe ich vor, wenn ich als Mitarbeiter einen länger andauernden Stromausfall im Gebäude bemerke? Wen informiere ich?",,BCM Handbook – 2.2.4 Immediate Measures in the Event of Power Failure
-Wen informiere ich bei einem länger andauernden Stromausfall?,,BCM Handbook – 2.2.4 Power Failure
-"An wen soll ich mich wenden, wenn im Gebäude der Strom ausgefallen ist?",,BCM Handbook – 2.2.4 Power Failure
-"Was ist meine Aufgabe, wenn ich einen Ausfall der Internetverbindung feststelle – und wer entscheidet über weitere Schritte?",,BCM Handbook – 2.2.6 Immediate Measures in the Event of Internet Connectivity Failure
-"Welche Schritte sind vorgesehen, wenn viele Kolleginnen und Kollegen gleichzeitig wegen Krankheit ausfallen und mein Bereich arbeitsunfähig zu werden droht?",,BCM Handbook – 2.2.9 Immediate Measures in the event of Staff Shortages due to Illness
-Wer ist „Manager of Duty“ (MoD) und welche Rolle spielt diese Funktion im Eskalationsprozess?,,BCM Handbook – 3.1 Detection and Reporting (Manager of Duty)
-Wer ist „Manager of Duty“ und was entscheidet er?,,BCM Handbook – 3.1 MoD
-"Welche Fragen sollen IT-Helpdesk-Mitarbeiter stellen, um eine mögliche „Emergency“ zu erkennen?",,BCM Handbook – 3.1.2 Key Questions IT Help Desk
-"Nach welchen Leitfragen bewertet z. B. das IT Help Desk, ob ein Vorfall das Potenzial für eine Emergency oder Crisis hat?",,BCM Handbook – 3.1.2 Report Recipient: IT Help Desk (1st / 2nd Level Support)
-Wo befindet sich der EMT-Raum im Headquarter und über welche alternativen Kanäle kann der EMT zusammenkommen?,,BCM Handbook – 3.3.1 Accessibility and Locations of EMT Rooms
-Wo befindet sich der EMT-Raum im Headquarter?,,BCM Handbook – 3.3.1 EMT Rooms
-Welche Vorbereitungsschritte sind im EMT-Raum vorgesehen?,,BCM Handbook – 3.3.2 Equipment
-"Welche Punkte müssen bei der Vorbereitung des EMT-Raums beachtet werden, bevor ein Notfallmeeting starten kann?",,BCM Handbook – 3.3.2 Equipment and Preparation
-"Welche Aufgaben hat das Emergency Management Team bei der Entscheidungsfindung (z. B. Fakten, Optionen, Risiken)?",,"BCM Handbook – 4.1–4.4 Facts / Options / Expenses, Opportunities and Risks / Decision"
-"Wie ist grundsätzlich vorgesehen, dass nach einem größeren IT-Ausfall der Betrieb wiederhergestellt wird (Notbetrieb, Wiederanlauf, Rückkehr zum Normalbetrieb)?",,BCM Handbook – 6.3 Failure of IT (Restart and recovery)
-Welche Phasen umfasst die Rückkehr zum Normalbetrieb nach einem Notfall und wer entscheidet über die De-Eskalation?,,BCM Handbook – 7 Transfer to Normal Operation (7.1 Measures Required for Transfer / 7.2 De-escalation / 7.3 Analysis and Evaluation)
-Wie oft muss das Kontinuitätshandbuch überprüft werden und wer ist dafür verantwortlich?,,BCM Handbook – 8 Reviewing and Updating of Contingency Manual
-Unter welchen Bedingungen kann die BCM-ERO eingerichtet und wieder aufgelöst werden?,,BCM Handbook – 9.1.1 Establishment and Dissolution of BCM-ERO
-Welche Regeln gelten für die Einrichtung und Auflösung der BCM-ERO?,,BCM Handbook – 9.1.1 Rules of Procedure
-Welche besonderen Befugnisse hat die BCM-ERO in Bezug auf finanzielle Mittel im Notfall?,,BCM Handbook – 9.1.2 Disposal of Financial Resources
-Welche grundsätzlichen Verhaltensregeln (Code of Conduct) gelten für Mitglieder der Emergency Response Organisation?,,BCM Handbook – 9.1.4 Code of Conduct
-Welche Kommunikationsmittel nutzt KISTERS im Notfall?,,BCM Handbook – 9.2 Communication Media
-Welche Kommunikationsmedien sind für die Notfallkommunikation vorgesehen und wo finde ich eine Übersicht dazu?,,BCM Handbook – 9.2 Communication Media
-Warum benötigt KISTERS einen formalen Change-Management-Prozess und welche Ziele werden damit verfolgt?,,Change Management – 1.1 Motivation and Objectives
-Auf welche Systeme und Prozesse bezieht sich die Change-Management-Richtlinie (Scope)?,,Change Management – 1.2 Scope of this Guideline
-Welche Rolle hat das (E)CAB bei Major Changes?,,Change Management – 1.3 Roles (E)CAB
-Welche Aufgaben übernimmt das (E)CAB bei Major Changes?,,"Change Management – 1.3 Roles, Responsibilities (E)CAB"
-Wer kann einen „Request for Change“ anstoßen und welche Rolle hat der „System owner“ dabei?,,"Change Management – 1.3 Roles, Responsibilities and Dependencies"
-Welche Rolle hat das (E)CAB bei Major und Emergency Changes?,,"Change Management – 1.3 Roles, Responsibilities and Dependencies (E)CAB"
-"Welche rechtlichen Anforderungen gelten für Change Management (ISO 27001, SOC2, C5 etc.)?",,Change Management – 1.4 Legal Requirements
-"Was wird in diesem Kontext als „Change“ verstanden, also welche Arten von Änderungen fallen darunter?",,Change Management – 2 Definition of Changes
-Welche Schritte umfasst der allgemeine Change-Management-Prozess von der Erstellung bis zur Nachbearbeitung eines Requests for Change (RfC)?,,Change Management – 3 Change Management Process / 3.2 Tasks
-Wie unterscheidet sich ein „Service Request“ von einem „Standard Change“?,,Change Management – 3.1.1 Service Request / 3.1.2 Standard Change
-Was ist ein „Standard Change“ und warum erfordert er keine gesonderte Freigabe?,,Change Management – 3.1.2 Standard Change
-Wann wird eine Änderung als „Major Change“ eingestuft und was bedeutet das für die Planung?,,Change Management – 3.1.3 Major Change
-Was ist ein „Emergency Change“ und wann ist dieser Typ zulässig?,,Change Management – 3.1.4 Emergency Change
-Welche Ticket-Systeme werden bei KISTERS für Changes und Support verwendet und wer nutzt welche Plattform?,,Change Management – 4.1 Jira Ticket Systems (Jira Service Management / Jira Software)
-"Was versteht KISTERS unter den wichtigsten Ticket-Begriffen wie „Issue/Ticket“, „Key“, „Reporter“ und „Assignee“?",,Change Management – 4.2 Terminology
-Wie wird der Bearbeitungsstatus eines Tickets im Workflow abgebildet und warum ist das wichtig?,,Change Management – 5.1 Ticket Status Workflow
-"Welche Unterschiede bestehen zwischen den Rollen „Reporter“, „Assignee“, „QA Contact“ und „Watcher“ in einem Ticket?",,Change Management – 5.2 Roles and Responsibilities in KISTERS Ticket Systems
-Welche minimalen Inhalte muss ein Change-Ticket enthalten?,,Change Management – 6.2 Ticket Content
-Welche Informationen müssen unbedingt in einem Change-Ticket enthalten sein?,,Change Management – 6.2 Ticket Information Content
-"Welche Informationen müssen inhaltlich mindestens in einem Ticket stehen, damit die Änderung sauber dokumentiert ist?",,Change Management – 6.2 Ticket Information Content
-Wie wird die Ticket-Priorität „Highest (Emergency)“ verwendet und was bedeutet sie für Reaktions- und Lösungszeiten?,,Change Management – 6.3.1 Priority “Highest (Emergency)”
-Wie orientieren sich die Ziel-Lösungszeiten (Target Resolution Time) an der Ticket-Priorität?,,Change Management – 6.3.2 Target Resolution Time
-Welche Informationspflichten bestehen im Change-Management-Prozess – wen muss ich über welche Änderungen informieren?,,Change Management – 7 Information Obligation
-Was ist ein „Standard Change“ und warum benötigt er keine zusätzliche Freigabe?,,Change Management Guideline – 3.1.2 Standard Change
-Was ist das Ziel eines Audits im Kontext von ISMS und BCMS?,,IS/BCM Audit Guideline – 1.1 Motivation and Objectives
-Worin unterscheiden sich Major Deviation und Minor Deviation?,,IS/BCM Audit Guideline – 2.4.1 / 2.4.2 Findings Types
-Wie wird ein Audit-Finding im Ticketsystem dokumentiert?,,IS/BCM Audit Guideline – 3.1 Organization of Audit Tickets
-Welchen Zweck hat das Verzeichnis von Verarbeitungstätigkeiten nach Art. 30 DSGVO für KISTERS?,,Record of Processing Activities – 1 Introduction
-In welchen Rollen verarbeitet KISTERS personenbezogene Daten und wie wird das im Dokument beschrieben?,,Record of Processing Activities – 1 Introduction / 4.1 Controller vs. processor
-"Welche Kontaktdaten von KISTERS (Adresse, zentrale Telefonnummer, E-Mail) sollte ich für externe Datenschutzanfragen parat haben?",,Record of Processing Activities – 2.1 Name and contact data
-"An wen kann ich mich als Beschäftigter wenden, wenn ich eine datenschutzrelevante Frage oder einen Vorfall melden möchte?",,Record of Processing Activities – 2.3 Data Protection Officers for the KISTERS Group
-"Wo sind die technischen und organisatorischen Maßnahmen (TOMs) für Datenschutz im Detail beschrieben, wenn ich sie nachlesen möchte?",,Record of Processing Activities – 3 Technical and organisational measures for data protection
-"Wie wird sichergestellt, dass das Verzeichnis der Verarbeitungstätigkeiten vollständig und aktuell bleibt?",,Record of Processing Activities – 4 Processing activities
-"Was bedeutet es für mich in der Praxis, wenn eine Verarbeitungstätigkeit sowohl als Controller als auch als Processor geführt wird?",,Record of Processing Activities – 4.1 Controller vs. processor
-Welche übergeordneten Datenschutzquellen (z. B. DSGVO) werden im Dokument als Referenz genannt?,,Record of Processing Activities – 5 References
-"In welchen Abständen wird das Dokument zum Verzeichnis der Verarbeitungstätigkeiten überprüft, und warum ist das wichtig?",,Record of Processing Activities – 6 Document history
-Warum muss KISTERS ein Verzeichnis von Verarbeitungstätigkeiten führen?,,RoPA – 1 Introduction
-Wer ist Datenschutzbeauftragter der KISTERS Gruppe?,,RoPA – 2.3 DPOs
-Welche allgemeinen technischen und organisatorischen Maßnahmen (TOMs) verweist KISTERS für Datenschutz?,,RoPA – 3 TOMs Reference
-Welche Rolle kann KISTERS bei Datenverarbeitungen einnehmen?,,RoPA – 4.1 Controller vs Processor
-Welche Dokumenthistorie wird im Datenschutz-Dokument gepflegt?,,RoPA – 6 Document History
-What is the goal of an internal or external audit in the ISMS/BCMS context?,,Audit Guideline – 1.1 Motivation
-"Why does KISTERS conduct internal and external audits, and what is the goal of the audit program?",,Audit Guideline – 1.1 Motivation and Objectives / 2 Audit Programme
-"What is included in the audit program, which must be reviewed every six months?",,Audit Guideline – 2 Audit Programme
-How is an audit ID generated and what is it used for?,,Audit Guideline – 2 Audit Programme (Audit-ID „ISAyyyymm_“)
-"What topics typically fall within the scope of an audit at KISTERS (e.g., ISMS, BCMS, technical audits)?",,Audit Guideline – 2.2 Audit scopes
-"What is expected of me as a participant in an audit during the preparation phase (e.g., documents, availability, responsibilities)?",,Audit Guideline – 2.3.1 Preparation (Participant)
-"How should I behave during an audit, particularly with regard to transparency and evidence?",,Audit Guideline – 2.3.2 Execution (Participant)
-"What are the next steps after an audit if I, as the responsible party, receive an audit report?",,Audit Guideline – 2.3.3 Report / 3 Management of audit findings
-What types of deviations (findings) are found during audits?,,Audit Guideline – 2.4 Findings
-"How does a ""major deviation"" differ from a ""minor deviation"" in an audit context?",,Audit Guideline – 2.4.1 Major deviation / 2.4.2 Minor deviation
-"What is meant by ""opportunity for improvement"" and how binding is its implementation?",,Audit Guideline – 2.4.3 Opportunity for improvement
-How is an audit finding documented in the ticketing system?,,Audit Guideline – 3.1 Audit Tickets
-"How does an audit finding become a ticket, and what role does the ""Audit Summary Ticket"" play in this process?",,Audit Guideline – 3.1 Organization of audit tickets
-"How are tickets originating from audits prioritized (e.g., Major Deviation vs. Minor Deviation) and what target implementation deadlines apply to them?",,Audit Guideline – 3.2.1 Standard audit ratings
-"How are risk ratings (Very High, High, Medium, …) assigned to Jira priorities and processing times?",,Audit Guideline – 3.2.2 Risk-based ratings
-What do I need to consider if an audit finding requires action across multiple teams – how should tickets be created?,,Audit Guideline – 3.3.2 Multiple Audit Action Tickets per finding
-How do I proceed if an existing ticket also covers the content of a new audit finding?,,Audit Guideline – 3.3.3 Re-use of existing tickets
-What should be done if a customer requests a vendor audit from KISTERS or conducts security checks independently?,,Audit Guideline – 3.4 Special case: vendor audits by clients
-Who regularly checks the status of the audit actions and how is this check documented?,,Audit Guideline – 4 Review of audit actions
-What is the purpose of the Business Continuity Handbook and who does its regulation affect?,,BCM Handbook – 1.1 Objective / 1.2 Scope
-"For which situations is the Business Continuity Handbook intended, and for which areas of the KISTERS Group is it binding?",,BCM Handbook – 1.1 Objective / 1.2 Scope
-"How is the difference between ""disruption"" and ""critical disruption"" described in the BCM manual?",,BCM Handbook – 1.3.1 Disruption / 1.3.2 Critical Disruption
-When does KISTERS speak of an emergency and when of a crisis?,,BCM Handbook – 1.3.3 / 1.3.4
-"What criteria must be met for an incident at KISTERS to be classified as an ""emergency""?",,BCM Handbook – 1.3.3 Emergency
-"At what point does KISTERS speak of an ""emergency"" and how does this differ from a ""crisis""?",,BCM Handbook – 1.3.3 Emergency / 1.3.4 Crisis
-"What basic principles must I observe when taking general immediate action in a dangerous situation (e.g. evacuation, first aid)?",,BCM Handbook – 2.1 General Immediate Measures
-"What should I do if I notice a cyberattack (e.g., ransomware)?",,BCM Handbook – 2.2.1 Cyber Attack
-What immediate actions should an employee take if they notice a cyberattack?,,BCM Handbook – 2.2.1 Cyber Attack Immediate Measures
-"What should I, as an employee, do specifically if a ransomware message appears on my screen?",,BCM Handbook – 2.2.1 Immediate Measures in the Event of Cyber Attack (Ransomware/Malware)
-"What should I do if I, as an employee, notice a prolonged power outage in the building? Whom should I inform?",,BCM Handbook – 2.2.4 Immediate Measures in the Event of Power Failure
-Whom should I inform in the event of a prolonged power outage?,,BCM Handbook – 2.2.4 Power Failure
-Who should I contact if the power goes out in the building?,,BCM Handbook – 2.2.4 Power Failure
-What is my responsibility if I experience an internet connection failure – and who decides on further steps?,,BCM Handbook – 2.2.6 Immediate Measures in the Event of Internet Connectivity Failure
-What steps are planned if many colleagues are absent due to illness at the same time and my department is at risk of becoming unable to function?,,BCM Handbook – 2.2.9 Immediate Measures in the event of Staff Shortages due to Illness
-Who is the “Manager of Duty” (MoD) and what role does this function play in the escalation process?,,BCM Handbook – 3.1 Detection and Reporting (Manager of Duty)
-"Who is ""Manager of Duty"" and what decisions does he make?",,BCM Handbook – 3.1 MoD
-"What questions should IT helpdesk staff ask to identify a potential ""emergency""?",,BCM Handbook – 3.1.2 Key Questions IT Help Desk
-"What guiding questions does the IT Help Desk, for example, use to assess whether an incident has the potential to become an emergency or crisis?",,BCM Handbook – 3.1.2 Report Recipient: IT Help Desk (1st / 2nd Level Support)
-Where is the EMT room located in the headquarters and through which alternative channels can the EMT team meet?,,BCM Handbook – 3.3.1 Accessibility and Locations of EMT Rooms
-Where is the EMT room located in the headquarters?,,BCM Handbook – 3.3.1 EMT Rooms
-What preparatory steps are planned in the EMT room?,,BCM Handbook – 3.3.2 Equipment
-What points need to be considered when preparing the EMT room before an emergency meeting can start?,,BCM Handbook – 3.3.2 Equipment and Preparation
-"What are the responsibilities of the Emergency Management Team in decision-making (e.g., facts, options, risks)?",,"BCM Handbook – 4.1–4.4 Facts / Options / Expenses, Opportunities and Risks / Decision"
-"How is the process generally planned to restore operations after a major IT outage (emergency operation, restart, return to normal operation)?",,BCM Handbook – 6.3 Failure of IT (Restart and recovery)
-"What phases does the return to normal operations after an emergency involve, and who decides on de-escalation?",,BCM Handbook – 7 Transfer to Normal Operation (7.1 Measures Required for Transfer / 7.2 De-escalation / 7.3 Analysis and Evaluation)
-"How often does the continuity manual need to be reviewed, and who is responsible for this?",,BCM Handbook – 8 Reviewing and Updating of Contingency Manual
-Under what conditions can the BCM-ERO be set up and then dissolved?,,BCM Handbook – 9.1.1 Establishment and Dissolution of BCM-ERO
-What rules apply to the establishment and dissolution of the BCM-ERO?,,BCM Handbook – 9.1.1 Rules of Procedure
-What special powers does the BCM-ERO have regarding financial resources in an emergency?,,BCM Handbook – 9.1.2 Disposal of Financial Resources
-What are the basic rules of conduct (code of conduct) for members of the Emergency Response Organisation?,,BCM Handbook – 9.1.4 Code of Conduct
-What communication methods does KISTERS use in an emergency?,,BCM Handbook – 9.2 Communication Media
-Which communication media are intended for emergency communication and where can I find an overview of them?,,BCM Handbook – 9.2 Communication Media
-Why does KISTERS need a formal change management process and what goals are being pursued with it?,,Change Management – 1.1 Motivation and Objectives
-To which systems and processes does the change management policy (scope) refer?,,Change Management – 1.2 Scope of this Guideline
-What role does the (E)CAB play in major changes?,,Change Management – 1.3 Roles (E)CAB
-What tasks does the (E)CAB perform during major changes?,,"Change Management – 1.3 Roles, Responsibilities (E)CAB"
-"Who can initiate a ""Request for Change"" and what role does the ""System owner"" play in this?",,"Change Management – 1.3 Roles, Responsibilities and Dependencies"
-What role does the (E)CAB play in major and emergency changes?,,"Change Management – 1.3 Roles, Responsibilities and Dependencies (E)CAB"
-"What legal requirements apply to change management (ISO 27001, SOC2, C5 etc.)?",,Change Management – 1.4 Legal Requirements
-"What is meant by ""change"" in this context, i.e., what types of changes fall under this category?",,Change Management – 2 Definition of Changes
-"What steps does the general change management process include, from the creation to the follow-up of a Request for Change (RfC)?",,Change Management – 3 Change Management Process / 3.2 Tasks
-"How does a ""Service Request"" differ from a ""Standard Change""?",,Change Management – 3.1.1 Service Request / 3.1.2 Standard Change
-"What is a ""Standard Change"" and why does it not require separate approval?",,Change Management – 3.1.2 Standard Change
-"When is a change classified as a ""Major Change"" and what does that mean for planning?",,Change Management – 3.1.3 Major Change
-"What is an ""emergency change"" and when is this type permissible?",,Change Management – 3.1.4 Emergency Change
-"Which ticketing systems are used at KISTERS for changes and support, and who uses which platform?",,Change Management – 4.1 Jira Ticket Systems (Jira Service Management / Jira Software)
-"What does KISTERS understand by the most important ticket terms such as ""Issue/Ticket"", ""Key"", ""Reporter"" and ""Assignee""?",,Change Management – 4.2 Terminology
-How is the processing status of a ticket represented in the workflow and why is this important?,,Change Management – 5.1 Ticket Status Workflow
-"What are the differences between the roles ""Reporter"", ""Assignee"", ""QA Contact"" and ""Watcher"" in a ticket?",,Change Management – 5.2 Roles and Responsibilities in KISTERS Ticket Systems
-What is the minimum content a change ticket must contain?,,Change Management – 6.2 Ticket Content
-What information must be included in a change ticket?,,Change Management – 6.2 Ticket Information Content
-What information must be included in a ticket at a minimum to ensure the change is properly documented?,,Change Management – 6.2 Ticket Information Content
-"How is the ticket priority ""Highest (Emergency)"" used and what does it mean for response and resolution times?",,Change Management – 6.3.1 Priority “Highest (Emergency)”
-How are the target resolution times aligned with the ticket priority?,,Change Management – 6.3.2 Target Resolution Time
-What information obligations exist in the change management process – who do I need to inform about which changes?,,Change Management – 7 Information Obligation
-"What is a ""Standard Change"" and why does it not require additional approval?",,Change Management Guideline – 3.1.2 Standard Change
-What is the goal of an audit in the context of ISMS and BCMS?,,IS/BCM Audit Guideline – 1.1 Motivation and Objectives
-What is the difference between major deviation and minor deviation?,,IS/BCM Audit Guideline – 2.4.1 / 2.4.2 Findings Types
-How is an audit finding documented in the ticketing system?,,IS/BCM Audit Guideline – 3.1 Organization of Audit Tickets
-What is the purpose of the record of processing activities pursuant to Article 30 GDPR for KISTERS?,,Record of Processing Activities – 1 Introduction
-In which roles does KISTERS process personal data and how is this described in the document?,,Record of Processing Activities – 1 Introduction / 4.1 Controller vs. processor
-"What contact details for KISTERS (address, main telephone number, email) should I have readily available for external data protection inquiries?",,Record of Processing Activities – 2.1 Name and contact data
-Who can I contact as an employee if I have a data protection-related question or incident to report?,,Record of Processing Activities – 2.3 Data Protection Officers for the KISTERS Group
-Where are the technical and organizational measures (TOMs) for data protection described in detail if I want to read them?,,Record of Processing Activities – 3 Technical and organisational measures for data protection
-How is it ensured that the record of processing activities remains complete and up-to-date?,,Record of Processing Activities – 4 Processing activities
-What does it mean for me in practice if a processing activity is managed as both a controller and a processor?,,Record of Processing Activities – 4.1 Controller vs. processor
-"Which overarching data protection sources (e.g., GDPR) are mentioned as references in the document?",,Record of Processing Activities – 5 References
-"At what intervals is the document relating to the record of processing activities reviewed, and why is this important?",,Record of Processing Activities – 6 Document history
-Why does KISTERS have to keep a record of processing activities?,,RoPA – 1 Introduction
-Who is the data protection officer of the KISTERS Group?,,RoPA – 2.3 DPOs
-What general technical and organizational measures (TOMs) does KISTERS refer to for data protection?,,RoPA – 3 TOMs Reference
-What role can KISTERS play in data processing?,,RoPA – 4.1 Controller vs Processor
-What document history is maintained in the data protection document?,,RoPA – 6 Document History
+ID,Frage,Supposed Answer Source
+01 - DE,Was ist das Ziel eines internen oder externen Audits im ISMS/BCMS-Kontext?,Audit Guideline – 1.1 Motivation
+01 - EN,What is the goal of an internal or external audit in the ISMS/BCMS context?,Audit Guideline – 1.1 Motivation
+02 - DE,Warum führt KISTERS interne und externe Audits durch und welches Ziel verfolgt das Auditprogramm?,Audit Guideline – 1.1 Motivation and Objectives / 2 Audit Programme
+02 - EN,"Why does KISTERS conduct internal and external audits, and what is the goal of the audit program?",Audit Guideline – 1.1 Motivation and Objectives / 2 Audit Programme
+03 - DE,"Was gehört zum Auditprogramm, das halbjährlich überprüft werden muss?",Audit Guideline – 2 Audit Programme
+03 - EN,"What is included in the audit program, which must be reviewed every six months?",Audit Guideline – 2 Audit Programme
+04 - DE,Wie wird eine Audit-ID gebildet und wozu wird sie verwendet?,Audit Guideline – 2 Audit Programme (Audit-ID „ISAyyyymm_“)
+04 - EN,How is an audit ID generated and what is it used for?,Audit Guideline – 2 Audit Programme (Audit-ID „ISAyyyymm_“)
+05 - DE,"Welche Themen fallen typischerweise in den Scope eines Audits bei KISTERS (z. B. ISMS, BCMS, technische Prüfungen)?",Audit Guideline – 2.2 Audit scopes
+05 - EN,"What topics typically fall within the scope of an audit at KISTERS (e.g., ISMS, BCMS, technical audits)?",Audit Guideline – 2.2 Audit scopes
+06 - DE,"Was wird von mir als Teilnehmer eines Audits bei der Vorbereitung erwartet (z. B. Dokumente, Verfügbarkeit, Zuständigkeiten)?",Audit Guideline – 2.3.1 Preparation (Participant)
+06 - EN,"What is expected of me as a participant in an audit during the preparation phase (e.g., documents, availability, responsibilities)?",Audit Guideline – 2.3.1 Preparation (Participant)
+07 - DE,"Wie laufen die nächsten Schritte nach einem Audit ab, wenn ich als Verantwortlicher einen Auditbericht erhalte?",Audit Guideline – 2.3.3 Report / 3 Management of audit findings
+07 - EN,"What are the next steps after an audit if I, as the responsible party, receive an audit report?",Audit Guideline – 2.3.3 Report / 3 Management of audit findings
+08 - DE,Welche Arten von Abweichungen (Findings) gibt es bei Audits?,Audit Guideline – 2.4 Findings
+08 - EN,What types of deviations (findings) are found during audits?,Audit Guideline – 2.4 Findings
+09 - DE,Wodurch unterscheidet sich eine „Major deviation“ von einer „Minor deviation“ im Auditkontext?,Audit Guideline – 2.4.1 Major deviation / 2.4.2 Minor deviation
+09 - EN,"How does a ""major deviation"" differ from a ""minor deviation"" in an audit context?",Audit Guideline – 2.4.1 Major deviation / 2.4.2 Minor deviation
+10 - DE,Wie wird ein Audit-Befund im Ticketsystem dokumentiert?,Audit Guideline – 3.1 Audit Tickets
+10 - EN,How is an audit finding documented in the ticketing system?,Audit Guideline – 3.1 Audit Tickets
+11 - DE,Wie wird aus einem Audit-Finding ein Ticket und welche Rolle spielt dabei das „Audit Summary Ticket“?,Audit Guideline – 3.1 Organization of audit tickets
+11 - EN,"How does an audit finding become a ticket, and what role does the ""Audit Summary Ticket"" play in this process?",Audit Guideline – 3.1 Organization of audit tickets
+12 - DE,"Wie ist die Zuordnung von Risiko-Ratings (Very High, High, Medium, …) zu Jira-Prioritäten und Bearbeitungsfristen?",Audit Guideline – 3.2.2 Risk-based ratings
+12 - EN,"How are risk ratings (Very High, High, Medium, …) assigned to Jira priorities and processing times?",Audit Guideline – 3.2.2 Risk-based ratings
+13 - DE,"Was muss ich beachten, wenn ein Audit-Befund in mehreren Teams Maßnahmen erfordert – wie sollen Tickets angelegt werden?",Audit Guideline – 3.3.2 Multiple Audit Action Tickets per finding
+13 - EN,What do I need to consider if an audit finding requires action across multiple teams – how should tickets be created?,Audit Guideline – 3.3.2 Multiple Audit Action Tickets per finding
+14 - DE,"Wie gehe ich vor, wenn ein bereits existierendes Ticket ein neues Audit-Finding inhaltlich mit abdeckt?",Audit Guideline – 3.3.3 Re-use of existing tickets
+14 - EN,How do I proceed if an existing ticket also covers the content of a new audit finding?,Audit Guideline – 3.3.3 Re-use of existing tickets
+15 - DE,"Was ist zu tun, wenn ein Kunde einen Vendor Audit bei KISTERS anfragt oder eigenständig Sicherheitsprüfungen durchführt?",Audit Guideline – 3.4 Special case: vendor audits by clients
+15 - EN,What should be done if a customer requests a vendor audit from KISTERS or conducts security checks independently?,Audit Guideline – 3.4 Special case: vendor audits by clients
+16 - DE,Wofür ist das Business Continuity Handbook gedacht und wen betreffen seine Regelungen?,BCM Handbook – 1.1 Objective / 1.2 Scope
+16 - EN,What is the purpose of the Business Continuity Handbook and who does its regulation affect?,BCM Handbook – 1.1 Objective / 1.2 Scope
+17 - DE,Für welche Situationen ist das Business Continuity Handbook gedacht und für welche Bereiche der KISTERS Gruppe gilt es verbindlich?,BCM Handbook – 1.1 Objective / 1.2 Scope
+17 - EN,"For which situations is the Business Continuity Handbook intended, and for which areas of the KISTERS Group is it binding?",BCM Handbook – 1.1 Objective / 1.2 Scope
+18 - DE,Wie wird im BCM-Handbuch der Unterschied zwischen „Disruption“ und „Critical Disruption“ beschrieben?,BCM Handbook – 1.3.1 Disruption / 1.3.2 Critical Disruption
+18 - EN,"How is the difference between ""disruption"" and ""critical disruption"" described in the BCM manual?",BCM Handbook – 1.3.1 Disruption / 1.3.2 Critical Disruption
+19 - DE,"Welche Kriterien müssen erfüllt sein, damit ein Vorfall bei KISTERS als „Emergency“ eingestuft wird?",BCM Handbook – 1.3.3 Emergency
+19 - EN,"What criteria must be met for an incident at KISTERS to be classified as an ""emergency""?",BCM Handbook – 1.3.3 Emergency
+20 - DE,"Was muss ich tun, wenn ich einen Cyberangriff bemerke (z. B. Ransomware)?",BCM Handbook – 2.2.1 Cyber Attack
+20 - EN,"What should I do if I notice a cyberattack (e.g., ransomware)?",BCM Handbook – 2.2.1 Cyber Attack
+21 - DE,"Was soll ich als Mitarbeiter konkret tun, wenn bei mir eine Ransomware-Meldung auf dem Bildschirm erscheint?",BCM Handbook – 2.2.1 Immediate Measures in the Event of Cyber Attack (Ransomware/Malware)
+21 - EN,"What should I, as an employee, do specifically if a ransomware message appears on my screen?",BCM Handbook – 2.2.1 Immediate Measures in the Event of Cyber Attack (Ransomware/Malware)
+22 - DE,"An wen soll ich mich wenden, wenn im Gebäude der Strom ausgefallen ist?",BCM Handbook – 2.2.4 Power Failure
+22 - EN,Who should I contact if the power goes out in the building?,BCM Handbook – 2.2.4 Power Failure
+23 - DE,"Was ist meine Aufgabe, wenn ich einen Ausfall der Internetverbindung feststelle – und wer entscheidet über weitere Schritte?",BCM Handbook – 2.2.6 Immediate Measures in the Event of Internet Connectivity Failure
+23 - EN,What is my responsibility if I experience an internet connection failure – and who decides on further steps?,BCM Handbook – 2.2.6 Immediate Measures in the Event of Internet Connectivity Failure
+24 - DE,"Welche Schritte sind vorgesehen, wenn viele Kolleginnen und Kollegen gleichzeitig wegen Krankheit ausfallen und mein Bereich arbeitsunfähig zu werden droht?",BCM Handbook – 2.2.9 Immediate Measures in the event of Staff Shortages due to Illness
+24 - EN,What steps are planned if many colleagues are absent due to illness at the same time and my department is at risk of becoming unable to function?,BCM Handbook – 2.2.9 Immediate Measures in the event of Staff Shortages due to Illness
+25 - DE,Wer ist „Manager of Duty“ und was entscheidet er?,BCM Handbook – 3.1 MoD
+25 - EN,"Who is ""Manager of Duty"" and what decisions does he make?",BCM Handbook – 3.1 MoD
+26 - DE,"Welche Fragen sollen IT-Helpdesk-Mitarbeiter stellen, um eine mögliche „Emergency“ zu erkennen?",BCM Handbook – 3.1.2 Key Questions IT Help Desk
+26 - EN,"What questions should IT helpdesk staff ask to identify a potential ""emergency""?",BCM Handbook – 3.1.2 Key Questions IT Help Desk
+27 - DE,Wo befindet sich der EMT-Raum im Headquarter?,BCM Handbook – 3.3.1 EMT Rooms
+27 - EN,Where is the EMT room located in the headquarters?,BCM Handbook – 3.3.1 EMT Rooms
+28 - DE,"Welche Punkte müssen bei der Vorbereitung des EMT-Raums beachtet werden, bevor ein Notfallmeeting starten kann?",BCM Handbook – 3.3.2 Equipment and Preparation
+28 - EN,What points need to be considered when preparing the EMT room before an emergency meeting can start?,BCM Handbook – 3.3.2 Equipment and Preparation
+29 - DE,"Wie ist grundsätzlich vorgesehen, dass nach einem größeren IT-Ausfall der Betrieb wiederhergestellt wird (Notbetrieb, Wiederanlauf, Rückkehr zum Normalbetrieb)?",BCM Handbook – 6.3 Failure of IT (Restart and recovery)
+29 - EN,"How is the process generally planned to restore operations after a major IT outage (emergency operation, restart, return to normal operation)?",BCM Handbook – 6.3 Failure of IT (Restart and recovery)
+30 - DE,Wie oft muss das Kontinuitätshandbuch überprüft werden und wer ist dafür verantwortlich?,BCM Handbook – 8 Reviewing and Updating of Contingency Manual
+30 - EN,"How often does the continuity manual need to be reviewed, and who is responsible for this?",BCM Handbook – 8 Reviewing and Updating of Contingency Manual
+31 - DE,Unter welchen Bedingungen kann die BCM-ERO eingerichtet und wieder aufgelöst werden?,BCM Handbook – 9.1.1 Establishment and Dissolution of BCM-ERO
+31 - EN,Under what conditions can the BCM-ERO be set up and then dissolved?,BCM Handbook – 9.1.1 Establishment and Dissolution of BCM-ERO
+32 - DE,Welche besonderen Befugnisse hat die BCM-ERO in Bezug auf finanzielle Mittel im Notfall?,BCM Handbook – 9.1.2 Disposal of Financial Resources
+32 - EN,What special powers does the BCM-ERO have regarding financial resources in an emergency?,BCM Handbook – 9.1.2 Disposal of Financial Resources
+33 - DE,Welche Kommunikationsmittel nutzt KISTERS im Notfall?,BCM Handbook – 9.2 Communication Media
+33 - EN,What communication methods does KISTERS use in an emergency?,BCM Handbook – 9.2 Communication Media
+34 - DE,Auf welche Systeme und Prozesse bezieht sich die Change-Management-Richtlinie (Scope)?,Change Management – 1.2 Scope of this Guideline
+34 - EN,To which systems and processes does the change management policy (scope) refer?,Change Management – 1.2 Scope of this Guideline
+35 - DE,Welche Rolle hat das (E)CAB bei Major Changes?,Change Management – 1.3 Roles (E)CAB
+35 - EN,What role does the (E)CAB play in major changes?,Change Management – 1.3 Roles (E)CAB
+36 - DE,Welche Aufgaben übernimmt das (E)CAB bei Major Changes?,"Change Management – 1.3 Roles, Responsibilities (E)CAB"
+36 - EN,What tasks does the (E)CAB perform during major changes?,"Change Management – 1.3 Roles, Responsibilities (E)CAB"
+37 - DE,Wer kann einen „Request for Change“ anstoßen und welche Rolle hat der „System owner“ dabei?,"Change Management – 1.3 Roles, Responsibilities and Dependencies"
+37 - EN,"Who can initiate a ""Request for Change"" and what role does the ""System owner"" play in this?","Change Management – 1.3 Roles, Responsibilities and Dependencies"
+38 - DE,Welche Rolle hat das (E)CAB bei Major und Emergency Changes?,"Change Management – 1.3 Roles, Responsibilities and Dependencies (E)CAB"
+38 - EN,What role does the (E)CAB play in major and emergency changes?,"Change Management – 1.3 Roles, Responsibilities and Dependencies (E)CAB"
+39 - DE,"Was wird in diesem Kontext als „Change“ verstanden, also welche Arten von Änderungen fallen darunter?",Change Management – 2 Definition of Changes
+39 - EN,"What is meant by ""change"" in this context, i.e., what types of changes fall under this category?",Change Management – 2 Definition of Changes
+40 - DE,Welche Schritte umfasst der allgemeine Change-Management-Prozess von der Erstellung bis zur Nachbearbeitung eines Requests for Change (RfC)?,Change Management – 3 Change Management Process / 3.2 Tasks
+40 - EN,"What steps does the general change management process include, from the creation to the follow-up of a Request for Change (RfC)?",Change Management – 3 Change Management Process / 3.2 Tasks
+41 - DE,Wie unterscheidet sich ein „Service Request“ von einem „Standard Change“?,Change Management – 3.1.1 Service Request / 3.1.2 Standard Change
+41 - EN,"How does a ""Service Request"" differ from a ""Standard Change""?",Change Management – 3.1.1 Service Request / 3.1.2 Standard Change
+42 - DE,Was ist ein „Standard Change“ und warum erfordert er keine gesonderte Freigabe?,Change Management – 3.1.2 Standard Change
+42 - EN,"What is a ""Standard Change"" and why does it not require separate approval?",Change Management – 3.1.2 Standard Change
+43 - DE,Wann wird eine Änderung als „Major Change“ eingestuft und was bedeutet das für die Planung?,Change Management – 3.1.3 Major Change
+43 - EN,"When is a change classified as a ""Major Change"" and what does that mean for planning?",Change Management – 3.1.3 Major Change
+44 - DE,Was ist ein „Emergency Change“ und wann ist dieser Typ zulässig?,Change Management – 3.1.4 Emergency Change
+44 - EN,"What is an ""emergency change"" and when is this type permissible?",Change Management – 3.1.4 Emergency Change
+45 - DE,Welche Ticket-Systeme werden bei KISTERS für Changes und Support verwendet und wer nutzt welche Plattform?,Change Management – 4.1 Jira Ticket Systems (Jira Service Management / Jira Software)
+45 - EN,"Which ticketing systems are used at KISTERS for changes and support, and who uses which platform?",Change Management – 4.1 Jira Ticket Systems (Jira Service Management / Jira Software)
+46 - DE,"Was versteht KISTERS unter den wichtigsten Ticket-Begriffen wie „Issue/Ticket“, „Key“, „Reporter“ und „Assignee“?",Change Management – 4.2 Terminology
+46 - EN,"What does KISTERS understand by the most important ticket terms such as ""Issue/Ticket"", ""Key"", ""Reporter"" and ""Assignee""?",Change Management – 4.2 Terminology
+47 - DE,Wie wird der Bearbeitungsstatus eines Tickets im Workflow abgebildet und warum ist das wichtig?,Change Management – 5.1 Ticket Status Workflow
+47 - EN,How is the processing status of a ticket represented in the workflow and why is this important?,Change Management – 5.1 Ticket Status Workflow
+48 - DE,"Welche Unterschiede bestehen zwischen den Rollen „Reporter“, „Assignee“, „QA Contact“ und „Watcher“ in einem Ticket?",Change Management – 5.2 Roles and Responsibilities in KISTERS Ticket Systems
+48 - EN,"What are the differences between the roles ""Reporter"", ""Assignee"", ""QA Contact"" and ""Watcher"" in a ticket?",Change Management – 5.2 Roles and Responsibilities in KISTERS Ticket Systems
+49 - DE,Welche minimalen Inhalte muss ein Change-Ticket enthalten?,Change Management – 6.2 Ticket Content
+49 - EN,What is the minimum content a change ticket must contain?,Change Management – 6.2 Ticket Content
+50 - DE,Welche Informationen müssen unbedingt in einem Change-Ticket enthalten sein?,Change Management – 6.2 Ticket Information Content
+50 - EN,What information must be included in a change ticket?,Change Management – 6.2 Ticket Information Content
+51 - DE,"Welche Informationen müssen inhaltlich mindestens in einem Ticket stehen, damit die Änderung sauber dokumentiert ist?",Change Management – 6.2 Ticket Information Content
+51 - EN,What information must be included in a ticket at a minimum to ensure the change is properly documented?,Change Management – 6.2 Ticket Information Content
+52 - DE,Wie wird die Ticket-Priorität „Highest (Emergency)“ verwendet und was bedeutet sie für Reaktions- und Lösungszeiten?,Change Management – 6.3.1 Priority “Highest (Emergency)”
+52 - EN,"How is the ticket priority ""Highest (Emergency)"" used and what does it mean for response and resolution times?",Change Management – 6.3.1 Priority “Highest (Emergency)”
+53 - DE,Wie orientieren sich die Ziel-Lösungszeiten (Target Resolution Time) an der Ticket-Priorität?,Change Management – 6.3.2 Target Resolution Time
+53 - EN,How are the target resolution times aligned with the ticket priority?,Change Management – 6.3.2 Target Resolution Time
+54 - DE,Welche Informationspflichten bestehen im Change-Management-Prozess – wen muss ich über welche Änderungen informieren?,Change Management – 7 Information Obligation
+54 - EN,What information obligations exist in the change management process – who do I need to inform about which changes?,Change Management – 7 Information Obligation
+55 - DE,Was ist ein „Standard Change“ und warum benötigt er keine zusätzliche Freigabe?,Change Management Guideline – 3.1.2 Standard Change
+55 - EN,"What is a ""Standard Change"" and why does it not require additional approval?",Change Management Guideline – 3.1.2 Standard Change
+56 - DE,Was ist das Ziel eines Audits im Kontext von ISMS und BCMS?,IS/BCM Audit Guideline – 1.1 Motivation and Objectives
+56 - EN,What is the goal of an audit in the context of ISMS and BCMS?,IS/BCM Audit Guideline – 1.1 Motivation and Objectives
+57 - DE,Worin unterscheiden sich Major Deviation und Minor Deviation?,IS/BCM Audit Guideline – 2.4.1 / 2.4.2 Findings Types
+57 - EN,What is the difference between major deviation and minor deviation?,IS/BCM Audit Guideline – 2.4.1 / 2.4.2 Findings Types
+58 - DE,Wie wird ein Audit-Finding im Ticketsystem dokumentiert?,IS/BCM Audit Guideline – 3.1 Organization of Audit Tickets
+58 - EN,How is an audit finding documented in the ticketing system?,IS/BCM Audit Guideline – 3.1 Organization of Audit Tickets
+59 - DE,Welchen Zweck hat das Verzeichnis von Verarbeitungstätigkeiten nach Art. 30 DSGVO für KISTERS?,Record of Processing Activities – 1 Introduction
+59 - EN,What is the purpose of the record of processing activities pursuant to Article 30 GDPR for KISTERS?,Record of Processing Activities – 1 Introduction
+60 - DE,In welchen Rollen verarbeitet KISTERS personenbezogene Daten und wie wird das im Dokument beschrieben?,Record of Processing Activities – 1 Introduction / 4.1 Controller vs. processor
+60 - EN,In which roles does KISTERS process personal data and how is this described in the document?,Record of Processing Activities – 1 Introduction / 4.1 Controller vs. processor
+61 - DE,"Welche Kontaktdaten von KISTERS (Adresse, zentrale Telefonnummer, E-Mail) sollte ich für externe Datenschutzanfragen parat haben?",Record of Processing Activities – 2.1 Name and contact data
+61 - EN,"What contact details for KISTERS (address, main telephone number, email) should I have readily available for external data protection inquiries?",Record of Processing Activities – 2.1 Name and contact data
+62 - DE,"An wen kann ich mich als Beschäftigter wenden, wenn ich eine datenschutzrelevante Frage oder einen Vorfall melden möchte?",Record of Processing Activities – 2.3 Data Protection Officers for the KISTERS Group
+62 - EN,Who can I contact as an employee if I have a data protection-related question or incident to report?,Record of Processing Activities – 2.3 Data Protection Officers for the KISTERS Group
+63 - DE,"Wo sind die technischen und organisatorischen Maßnahmen (TOMs) für Datenschutz im Detail beschrieben, wenn ich sie nachlesen möchte?",Record of Processing Activities – 3 Technical and organisational measures for data protection
+63 - EN,Where are the technical and organizational measures (TOMs) for data protection described in detail if I want to read them?,Record of Processing Activities – 3 Technical and organisational measures for data protection
+64 - DE,"Wie wird sichergestellt, dass das Verzeichnis der Verarbeitungstätigkeiten vollständig und aktuell bleibt?",Record of Processing Activities – 4 Processing activities
+64 - EN,How is it ensured that the record of processing activities remains complete and up-to-date?,Record of Processing Activities – 4 Processing activities
+65 - DE,"Was bedeutet es für mich in der Praxis, wenn eine Verarbeitungstätigkeit sowohl als Controller als auch als Processor geführt wird?",Record of Processing Activities – 4.1 Controller vs. processor
+65 - EN,What does it mean for me in practice if a processing activity is managed as both a controller and a processor?,Record of Processing Activities – 4.1 Controller vs. processor
+66 - DE,Welche übergeordneten Datenschutzquellen (z. B. DSGVO) werden im Dokument als Referenz genannt?,Record of Processing Activities – 5 References
+66 - EN,"Which overarching data protection sources (e.g., GDPR) are mentioned as references in the document?",Record of Processing Activities – 5 References
+67 - DE,"In welchen Abständen wird das Dokument zum Verzeichnis der Verarbeitungstätigkeiten überprüft, und warum ist das wichtig?",Record of Processing Activities – 6 Document history
+67 - EN,"At what intervals is the document relating to the record of processing activities reviewed, and why is this important?",Record of Processing Activities – 6 Document history
+68 - DE,Warum muss KISTERS ein Verzeichnis von Verarbeitungstätigkeiten führen?,RoPA – 1 Introduction
+68 - EN,Why does KISTERS have to keep a record of processing activities?,RoPA – 1 Introduction
+69 - DE,Wer ist Datenschutzbeauftragter der KISTERS Gruppe?,RoPA – 2.3 DPOs
+69 - EN,Who is the data protection officer of the KISTERS Group?,RoPA – 2.3 DPOs
+70 - DE,Welche allgemeinen technischen und organisatorischen Maßnahmen (TOMs) verweist KISTERS für Datenschutz?,RoPA – 3 TOMs Reference
+70 - EN,What general technical and organizational measures (TOMs) does KISTERS refer to for data protection?,RoPA – 3 TOMs Reference
+71 - DE,Welche Rolle kann KISTERS bei Datenverarbeitungen einnehmen?,RoPA – 4.1 Controller vs Processor
+71 - EN,What role can KISTERS play in data processing?,RoPA – 4.1 Controller vs Processor
+72 - DE,Welche Dokumenthistorie wird im Datenschutz-Dokument gepflegt?,RoPA – 6 Document History
+72 - EN,What document history is maintained in the data protection document?,RoPA – 6 Document History

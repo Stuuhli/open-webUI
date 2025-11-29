@@ -1,0 +1,1442 @@
+Frage,Antwort,Referenz
+Was ist das Ziel eines internen oder externen Audits im ISMS/BCMS-Kontext?,"Laut der Dokumentation ""KISTERS_IS_Audits.pdf"" im Abschnitt ""2.1 Audit objectives"" ist das Ziel eines internen und externen Audits, die Einhaltung der Anforderungen des ISO/IEC 27001, BSI C5, SOC 2, TISAX, BSI TR-03109-6 usw., sowie der gesetzlichen und behördlichen Anforderungen (z.B. GDPR, NIS 2) zu überprüfen.
+
+Das Dokument besagt auch, dass das Ziel eines Audits darin besteht, festzustellen, ob die technischen und organisatorischen Maßnahmen für Informationssicherheit, Unternehmensfortführung und Datenschutz durch KISTERS geeignet sind, um die definierten Anforderungen zu erfüllen, und ob sie effektiv sind, um die Sicherheitsziele zu erreichen.
+
+Insgesamt lautet das Ziel eines internen oder externen Audits im ISMS/BCMS-Kontext: ""um festzustellen, ob das ISMS (ISMS) den Anforderungen von KISTERS und den Standards, an denen sich KISTERS orientiert, entspricht, sowie die technischen und organisatorischen Maßnahmen für Informationssicherheit, Unternehmensfortführung und Datenschutz effektiv sind."" [1]",Audit Guideline – 1.1 Motivation
+Warum führt KISTERS interne und externe Audits durch und welches Ziel verfolgt das Auditprogramm?,"Laut dem Dokument ""KISTERS_IS_Audits.pdf | Section: 1.1 Motivation and Objectives"" hat KISTERS die internen und externen Audits eingeführt, um sicherzustellen, dass seine Management-Systeme, einschließlich Informationssicherheits-, Datenschutz- und Geschäftskontinuitätsmanagementsysteme (ISMS, DPMS, BCMS), den Anforderungen des Unternehmens sowie der von KISTERS verpflichteten Standards wie ISO/IEC 27001, SOC 2, BSI C5 etc. entsprechen.
+
+Das Auditprogramm soll sicherstellen, dass die technischen und organisatorischen Maßnahmen zur Informationssicherheit, Datenschutz und Geschäftskontinuität effektiv sind und den definierten Anforderungen entsprechen. Das Programm zielt darauf ab, die Einhaltung der von KISTERS festgelegten Ziele für ihre Management-Systeme sicherzustellen und kontinuierliche Verbesserungen voranzutreiben.
+
+Quelle: ""KISTERS_IS_Audits.pdf | Section: 1.1 Motivation and Objectives""",Audit Guideline – 1.1 Motivation and Objectives / 2 Audit Programme
+"Was gehört zum Auditprogramm, das halbjährlich überprüft werden muss?","Das Auditprogramm umfasst alle geplanten und durchgeführten Audits und wird gemeinsam vom CISO (Chief Information Security Officer), dem BCMO (Business Continuity Manager) und dem DPO (Data Protection Officer) verwaltet. Es sollte mindestens alle sechs Monate überprüft werden, sowie bei jedem relevanten Änderung des Auditprogramms.
+
+Zu den Audits gehören:
+
+* Audits der ISMS (Information Security Management System) nach ISO/IEC 27001, einschließlich von Kontrollen aus ISO/IEC 27017, ISO/IEC 27018, ISO/IEC 27019 und ISO/IEC 27701, soweit zutreffend
+* Audits des BCMS (Business Continuity Management System) nach ISO 22301 und BSI 200-4
+* Audits zur Einhaltung anderer Normen oder rechtlicher Anforderungen (z.B. GDPR, TÜV TSI, SOC 2 usw.)
+* Technische Audits der internen und externen IT-Infrastruktur von KISTERS, einschließlich Penetrationstests
+* Audits des Geschäftskontinuierungsmanagements und der Incident-Management-Strategie, einschließlich Ausbildung auf Incident-Management und Disaster Recovery",Audit Guideline – 2 Audit Programme
+Wie wird eine Audit-ID gebildet und wozu wird sie verwendet?,"Laut dem Dokument ""KISTERS_IS_Audits.pdf"" (Abschnitt 2.1 Audit objectives) muss die Audit-ID die folgende Form haben: ""ISAyyyymm_&lt;Subject&gt;"" [1]. Die Audit-ID soll alle Audits eindeutig identifizieren.
+
+Die Audit-ID wird verwendet, um einzelne Audits zu identifizieren und zu unterscheiden. Sie dient auch als Bezeichnung für die Audits in den Auditräumen und Tickets [2].
+
+[1] KISTERS_IS_Audits.pdf | Section: 2.1 Audit objectives
+[2] KISTERS_IS_Audits.pdf | Section: 3.3.1 Combining Audit Actions into single tickets",Audit Guideline – 2 Audit Programme (Audit-ID „ISAyyyymm_“)
+"Welche Themen fallen typischerweise in den Scope eines Audits bei KISTERS (z. B. ISMS, BCMS, technische Prüfungen)?","Laut dem Dokument ""KISTERS_IS_Audits.pdf | Section: 2.2 Audit scopes"" fallen folgende Themen typischerweise in den Scope eines Audits bei KISTERS:
+
+* Audits des ISMS (Information Security Management System) durch die Überprüfung der Umsetzung von Maßnahmen nach ISO/IEC 27001, einschließlich von Kontrollen aus ISO/IEC 27017, ISO/IEC 27018, ISO/IEC 27019 und ISO/IEC 27701
+* Audits des BCMS (Business Continuity Management System) durch die Überprüfung der Umsetzung von Maßnahmen nach ISO 22301 und BSI 200-4
+* Audits zur Einhaltung anderer Normen oder rechtlicher Anforderungen (z.B. GDPR, TÜV TSI, SOC 2)
+* Technische Prüfungen der IT-Infrastruktur, einschließlich Penetrationstests
+* Audits des Geschäftsfortführungsmanagements und der Notfallverfahren, einschließlich Übungen zum Notfallmanagement und Wiederherstellungsplanung
+* Audits von KISTERS-Lieferanten (Lieferantenaudits durch oder auf Kosten von KISTERS)
+* Audits von KISTERS als Lieferant (Audits von KISTERS durch oder auf Kosten der Kunden)
+* Audits von KISTERS- Lösungen hinsichtlich IT-Sicherheits- und/oder Datenschutzfeatures, einschließlich Penetrationstests durch KISTERS oder Dritte
+* Interne Risikobewertungen
+* Audits einzelner technischer oder organisatorischer Aspekte bei KISTERS, die für Informationssicherheit, Geschäftsfortführung und/oder Datenschutz relevant sind.",Audit Guideline – 2.2 Audit scopes
+"Was wird von mir als Teilnehmer eines Audits bei der Vorbereitung erwartet (z. B. Dokumente, Verfügbarkeit, Zuständigkeiten)?","Laut dem Dokument ""KISTERS_IS_Audits.pdf"" im Abschnitt ""2.3.1 Preparation"" ist von dir als Teilnehmer eines Audits bei der Vorbereitung erwartet:
+
+* Du solltest das Auditorium über die relevanten Dokumente informieren, die für das Audit benötigt werden (Anmerkung: Keine explizite Erwähnung).
+* Du solltest sicherstellen, dass du verfügbar bist und in der Lage bist, Informationen bereitzustellen, ansonsten den zuständigen Mitarbeiter zu benennen.
+* Du solltest die relevanten Dokumente für das Audit vorbereiten und dem Auditor zur Verfügung stellen, wenn er sie benötigt.
+
+Es ist wichtig zu beachten, dass als Teilnehmer des Audits du auch deine Zuständigkeiten und Verantwortlichkeiten kennen und bereit sein solltest, Fragen der Auditorium beantworten zu können.",Audit Guideline – 2.3.1 Preparation (Participant)
+"Wie soll ich mich während der Durchführung eines Audits verhalten, insbesondere im Hinblick auf Offenheit und Nachweise?","Laut dem Dokument ""KISTERS_IS_Audits.pdf"" | Section: 2.3.1 Preparation sollte man sich wie folgt verhalten:
+
+* Sei offen und ehrlich in der Diskussion über relevante Themen.
+* Bitte um dokumentierte Beweise, wenn möglich und angemessen; beachte den Titel, die Version und das Datum der geprüften Dokumente.
+* Beziehe dich auf beobachtete Audits von aktiven Tests aus, wie z.B. Penetrationstests. Leite aktiv durchgeführte Tests mit verantwortungsvoller Vorsicht durch; wenn du unsicher bist, bitte um Zustimmung für die Durchführung der Aktivität vom Audit-Teilnehmer.
+* Stelle sicher, dass Audit-Befunde als ""Möglichkeit zur Verbesserung"" für konforme Themen eingeordnet werden, bei denen weitere Verbesserungen möglich sind, und als ""kleine Abweichung"" oder ""große Abweichung"" für Nichtkonformitäten. Identifiziere jeden Befund mit einer eindeutigen ""Befund- ID"".
+
+Ich hoffe, diese Informationen helfen dir bei deinem Audit!",Audit Guideline – 2.3.2 Execution (Participant)
+"Wie laufen die nächsten Schritte nach einem Audit ab, wenn ich als Verantwortlicher einen Auditbericht erhalte?","Laut dem Dokument ""KISTERS_IS_Audits.pdf | Section: 3 Management of audit findings"" und ""KISTERS_IS_Audits.pdf | Section: 2.3.3 Report"" müssen Sie als verantwortlicher Auditee nach Erhalt des Auditberichts folgende Schritte ausführen:
+
+1. Überprüfen Sie den Bericht auf Richtigkeit und Vollständigkeit.
+2. Fügen Sie alle korrekten und umfassenden Kommentare und Kritiken hinzu, die zuvor von allen Beteiligten gegeben wurden.
+3. Verwenden Sie diese Informationen, um eine endgültige Auditbericht zusammenzustellen.
+4. Übermitteln Sie den endgültigen Bericht an die relevanten Interessengruppen.
+
+Es ist wichtig, dass der Auditbericht detailliert und umfassend ist, damit sich alle Beteiligten auf das nachfolgende Maßnahmenpaket vorbereiten können.",Audit Guideline – 2.3.3 Report / 3 Management of audit findings
+Welche Arten von Abweichungen (Findings) gibt es bei Audits?,"Laut den KISTERS IS Guidelines gibt es bei Audits drei Arten von Abweichungen (Findings):
+
+1.  **Mögliche Verbesserung** (Opportunity for Improvement): Eine nicht konforme Situation, die keine negative Auswirkungen auf das Unternehmen hat.
+2.  **Minor-Abweichung**: Eine nicht konforme Situation, die das Erreichen der Ziele des Prozesses beeinträchtigen kann, aber in der Regel keinen schwerwiegenden Schaden verursacht.
+3.  **Major-Abweichung**: Eine schwerwiegende und bedeutende Abweichung von den relevanten Anforderungen, die das Erreichen der Ziele des Prozesses erheblich beeinträchtigen kann.
+
+Diese Arten von Abweichungen werden in den KISTERS IS Guidelines als ""opportunity for improvement"" (1), ""minor deviation"" (2) und ""major deviation"" (3) bezeichnet.",Audit Guideline – 2.4 Findings
+Wodurch unterscheidet sich eine „Major deviation“ von einer „Minor deviation“ im Auditkontext?,"Laut dem Dokument ""KISTERS_IS_Audits.pdf"" | Section: 2.4.1 Major deviation und 2.4.2 Minor deviation sind die wesentlichen Unterschiede zwischen Major- und Minordeviationen:
+
+* Eine Major Deviation ist eine signifikante Nichtkonformität mit den relevanten Anforderungen, die das Erreichen der erforderlichen Ziele des untersuchten Prozesses beeinträchtigen kann. 
+* Ein Major Deviation kann auch auftreten, wenn mehrere minor Deviations von einer Anforderung formuliert sind oder wenn das Problem zu einem Systemversagen führen könnte.
+* Bei einer Minor Deviation handelt es sich um eine Nichtkonformität, die sich nicht selbst auf das Erreichen der Ziele des untersuchten Prozesses auswirkt.
+
+Zusammenfassend kann man sagen, dass Major- und Minordeviationen sich in ihrer Auswirkung auf den betroffenen Prozess und deren Schweregrad unterscheiden.",Audit Guideline – 2.4.1 Major deviation / 2.4.2 Minor deviation
+Was ist mit „Opportunity for improvement“ gemeint und wie verbindlich ist deren Abarbeitung?,"Laut dem Dokument ""KISTERS_IS_Audits.pdf | Section: 2.4.3 Opportunity for improvement"" ist eine ""Opportunity for improvement"" eine Möglichkeit, die sich aus einer Audits ergibt, aber noch nicht erfüllt wurde.
+
+Es gibt keine feste Frist für die Abarbeitung von Opportunities for Improvement. Sie sollten jedoch bevor der nächsten Audit in Betracht gezogen und entsprechende Entscheidungen dokumentiert werden.
+
+In diesem Sinne ist die Abarbeitung einer Opportunity for Improvement empfohlen, aber nicht verpflichtend.
+
+Quelle: KISTERS_IS_Audits.pdf | Section: 2.4.3 Opportunity for improvement",Audit Guideline – 2.4.3 Opportunity for improvement
+Wie wird ein Audit-Befund im Ticketsystem dokumentiert?,"Laut der Dokumentation ""KISTERS_IS_Audits.pdf"" (Abschnitt 3 Management of audit findings) müssen alle Audit-Befunde (Abweichungen und Verbesserungsmöglichkeiten) betreffend KISTERS als verantwortliche Partei dokumentiert und im Ticketsystem nachverfolgt werden.",Audit Guideline – 3.1 Audit Tickets
+Wie wird aus einem Audit-Finding ein Ticket und welche Rolle spielt dabei das „Audit Summary Ticket“?,"Laut dem Dokument ""KISTERS_IS_Audits.pdf"" | Section: 3.1 Organization of audit tickets (Quelle: [id nicht vorhanden]) sollten für jeden Audit, ein oberstes Ticket oder Problem (""Audit Summary Ticket"") erstellt werden.
+
+Um aus einem Audit-Finding ein Ticket zu machen, wird laut dem Dokument ""KISTERS_IS_Audits.pdf"" | Section: 3.3.3 Re-use of existing tickets (Quelle: [1]) empfohlen, dass ein bestehendes Ticket nicht neu erstellt, sondern vielmehr als Audit Action Ticket angebunden werden muss.
+
+Das „Audit Summary Ticket“ stellt hierbei die Oberstufe dar und dient dazu, alle relevanten Informationen zu einem bestimmten Audit zusammenzufassen.",Audit Guideline – 3.1 Organization of audit tickets
+Wie werden aus Audits stammende Tickets priorisiert (z. B. Major Deviation vs. Minor Deviation) und welche Ziel-Umsetzungsfristen gelten dafür?,"Nach der KISTERS_IS_Audits.pdf, Section 2.4 Audit findings, gibt es zwei Arten von Nichtkonformitäten: Major Deviation und Minor Deviation. 
+
+Bei einer Major Deviation handelt es sich um eine signifikante Nichtkonformität mit den relevanten Anforderungen, die möglicherweise die Erreichung der erforderlichen Ziele des überprüften Prozesses beeinträchtigen kann (Konformität mit Standards, Wirksamkeit von Verfahren usw.). 
+
+In diesem Fall gilt eine Ziel-Umsetzungsfrist von 1 Monat. 
+
+Bei einer Minor Deviation handelt es sich um eine Nichtkonformität, die in sich selbst nicht den Erreichung der Ziele des überprüften Prozesses beeinträchtigt. Diese sollte innerhalb eines festgelegten Zeitraums korrigiert werden, oft bis zur nächsten Auditierung. 
+
+Die Ziel-Umsetzungsfrist für Minor Deviation liegt bei 3 Monaten.
+
+Hinweis: Die genannten Fristen gelten gemäß der KISTERS_IS_Audits.pdf, Section 2.4 Audit findings.",Audit Guideline – 3.2.1 Standard audit ratings
+"Wie ist die Zuordnung von Risiko-Ratings (Very High, High, Medium, …) zu Jira-Prioritäten und Bearbeitungsfristen?","Laut der Dokumentation ""KISTERS_IS_Audits.pdf"" (Abschnitt 3.2.2 Risk-based ratings) gibt es folgende Zuordnungen:
+
+| Risiko-Rating   | Jira-Priorität   | Zielplanungsdauer   | Zielauflösungszeit |
+|-----------------|-----------------|---------------------|--------------------|
+| Sehr Hoch       | Sehr hoch        | ASAP                | 1 Woche            |
+| Hoch          | Hoch            | 2 Wochen            | 1 Monat           |
+| Mittel         | Mittel          | 2 Monate            | 3 Monate          |
+| Niedrig        | Niedrig        | -                  | 6 Monate oder nächste Audit |
+| Informationswert | Tiefstes        | -                 | 12 Monate oder nächster Audit |
+
+Diese Zuordnungen können als Referenz für die Verwendung in Jira-Prioritäten und Bearbeitungsfristen dienen.",Audit Guideline – 3.2.2 Risk-based ratings
+"Was muss ich beachten, wenn ein Audit-Befund in mehreren Teams Maßnahmen erfordert – wie sollen Tickets angelegt werden?","Nachdem ein Audit-Befund in mehreren Teams Maßnahmen erfordert, können mehrere Audit-Aktionstickets für einen einzelnen Befund erstellt werden. Alle Ticket-Subjekte müssen die Konvention folgen, aber sollten unterschiedlich sein, um eine einfache Identifizierung zu ermöglichen.
+
+Quelle: KISTERS_IS_Audits.pdf | Section 3.3.2 Multiple Audit Action Tickets per finding",Audit Guideline – 3.3.2 Multiple Audit Action Tickets per finding
+"Wie gehe ich vor, wenn ein bereits existierendes Ticket ein neues Audit-Finding inhaltlich mit abdeckt?","Laut dem Dokument ""KISTERS_IS_Audits.pdf | Section: 3.3.3 Re-use of existing tickets"" [1] muss kein neues Audit Action Ticket erstellt werden, wenn ein bereits existierendes Ticket ein neues Audit-Finding inhaltlich mit abdeckt. Stattdessen sollte das bestehende Audit Action Ticket als Blockierungsticket zum aktuellen Audit-Summary-Ticket hinzugefügt werden.
+
+Der Inhalt von [1] lautet: ""If a finding from a previous audit is reported again in a subsequent audit, it is not necessary to create a new Audit Action Ticket. Instead, the existing Audit Action Ticket MUST additionally be linked the current Audit Summary Ticket as a blocking ticket.""
+
+In diesem Fall ist keine weitere Maßnahme erforderlich, da das bestehende Ticket bereits die Anforderungen des neuen Audit-Findings erfüllt.
+
+Quelle: [1] Document: KISTERS_IS_Audits.pdf | Section: 3.3.3 Re-use of existing tickets",Audit Guideline – 3.3.3 Re-use of existing tickets
+"Was ist zu tun, wenn ein Kunde einen Vendor Audit bei KISTERS anfragt oder eigenständig Sicherheitsprüfungen durchführt?","Laut der Dokumente ""KISTERS_IS_External3rdParties.pdf"" und ""KISTERS_IS_Audits.pdf"" ist folgendes zu beachten, wenn ein Kunde einen Vendor Audit bei KISTERS anfragt oder eigenständig Sicherheitsprüfungen durchführt:
+
+1.  Die Anfrage des Kunden muss unverzüglich der KISTERS Geschäftsführung zur Kenntnis gebracht werden.
+2.  Die KISTERS CISO oder BCMO muss informiert werden, um sicherzustellen, dass die Anfrage im KISTERS ISMS / BCMS entsprechend dokumentiert wird.
+3.  Die Auditpläne und -resultate müssen mit der KISTERS CISO abgesprochen werden, um sicherzustellen, dass die Prüfungen nicht unangemessen und nicht kontrollierbar für KISTERS sind.
+4.  Ein Vertraulichkeitsvertrag zwischen dem Kunden und KISTERS muss vor Beginn der Audit-Prüfungen geschlossen werden.
+5.  Wenn ein externer Auditor eingeschaltet wird, muss auch ein Vertraulichkeitsvertrag zwischen diesem und KISTERS abgeschlossen werden.
+6.  Der Zugriff auf Systeme und Daten anderer Kunden durch den externen Auditor ist nicht zulässig.
+7.  Die Ergebnisse der Audit-Prüfungen müssen vertraulich behandelt werden und an die KISTERS CISO oder BCMO zur Verfügung gestellt werden.
+
+Es ist wichtig, dass alle diese Schritte sorgfältig durchgeführt werden, um sicherzustellen, dass die Prüfungen ordnungsgemäß durchgeführt und die Ergebnisse entsprechend dokumentiert werden.",Audit Guideline – 3.4 Special case: vendor audits by clients
+Wer überprüft regelmäßig den Status der Audit-Aktionen und wie wird diese Überprüfung dokumentiert?,"Laut dem Dokument ""KISTERS_IS_Audits.pdf | Section: 4 Review of audit actions"" sind diejenigen verantwortlich, die sich um das entsprechende Thema kümmern. Der Status der Audit-Aktionen wird regelmäßig von:
+
+* Der zuständigen Leitung oder Systembesitzer des geprüften Gegenstands, Bereichs, Lösung, Organisation usw.
+* Der ISMT für alle Audit-Aktionen
+
+Die Überprüfung wird dokumentiert, indem sichergestellt wird, dass alle Änderungen in den entsprechenden Ticket-Vermerken eingetragen werden.",Audit Guideline – 4 Review of audit actions
+Wofür ist das Business Continuity Handbook gedacht und wen betreffen seine Regelungen?,"Das Business Continuity Handbook soll als Leitfaden dienen, um die Gesamtheit der Maßnahmen zur Wiederherstellung der Geschäftsfähigkeit bei einer Störung zu dokumentieren. Es soll dabei insbesondere die Zeitkritischen Geschäftsprozesse im Auge haben und sicherstellen, dass diese schnellstmöglich wieder aufgenommen werden können.
+
+Die Regelungen in diesem Handbuch gelten für alle Bereiche und Standorte innerhalb der KISTERS Gruppe. Daher betreffen sie alle Mitarbeiter und Abteilungen, die von diesen Regeln abgeleitete Anforderungen an ihre Arbeit haben müssen.",BCM Handbook – 1.1 Objective / 1.2 Scope
+Für welche Situationen ist das Business Continuity Handbook gedacht und für welche Bereiche der KISTERS Gruppe gilt es verbindlich?,"Das Business Continuity Handbook (BCH) ist für die Situationen vorbereitet, in denen Geschäftsprozesse oder die Erbringung von Dienstleistungen durch eine Krise oder einen Notfall bedroht sind. Es deckt die Bereiche der KISTERS Gruppe ab, die unter den Anforderungen des BCM stehen.
+
+Laut dem Handbook ist das Business Continuity Plan (BCP) für alle organisatorischen Einheiten verbindlich und umfasst Maßnahmen, Verfahren und weitere Informationen zur Reaktion auf unterbrochene Geschäftsprozesse. Die BCPs werden in dezentralen Dokumenten festgehalten.
+
+Das Business Continuity Handbook ist auch für die KISTERS Gruppe insgesamt verbindlich und deckt alle Standorte, organisatorischen Einheiten und Geschäftsprozesse ab.",BCM Handbook – 1.1 Objective / 1.2 Scope
+Wie wird im BCM-Handbuch der Unterschied zwischen „Disruption“ und „Critical Disruption“ beschrieben?,"Nach dem BCM-Handbuch von KISTERS (KISTERS_BCM_1-BCHandbook.pdf) werden Disruptions und Critical Disruptions wie folgt definiert:
+
+Ein Disruption ist eine Situation, in der Prozesse oder Ressourcen nicht wie vorgesehen verfügbar sind. Als Regel werden Fehler während normaler Betriebszeiten von der allgemeinen Organisation von KISTERS behoben. Dazu werden bestehende Prozesse für Fehlersuche innerhalb des Rahmenwerks der Fehlertoleranzmanagement verwendet.
+
+Eine Critical Disruption hingegen ist eine Unterbrechung von Geschäftsbetrieben, die mindestens einen Zeitkritischen Betriebsprozess beeinträchtigt, der nicht innerhalb der maximalen Dauer der Störungsperiode (MTPD) wieder normal arbeiten kann. Critical Disruptions werden im Allgemeinen während normaler Betriebzeit von der allgemeinen Organisation von KISTERS behoben.
+
+Quelle: KISTERS_BCM_1-BCHandbook.pdf, Section 1.3.1 ""Disruption"" und 1.3.2 ""Critical Disruption""
+
+Dies ist eine direkte Aussage aus dem bereitgestellten Kontext, ohne Reinterpretation oder Ergänzung durch externe Kenntnisse.",BCM Handbook – 1.3.1 Disruption / 1.3.2 Critical Disruption
+Wann spricht KISTERS von einer Emergency und wann von einer Crisis?,"Laut dem BCM-Handbuch der KISTERS AG [4] wird eine Emergency als eine Unterbrechung der Geschäftsabläufe beschrieben, die mindestens einen zeitkritischen Geschäftsbetrieb betrifft, der während normaler Betriebsabläufe innerhalb des maximal tolerierbaren Ausfallzeitraums (MTPD) nicht wiederhergestellt werden kann. [4] Eine Emergency erfordert eine spezielle Kontingenzplanung und -ausführung durch die BCM-ERO.
+
+Eine Crisis wird dagegen als ein schädlicher Ereignis beschrieben, der einen massiven negativen Einfluss auf KISTERS AG hat und dessen Auswirkungen während normaler Betriebsabläufe nicht gemanagt werden können. [4] Im Gegensatz zu einer Emergency fehlen bei einer Crisis spezifische Kontingenzpläne, oder diese können nur begrenzt oder überhaupt nicht umgesetzt werden.
+
+Insgesamt ist die Definition von Emergency und Crisis in dem BCM-Handbuch der KISTERS AG klar differenziert und es wird klargestellt, welche Maßnahmen für jede dieser Situationen erforderlich sind.",BCM Handbook – 1.3.3 / 1.3.4
+"Welche Kriterien müssen erfüllt sein, damit ein Vorfall bei KISTERS als „Emergency“ eingestuft wird?","Laut dem Dokument ""KISTERS_BCM_1-BCHandbook.pdf"" im Abschnitt ""1.3.3 Emergency"" werden Ereignisse als ""Emergency"" eingestuft, wenn sie eine Unterbrechung der Geschäftsabläufe darstellen und dabei zumindest ein zeitkritischer Geschäftsprozess betroffen ist, der innerhalb des Maximum Tolerable Period of Disruption (MTPD) nicht wiederhergestellt werden kann.",BCM Handbook – 1.3.3 Emergency
+Ab wann spricht KISTERS von einer „Emergency“ und wodurch unterscheidet sich diese von einer „Crisis“?,"Nach dem Dokument ""KISTERS_BCM_1-BCHandbook.pdf"" (Abschnitt 1.3.3) definiert KISTERS eine Emergency als eine Unterbrechung der Geschäftsabläufe, die mindestens einen zeitkritischen Geschäftsvorgang beeinträchtigt und innerhalb des maximalen tolerierbaren Zeitraums der Störung (MTPD) nicht wiederhergestellt werden kann.
+
+Eine Crisis hingegen wird als ein schädlicher Ereignis definiert, der eine massive negative Auswirkung auf KISTERS AG hat und deren Auswirkungen während normalen Geschäftsabläufen nicht bewältigt werden können. Im Gegensatz zu einer Emergency gibt es für eine Crisis keine spezifischen Kontingenzpläne.
+
+Quelle: Dokument ""KISTERS_BCM_1-BCHandbook.pdf"" | Abschnitt 1.3.3",BCM Handbook – 1.3.3 Emergency / 1.3.4 Crisis
+"Welche Grundprinzipien muss ich bei allgemeinen Sofortmaßnahmen in einer Gefahrensituation beachten (z. B. Evakuierung, Erste Hilfe)?","Laut dem KISTERS Business Continuity Management-Handbuch [6] müssen bei allgemeinen Sofortmaßnahmen folgende Grundsätze beachtet werden:
+
+* Die Sicherheit von Leben und Gesundheit muss vor der Sicherung von Eigentum oder Vermögen haben.
+* Bei akuter Gefahr muss der Bereich gesichert, die Einzelsituation gemeldet und Personen gepflegt werden.
+* Beispielsweise müssen sofortige Erste-Hilfe-Maßnahmen getroffen, Uninjured Personen gerettet und im Bedarfsfall evakuiert werden.",BCM Handbook – 2.1 General Immediate Measures
+"Was muss ich tun, wenn ich einen Cyberangriff bemerke (z. B. Ransomware)?","Lassen Sie sich bitte nicht von der Situation überfordern und bleiben Sie ruhig! Bei einem Cyberangriff wie z.B. einer Ransomware-Attacke sollten folgende Schritte unternommen werden:
+
+1. Bleiben Sie kalt und vermeiden Sie es, auf Anweisungen auf dem Bildschirm zu reagieren.
+2. Trennen Sie alle Netzwerkverbindungen sofort ab (aktivieren Sie den Flugmodus, schalten Sie WiFi/Bluetooth aus und entfernen Sie die Netzwerkschleife).
+3. Öffnen Sie keine weiteren Programme oder Dateien.
+4. Rufen Sie das IT-Emergenztelefon an.
+5. Warten Sie auf weitere Anweisungen.
+6. Übergeben Sie den Computer an die IT-Administration, um Beweise zu sichern und ggf. externe Forensik-Spezialisten einzuschalten.
+
+Diese Schritte helfen dabei, den Schaden zu begrenzen und eine schnelle Wiederherstellung der Systeme zu ermöglichen.",BCM Handbook – 2.2.1 Cyber Attack
+"Welche Sofortmaßnahmen soll ein Mitarbeiter ergreifen, wenn er einen Cyberangriff bemerkt?","Laut dem BCM-Handbuch der KISTERS AG (Document: KISTERS_BCM_1-BCHandbook.pdf) sind die folgenden Sofortmaßnahmen zu treffen, wenn ein Mitarbeiter einen Cyberangriff bemerkt:
+
+1.  Bleiben Sie ruhig und schließen Sie keine Anweisungen auf dem Bildschirm aus.
+2.  Alle Netzwerkverbindungen trennen (Airplane-Modus aktivieren, WiFi/Bluetooth abschalten, Netzwerkkabel entkuppeln).
+3.  Keine weiteren Programme starten und keine Dateien öffnen.
+4.  Das IT-Emergenztelefon anrufen.
+5.  Warten Sie auf weitere Anweisungen.
+6.  Für die Beweissicherung und forensische Ermittlung den Computer an das IT-Team übergeben.
+
+Diese Maßnahmen sind wichtig, um einen Schaden zu minimieren und eine schnellstmögliche Reaktion zu gewährleisten.",BCM Handbook – 2.2.1 Cyber Attack Immediate Measures
+"Was soll ich als Mitarbeiter konkret tun, wenn bei mir eine Ransomware-Meldung auf dem Bildschirm erscheint?","Laut KISTERS_BCM_1-BCHandbook.pdf, Abschnitt 2.2.1 Immediate Measures in the Event of Cyber Attack (Ransomware / Malware) solltest du als Mitarbeiter folgende Schritte einleiten:
+
+1. Bleib ruhig und beachte keine Anweisungen auf dem Bildschirm!
+2. Beende alle Netzwerkverbindungen sofort! (Aktiviere den Flugmodus, schalte das WLAN/Bluetooth aus, ziehe den Netzwerkkabel heraus usw.)
+3. Öffne keine weiteren Programme und Dateien.
+4. Ruf die IT-Emergenznummer an!
+5. Warte auf weitere Anweisungen.
+6. Übergebe deinen Computer zum sicheren Beweissicherung und ggf. forensischer Untersuchung durch die IT-Administration.
+
+Bitte beachte auch, dass du in diesem Fall unbedingt auf die genannten Schritte achten musst, um den potenziellen Schaden zu begrenzen.
+
+Quelle: KISTERS_BCM_1-BCHandbook.pdf, Abschnitt 2.2.1 Immediate Measures in the Event of Cyber Attack (Ransomware / Malware)",BCM Handbook – 2.2.1 Immediate Measures in the Event of Cyber Attack (Ransomware/Malware)
+"Wie gehe ich vor, wenn ich als Mitarbeiter einen länger andauernden Stromausfall im Gebäude bemerke? Wen informiere ich?","Laut dem KISTERS BCM Handbook müssen Sie bei einem länger andauernden Stromausfall zunächst die Sicherheit der Mitarbeiter und der Ausrüstung priorisieren. Dazu gehören:
+
+1. Die Notifikation des Schadensereignisses an das Gebäudemanagement oder das Hauptquartier mit einer Anfrage zur sofortigen Weiterleitung an das Gebäudemanagement.
+2. Durchführung von Troubleshooting und Maßnahmen zum Einschränken der Schäden durch die Gebäudeverwaltung.
+3. Informieren Sie den BCMO oder CISO abhängig von der Risikosituation.
+
+Es ist wichtig, dass Sie alle Beteiligten über die Situation informieren, um gemeinsam eine Lösung zu finden und die Auswirkungen des Stromausfalls minimieren zu können.",BCM Handbook – 2.2.4 Immediate Measures in the Event of Power Failure
+Wen informiere ich bei einem länger andauernden Stromausfall?,"Laut dem Dokument ""KISTERS_BCM_1-BCHandbook.pdf"" im Abschnitt 2.2.4 Immediate Measures in the Event of Power Failure ist folgende Informationspflicht festgelegt:
+
+|   No. | Activity                                                                                                                                                     | Responsible                               |
+|-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|
+|     1 | Power failure noticed: Report by telephone to the facility managementorheadofficewith a request for immediate forwarding to the facility management | Reporting person                        |
+
+In diesem Fall müsste also der Facility Management informiert werden.",BCM Handbook – 2.2.4 Power Failure
+"An wen soll ich mich wenden, wenn im Gebäude der Strom ausgefallen ist?","Laut dem Dokument ""KISTERS_BCM_1-BCHandbook.pdf"" | Section: 2.2.4 Immediate Measures in the Event of Power Failure sollte man sich bei einem Stromausfall zunächst an die ""Reportierungsperson"" wenden, um den Betriebsleiter oder das Büro darüber zu informieren. Die Reportierungsperson muss dann eine Telefonnummer der Leitstelle (Notrufnummer) wählten.",BCM Handbook – 2.2.4 Power Failure
+"Was ist meine Aufgabe, wenn ich einen Ausfall der Internetverbindung feststelle – und wer entscheidet über weitere Schritte?","Nachdem wir den Kontext durchgearbeitet haben, lautet die Antwort:
+
+Laut dem Dokument 'KISTERS_BCM_1-BCHandbook.pdf' | Abschnitt: 2.2.6 Immediate Measures in the Event of Internet Connectivity Failure ist deine Aufgabe, wenn du einen Ausfall der Internetverbindung feststellst, die Meldung an das IT-Management oder die zentrale Stelle mit der Bitte um sofortige Weiterleitung.
+
+Die Entscheidungen über weitere Schritte werden gemeinsam vom Team getroffen. Die Rolle des ERT (Emergency Response Team) ist dabei wichtig, da sie sich im Notfall um das Handling der Krise kümmert und in Absprache mit dem IT-Management die notwendigen Maßnahmen trifft.
+
+In Abschnitt 2.2.6 Immediate Measures in the Event of Internet Connectivity Failure lautet die Tabelle: 
+
+|   No. | Activity                                                                                                                                     | Responsible       |
+|-------|----------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
+|     1 | Internet failure noticed: Report to IT administrationor via the head office with the request for immediate forward- ing to IT administration | Reporting person  |
+|     2 | Troubleshooting and damage limitation                                                                                                        | IT administration |
+|     3 | Information to BCMOor CISO depending on the risk situ- ation                                                                                 | IT administration |
+
+Das bedeutet, dass die erste Aufgabe darin besteht, das IT-Management zu informieren und sie um die Durchleitung an das zuständige Team zu bitten. Die weiteren Schritte werden gemeinsam mit dem IT-Team besprochen.
+
+Die Entscheidung darüber, wer entscheidet über weitere Schritte ist in Abschnitt 1.3 der Dokumentation 'KISTERS_BCM_9-EP-Internal_IT.pdf' | Abschnitt: 1.2 Stakeholders nicht explizit genannt.",BCM Handbook – 2.2.6 Immediate Measures in the Event of Internet Connectivity Failure
+"Welche Schritte sind vorgesehen, wenn viele Kolleginnen und Kollegen gleichzeitig wegen Krankheit ausfallen und mein Bereich arbeitsunfähig zu werden droht?","Laut dem Dokument ""KISTERS_BCM_1-BCHandbook.pdf"" im Abschnitt 2.2.9 Immediate Measures in the event of Staff Shortages due to Illness sind die folgenden Schritte vorgesehen:
+
+|   No. | Activity                                                                                                                                                                                                                                                                                                                               | Responsible                |
+|-------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
+|     1 | In case of symptoms of infectious diseases: work from home if possible                                                                                                                                                                                                                                                                 | Affected person            |
+|     2 | Clarify suspected infection promptly (visit a doctor, self- test if necessary). If infection is confirmed: Report to krankmeldung@kisters.de or the head office                                                                                                                                                                        | Affected person            |
+|     3 | In any case, the official regulations applicable to the epi- demic/pandemic must be followed. In particular, if there ist eine Verstärzung der Krankheitsfälle ist es wichtig das die offiziellen Vorschriften zu beachten.   | Affected person            |
+|     4 | Notification to supervisor / BU management of sickness- related absence of the person with expected duration of staff absence                                                                                                                                                                                                          | Human resources department |
+|     5 | Notify the OHS representative if a high level of sick leave is suspected                                                                                     | Human resources department |",BCM Handbook – 2.2.9 Immediate Measures in the event of Staff Shortages due to Illness
+Wer ist „Manager of Duty“ (MoD) und welche Rolle spielt diese Funktion im Eskalationsprozess?,"Der ""Manager of Duty"" (MoD) ist eine Schlüsselrolle im Eskalationsprozess der KISTERS AG. Er wird als zentrale Entscheidungsinstanz in Fällen von kritischen Incidenten oder Notfällen bezeichnet [9].
+
+Laut den Dokumenten von KISTERS hat der MoD die Autorität, in Fällen von kritischen Incidents oder Notfallsituationen zu entscheiden. Er ist auch für die Überwachung des Eskalationsprozesses verantwortlich und wird vom zentralen Entscheidungsträger (ERT) alarmiert [9].
+
+In Dokument KISTERS_BCM_1-BCHandbook.pdf, Abschnitt 3.1 ""Detection and Reporting"", wird erwähnt, dass der MoD bei einer kritischen Situation benachrichtigt werden sollte und es ist auch für die weitere Überwachung des Eskalationsprozesses verantwortlich [9].
+
+In Dokument KISTERS_BCM_7-EP-Generic_Restore.pdf im Abschnitt ""1.2 Stakeholders"" wird der MoD als Entscheidungsinstanz bei kritischen Incidents oder Notfallsituationen genannt.
+
+In KISTERS_BCM_8-EP-KISTERScloud.pdf, Abschnitt 1.2 ""Stakeholder"", ist der MoD ebenfalls eine Schlüsselrolle im Eskalationsprozess genannt.
+
+Außerdem finden sich weitere Erwähnungen des MoD in anderen Dokumenten wie KISTERS_BCM_9-EP-Internal_IT.pdf und KISTERS_BCM_9-EP-Internal_IT-Infrastructure.pdf.",BCM Handbook – 3.1 Detection and Reporting (Manager of Duty)
+Wer ist „Manager of Duty“ und was entscheidet er?,"Der Manager of Duty (MoD) ist die höchste autorisierte Person, der in Notfällen Entscheidungen trifft. Der MoD wird durch das CEO (Chief Executive Officer) bestimmt und kann auch innerhalb von organisatorischen Einheiten eingesetzt werden.
+
+Nach dem KISTERS Business Continuity Management-Handbuch [4] ist der MoD für die Entscheidung verantwortlich, ob ein Notfall oder eine Krise vorliegt. Wenn dies der Fall ist, muss der MoD das Emergency Response Team (ERT) informieren und entscheiden, welche Maßnahmen ergriffen werden müssen.
+
+In Abschnitt 3.1 des Handbuchs [4] wird festgelegt, dass der MoD die Entscheidung trifft, ob ein Notfall oder eine Krise vorliegt, wenn der Bericht einer Einheit über einen Vorfall eingeholt wurde und dieser als potenzieller Notfall oder Krisenfall klassifiziert wurde. Wenn dies nicht der Fall ist, wird der Vorfall einfach in die Kategorie „Vorfall“ eingeordnet.
+
+Im Falle eines Notfalls oder einer Krise muss der MoD entscheiden, ob der Emergency Response Plan (ERP) aktiviert werden soll und welche Maßnahmen ergriffen werden müssen, um den Notfall zu bewältigen.",BCM Handbook – 3.1 MoD
+"Welche Fragen sollen IT-Helpdesk-Mitarbeiter stellen, um eine mögliche „Emergency“ zu erkennen?","Laut dem Dokument ""KISTERS_BCM_1-BCHandbook.pdf"" im Abschnitt ""3.1 Detection and Reporting"" sollten IT-Helpdesk-Mitarbeiter die folgenden Fragen stellen, um eine mögliche ""Emergency"" zu erkennen:
+
+* Ist das betroffene IT-System oder die betroffene Anwendung ein wesentlicher Teil der Sicherheitsinfrastruktur (Virusmanagement, Firewall usw.)?
+* Hat die Ausfall des betroffenen IT-Systems oder der betroffenen Anwendung einen Einfluss auf eine große Gruppe von Benutzern oder die wesentlichen Geschäftsprozesse bei KISTERS?
+* Gibt es starke Verdachtsmomente auf absichtliche Daten- oder Systemsmanipulation (Datenleakage), unerlaubten Ausübung von Rechten oder gezielte Angriffe (physisch oder virtuell) auf IT-Komponenten?
+* Allgemein: Ist zu erwarten, dass die Auswirkungen des gemeldeten Vorfalls mehr als 24 Stunden dauern werden? Wenn nötig, stellen Sie 2. Stufe-Betreuung für weitere Informationen zur Verfügung.
+* Wird ein kritischer Geschäftsprozess durch den Ausfall beeinflusst? Ist zu erwarten, dass die Auswirkungen des Vorfalls mehr als den Maximum-Time-for-Decision (MTD) des Geschäftsprozesses dauern werden? Wenn nötig, stellen Sie 2. Stufe-Betreuung für weitere Informationen zur Verfügung.
+* Hat der Ausfall des betroffenen IT-Systems oder der betroffenen Anwendung einen Einfluss auf externe Stakeholder wie Kunden, Medien oder Aufsichtsbehörden? Wenn nötig, stellen Sie den Benutzer für weitere Informationen zur Verfügung.
+
+Wenn mindestens eine dieser Fragen mit ""JA"" beantwortet werden kann, sollten die IT-Helpdesk-Mitarbeiter den Manager of Duty sofort informieren.",BCM Handbook – 3.1.2 Key Questions IT Help Desk
+"Nach welchen Leitfragen bewertet z. B. das IT Help Desk, ob ein Vorfall das Potenzial für eine Emergency oder Crisis hat?","Laut dem KISTERS_BCM_1-BCHandbook.pdf [4] evaluiert das IT Help Desk einen Vorfall nach folgenden Leitfragen:
+
+* Hat der Serviceanbieter oder sein Zulieferer eine unvorhergesehene Betriebsunterbrechung, ein Notfall oder eine Krise durchgemacht oder ist dies vorhersehbar? [Ja/Nein]
+* Hat der Serviceanbieter die Vertragsbeziehung einseitig aufgelöst und seine Dienste mit sofortiger Wirkung eingestellt? [Ja/Nein]
+
+Sobald mindestens eine dieser Fragen mit ""JA"" beantwortet werden kann, soll der Manager des Dienstes (MoD) sofort benachrichtigt werden.",BCM Handbook – 3.1.2 Report Recipient: IT Help Desk (1st / 2nd Level Support)
+Wo befindet sich der EMT-Raum im Headquarter und über welche alternativen Kanäle kann der EMT zusammenkommen?,"Laut dem BCM-Handbuch [1] befinden sich die EMT-Räume in den folgenden Standorten:
+
+* Aachen: Pascalstraße 8-10, Raum D013 (Zugriff ist über Company ID/Accesskarte reguliert)
+* Microsoft 365 Teams: KISTERS BCM-ERO (Link siehe [4])
+* Microsoft 365 SharePoint: KISTERS BCM-ERO (Link siehe [5])
+
+Alternativ kann der EMT auch über Microsoft 365 Teams oder SharePoint zusammenkommen, wenn die konventionelle Möglichkeit nicht verfügbar ist.",BCM Handbook – 3.3.1 Accessibility and Locations of EMT Rooms
+Wo befindet sich der EMT-Raum im Headquarter?,"Laut dem Dokument KISTERS_BCM_1-BCHandbook.pdf, Abschnitt 3.3.1 ""Accessibilität und Standorte von EMT-Räumen"" befindet sich der EMT-Raum im Headquarter in Aachen (Pascalstraße 8-10, Raum D013). Der Zugang ist reglementiert via Firma-ID/ Zutrittskarte. Es gibt auch eine Microsoft 365 Teams-Landesverbindung: ""KISTERS BCM-ERO"" (siehe [4] ).",BCM Handbook – 3.3.1 EMT Rooms
+Welche Vorbereitungsschritte sind im EMT-Raum vorgesehen?,"Laut dem Dokument KISTERS_BCM_1-BCHandbook.pdf, Abschnitt 3.3.2 Equipment and Preparation, sind folgende Vorbereitungsschritte im EMT-Raum vorgesehen:
+
+- -Schließen und beaufschlagten des Raumes
+- -Bewafftung von Visualisierungsbereichen wie Aktionstracking oder Ereignistimeline
+- -Aufstellen von Tischen und Stühlen in U-Form in Richtung der Visualisierungsbereiche
+- -Vorbereitung von Notfallmanual, Starten des Notfallnotebooks und Verbindung zum Netzwerk
+- -Bewafftung einer Konferenzverbindung
+- -Testen der Kommunikationsausrüstung und Technologie für Betriebsbereitschaft
+- -Bewafftung von Catering und Getränken",BCM Handbook – 3.3.2 Equipment
+"Welche Punkte müssen bei der Vorbereitung des EMT-Raums beachtet werden, bevor ein Notfallmeeting starten kann?","Nach dem BCM-Handbuch von KISTERS (Document: KISTERS_BCM_1-BCHandbook.pdf) muss der EMT-Raum folgendermaßen vorbereitet werden:
+
+* Die Räume müssen geöffnet und gelüftet werden.
+* Es sollten Visualisierungsoberflächen wie z.B. Aktionsverfolgung oder Ereignistimeline bereitgestellt werden.
+* Tische und Stühle in einer U-Form in Richtung der Visualisierungsgebiete aufgestellt werden.
+* Namensschilder und Rollenbeschreibungen für die EMT-Mitglieder bereitgestellt werden.
+* Der Notfallhandbuch, Startnotizblock und Netzwerkanschluss vorbereitet werden.
+* Eine Konferenzanrufverbindung bereitgestellt werden.
+* Kommunikationsgeräte und Technologie auf ihre Betriebsbereitschaft getestet werden.
+
+Quelle: KISTERS_BCM_1-BCHandbook.pdf, Section 3.3 EMT Room (KISTERS Headquarter)",BCM Handbook – 3.3.2 Equipment and Preparation
+"Welche Aufgaben hat das Emergency Management Team bei der Entscheidungsfindung (z. B. Fakten, Optionen, Risiken)?","Laut dem Dokument ""KISTERS_BCM_1-BCHandbook.pdf"" im Abschnitt ""Responsibilities"" haben die Aufgaben des Head of EMT folgende Aspekte:
+
+- -Sicherstellung und Festigung der Fähigkeit der EMT, aktiv zu sein
+- -Bestimmung und Erklärung einer Notlage oder Krisensituation
+- -Zuweisung unbelegter Rollen in der EMT
+- -Einberufung der notwendigen Nothilfeteams
+- -Informerichtung und -berichterstattung an die Unternehmensleitung
+
+Der Abschnitt ""4 Work of Emergency Management Team"" im gleichen Dokument besagt, dass das Emergency Management Team folgende Prinzipien bei der Notfallarbeit anwendet:
+
+* Loggen, Situationenberichte und EMT-Arbeit für die Dauer des EMT-Wirkens.
+
+Dies scheint jedoch nicht direkt auf den Aspekt ""Fakten, Optionen, Risiken"" im Entscheidungsfindungsprozess einzugehen.","BCM Handbook – 4.1–4.4 Facts / Options / Expenses, Opportunities and Risks / Decision"
+"Wie ist grundsätzlich vorgesehen, dass nach einem größeren IT-Ausfall der Betrieb wiederhergestellt wird (Notbetrieb, Wiederanlauf, Rückkehr zum Normalbetrieb)?","Laut dem Dokument KISTERS_BCM_6-BCP-GEN-SharedIT-Internal_IT.pdf ist das Verfahren wie folgt vorgesehen:
+
+1. Wechsel in den Notbetrieb
+	* So weit möglich sollen die IT-Infrastrukturen im Betrieb bleiben.
+	* Funktionen auf Ersatzressourcen umstellen.
+2. Start des Wiederherstellungsprozesses
+	* Schaden beurteilen
+	* Ressourcen wiederherstellen
+	* Ersatzressourcen bereitstellen, wenn notwendig
+	* Wiederaufnahme der Geschäftsprozesse
+3. Rückkehr zum Normalbetrieb",BCM Handbook – 6.3 Failure of IT (Restart and recovery)
+Welche Phasen umfasst die Rückkehr zum Normalbetrieb nach einem Notfall und wer entscheidet über die De-Eskalation?,"Laut dem Dokument ""KISTERS_BCM_1-BCHandbook.pdf"" (Sektion 7) besteht der Transfer zu Normaloperation in drei Phasen:
+
+1. Maßnahmen zur Überleitung (Sektion 7.1)
+2. De-Eskalation (Sektion 7.2)
+3. Analyse und Bewertung von Emergency Response (Sektion 7.3)
+
+Laut Sektion 7.2 wird nur der EMT de-escalieren, während alle Sonderbefugnisse innerhalb des BCM-ERO mit dem Zeitpunkt der De-Eskalation enden.
+
+Quelle: KISTERS_BCM_1-BCHandbook.pdf | Sektion 7",BCM Handbook – 7 Transfer to Normal Operation (7.1 Measures Required for Transfer / 7.2 De-escalation / 7.3 Analysis and Evaluation)
+Wie oft muss das Kontinuitätshandbuch überprüft werden und wer ist dafür verantwortlich?,"Das Kontinuitätshandbuch muss mindestens einmal pro Jahr von dem BCMO (Business Continuity Manager) überprüft werden, um sicherzustellen, dass es aktuell und geeignet ist. Wenn außerdem signifikante Änderungen in den Rahmenbedingungen der BCMS oder Ergebnisse aus Notfällen und Krisen vorkommen, müssen auch die erforderlichen Anpassungen vornehmen.",BCM Handbook – 8 Reviewing and Updating of Contingency Manual
+Unter welchen Bedingungen kann die BCM-ERO eingerichtet und wieder aufgelöst werden?,"Laut dem Dokument ""KISTERS_BCM_1-BCHandbook.pdf"" | Section: 9.1.1 Establishment and Dissolution of BCM-ERO kann die BCM-ERO durch den Leiter der EMT (Emergency Management Team) eingerichtet und wieder aufgelöst werden.
+
+Die BCM-ERO wird eingerichtet, wenn ein Notfall oder eine Krise vorliegt, bei dem die Geschäftsaktivitäten des Unternehmens beeinträchtigt sind. Der Leiter der EMT kann den Notstand oder die Krise durch Beschluss feststellen und damit die BCM-ERO in Kraft setzen.
+
+Die BCM-ERO wird wieder aufgelöst, wenn das Krisenmanagement abgeschlossen ist und die Geschäftsaktivitäten des Unternehmens wieder normalisiert sind. Der Leiter der EMT muss den Aufhebungsbeschluss festlegen und die Entscheidung kommunizieren.
+
+[7]",BCM Handbook – 9.1.1 Establishment and Dissolution of BCM-ERO
+Welche Regeln gelten für die Einrichtung und Auflösung der BCM-ERO?,"Laut dem Document: KISTERS_BCM_1-BCHandbook.pdf | Section: 9.1 Rules of Procedure gibt es folgende Regeln für die Einrichtung und Auflösung der BCM-ERO:
+
+Einleitung und Beendigung einer Notfallsituation ist durch das EMT (Emergency Management Team) zu entscheiden.
+Der Head of EMT kann eine Notfallsituation einleiten, indem er das BCM-ERO (Business Continuity Management Emergency Response Organisation) in Kraft setzt.
+
+Die Auflösung der Notfallsituation erfolgt ebenfalls durch das EMT. Sobald die Krise beendet ist, muss dies aktiv durch das EMT beschlossen und allen bekannt gegeben werden.
+
+[6]",BCM Handbook – 9.1.1 Rules of Procedure
+Welche besonderen Befugnisse hat die BCM-ERO in Bezug auf finanzielle Mittel im Notfall?,"Nachdem wir uns den bereitgestellten Kontext angegesehen haben, können wir diese Frage beantworten:
+
+In Abschnitt 7.1 ""Measures Required for Transfer"" des Dokuments KISTERS_BCM_1-BCHandbook.pdf steht: 
+
+""... Maßnahmen nach Absatz 1 sollen den Stand der Technik einhalten, die einschlägigen europäischen und internationalen Normen berücksichtigen und müssen auf einem gefahrenübergreifenden Ansatz beruhen.""
+
+Dieser Abschnitt beschreibt die allgemeinen Maßnahmen für die Übertragung von Zuständigkeiten im Notfall, aber er spricht nicht explizit über besondere Befugnisse der BCM-ERO in Bezug auf finanzielle Mittel.
+
+In Abschnitt 9.1 ""Rules of Procedure"" des Dokuments KISTERS_BCM_1-BCHandbook.pdf steht: 
+
+""... Die Maßnahmen nach § 30 BSIG (Bundesinformations- und Sicherheitsgesetz) werden ebenfalls umgesetzt.""
+
+Dieser Abschnitt spricht über die Umsetzung der Maßnahmen des BSIG, aber es gibt keine spezifischen Informationen über besondere Befugnisse der BCM-ERO in Bezug auf finanzielle Mittel.
+
+Nach dem Studium des bereitgestellten Kontexts kann ich sagen, dass es keine expliziten Informationen zu besonderen Befugnissen der BCM-ERO in Bezug auf finanzielle Mittel im Notfall gibt. Ich kann diese Frage daher nicht aus dem bereitgestellten Kontext beantworten.
+
+Wenn Sie weitere Fragen haben oder mehr über den bereitgestellten Kontext erfahren möchten, stehe ich Ihnen gerne zur Verfügung.",BCM Handbook – 9.1.2 Disposal of Financial Resources
+Welche grundsätzlichen Verhaltensregeln (Code of Conduct) gelten für Mitglieder der Emergency Response Organisation?,"Laut dem Dokument ""KISTERS_BCM_1-BCHandbook.pdf"" im Abschnitt 9.1.4 Code of Conduct gibt es folgende grundsätzliche Verhaltensregeln:
+
+1. Die EMT sollte ihre Arbeitsmethoden auf der bestehenden Notfallplan basieren. Wenn kein Notfallplan oder ein nicht wirksamer besteht, sollten die Arbeitsmethoden auf dem FOR-DEC-Management-Zyklus basieren.
+2. Die EMT hat Arbeit- und Treffenphasen (Situationstreffen). Diese müssen klar definiert und allen EMT-Mitgliedern mitgeteilt werden.
+
+Daher lautet die Antwort:
+
+Laut dem Dokument ""KISTERS_BCM_1-BCHandbook.pdf"" im Abschnitt 9.1.4 Code of Conduct gelten folgende grundsätzliche Verhaltensregeln für Mitglieder der Emergency Response Organisation:
+- Die EMT sollte ihre Arbeitsmethoden auf der bestehenden Notfallplan basieren.
+- Die EMT hat Arbeit- und Treffenphasen (Situationstreffen), die klar definiert und allen EMT-Mitgliedern mitgeteilt werden müssen.",BCM Handbook – 9.1.4 Code of Conduct
+Welche Kommunikationsmittel nutzt KISTERS im Notfall?,"Nach dem Dokument ""KISTERS_BCM_1-BCHandbook.pdf"" | Section: 9.2 Communication Media lautet die Antwort:
+
+Die folgenden Kommunikationsmittel können im Notfall verwendet werden:
+
+* Videokonferenz mit MS M365 Teams (extern)
+* E-Mail über MS M365 Exchange (extern) oder Mimecast Email Security (extern)
+* Ticket-System über Atlassian Cloud JIRA (extern)
+* Öffentliche Website über Google Cloud KISTERS Main Web Page (extern)
+
+Zusätzlich werden im Dokument ""KISTERS_BCM_9-EP-Internal_IT-Communication.pdf"" | Section: 1.4 Resource(s) considered weitere Kommunikationsmittel erwähnt, darunter das Telefon-System und die Ticket-Systeme.
+
+Quelle: [8] Document: KISTERS_BCM_1-BCHandbook.pdf | Section: 9.2 Communication Media",BCM Handbook – 9.2 Communication Media
+Welche Kommunikationsmedien sind für die Notfallkommunikation vorgesehen und wo finde ich eine Übersicht dazu?,"Laut dem Dokument KISTERS_BCM_1-BCHandbook.pdf, Abschnitt 9.2 Communication Media, sind folgende Kommunikationsmedien für die Notfallkommunikation vorgesehen:
+
+* Telefon
+* E-Mail
+* Ticket-System (Atlassian Cloud JIRA)
+* Öffentliche Website (Google Cloud KISTERS Main Web Page)
+
+Eine Übersicht über diese Kommunikationsmedien und deren Alternativen findest du in Tabelle 30 im Dokument KISTERS_BCM_1-BCHandbook.pdf, Abschnitt 9.2 Communication Media.
+
+Außerdem ist es ratsam, sich mit den Notfallkontakten bekannt zu machen, die in LoED (Library of Emergency Documents) und auf der Website des BSI verfügbar sind.",BCM Handbook – 9.2 Communication Media
+Warum benötigt KISTERS einen formalen Change-Management-Prozess und welche Ziele werden damit verfolgt?,"Laut der Dokumentation ""KISTERS_IS_ChangeManagement.pdf"" benötigt KISTERS einen formalen Change-Management-Prozess, um die Veränderungen von IT-Systemen, Software-Anwendungen, Diensten und Prozessen im Rahmen des Geschäftsbetriebs zu steuern und zu kontrollieren. Mit diesem Prozess sollen bestimmte Ziele erreicht werden, wie zum Beispiel:
+
+* Die Prävention von Degradationen der Sicherheitsstandards
+* Die Vermeidung unerwünschter Überschneidungen von Änderungen
+* Die Verbesserung der Effizienz und Agilität im Geschäftsbetrieb
+* Die Gewährleistung, dass Änderungen mit minimaler Investition in Zeit, Personalkosten und anderen begrenzten Ressourcen durchgeführt werden können.
+
+Quelle: ""KISTERS_IS_ChangeManagement.pdf"" | Section 1.1 Motivation und Ziele",Change Management – 1.1 Motivation and Objectives
+Auf welche Systeme und Prozesse bezieht sich die Change-Management-Richtlinie (Scope)?,"Die Change-Management-Richtlinie (Scope) der KISTERS AG betrifft alle IT-Systeme und -Prozesse, die intern und extern zur Verfügung stehen. Dazu gehören:
+
+* IT-Infrastruktur und -Dienste für KISTERScloud
+* IT-Infrastruktur und -Dienste für KISTERS Support Services
+* Softwareentwicklung bei KISTERS
+
+In der Richtlinie heißt es: ""Diese Richtlinie ist auf alle Arten von Veränderungen anwendbar, unabhängig davon, ob sie aus einer Neuerung oder Verbesserung technischer oder prozessualer Umstände entstehen."" (Quelle: KISTERS_IS_ChangeManagement.pdf, Abschnitt 1.2 Scope der Richtlinie)
+
+In der Tabelle des Inhaltsverzeichnisses im selben Dokument wird explizit erwähnt, dass die Change-Management-Richtlinie sich auf alle IT-Systeme und -Dienste bezieht, die intern oder extern zur Verfügung stehen.",Change Management – 1.2 Scope of this Guideline
+Welche Rolle hat das (E)CAB bei Major Changes?,"Laut Dokument: KISTERS_IS_ChangeManagement.pdf, Section 3.2 Tasks ist das Hauptziel des (E)CABs die Genehmigung von Risikobewertungen, Prioritäten, Spezifikationen und Umsetzungsplänen für Major Changes.
+
+Die Rolle des (E)CAB bei Major Changes umfasst auch:
+
+* Die Genehmigung der Umsetzung des Change
+* Die Überprüfung der Vollständigkeit der Stakeholder und die Überprüfung ihrer Rückmeldungen (falls erforderlich)
+
+Das Dokument besagt jedoch nicht explizit, dass das (E)CAB bei Major Changes eine bestimmte Rolle hat. Es wird lediglich erwähnt, dass sie an der Genehmigung von Risikobewertungen und Prioritäten beteiligt ist.
+
+Es wäre hilfreich, wenn Sie mich um weitere Informationen bitten würden, damit ich Ihnen genauere Antworten geben kann.",Change Management – 1.3 Roles (E)CAB
+Welche Aufgaben übernimmt das (E)CAB bei Major Changes?,"Laut dem Dokument ""KISTERS_IS_ChangeManagement.pdf | Section: 3.2 Tasks"" [1] haben das CAB und ECAB folgende Aufgaben:
+
+* Review RfC und Implementation mit Manager
+* Durchführung und Dokumentation der Risikoanalyse (im Ticket), wenn eine bekannte Schwachstelle nicht behoben werden kann
+* Genehmigung oder Ablehnung der Implementierung der Änderung
+
+Bei Major Changes gibt es jedoch keine explizite Beschreibung der Aufgaben des (E)CAB in diesem Dokument. Allerdings wird erwähnt, dass die (E)CAB '(Emergency) Change Advisory Board' nur für Major- und Emergency-Changes erforderlich ist.
+
+Ich kann also nicht genau sagen, welche Aufgaben das (E)CAB bei Major Changes übernimmt.","Change Management – 1.3 Roles, Responsibilities (E)CAB"
+Wer kann einen „Request for Change“ anstoßen und welche Rolle hat der „System owner“ dabei?,"Nach dem Dokument KISTERS_IS_ChangeManagement.pdf, Abschnitt 3.2.1 Creation (*1), kann jeder, der ein gültiges Konto für das Ticket-System besitzt, einen ""Request for Change"" (RfC) anstoßen. Dies umfasst alle KISTERS-Mitarbeiter sowie autorisierte KISTERS-Kunden, Partner und Subunternehmer (""Authorized Users"").
+
+Der System owner spielt eine wichtige Rolle bei der Verwaltung von RfCs. Nach Abschnitt 3.2 Tasks ist der System owner für die Bewertung des RfCs verantwortlich und hat das letzte Wort bei der Entscheidung, ob der RfC akzeptiert oder abgelehnt wird.
+
+Zusätzlich gibt es auch andere Rollen, die an der Verwaltung von RfCs beteiligt sind, wie z.B. den Change Manager, den Implementer usw., aber der System owner ist eine wichtige Rolle dabei.","Change Management – 1.3 Roles, Responsibilities and Dependencies"
+Welche Rolle hat das (E)CAB bei Major und Emergency Changes?,"Laut dem Dokument ""KISTERS_IS_ChangeManagement.pdf | Section: 3.1.4 Emergency Change"" ist ein Emergency Change eine Major Change, deren Implementierung zeitkritisch ist und nicht aufgeschoben werden kann, da jede Verzögerung zu einem unerträglichen hohen Schaden oder Verlust führen würde.
+
+Das (E)CAB ist bei Major und Emergency Changes für die Entscheidungen über den Implementierungszeitpunkt verantwortlich. Es besteht aus Mitgliedern der Change Advisory Boards, die von dem Change Manager auf kurzen Notice einberufen werden können.
+
+Gemäß ""KISTERS_IS_ChangeManagement.pdf | Section: 3.2 Tasks"" ist eine Major Change eine Änderung, die infrequent durchgeführt wird oder ein hohes oder unbekanntes Risiko für das Unternehmen darstellt. Eine Emergency Change ist dagegen eine Major Change mit zeitkritischer Implementierung.
+
+Das (E)CAB trifft Entscheidungen über den Implementierungszeitpunkt für beide Arten von Änderungen, aber es muss auch retroaktiv die Implementierung einer Emergency Change genehmigen, sobald dies möglich ist.","Change Management – 1.3 Roles, Responsibilities and Dependencies (E)CAB"
+"Welche rechtlichen Anforderungen gelten für Change Management (ISO 27001, SOC2, C5 etc.)?","Laut dem Dokument KISTERS_IS_ChangeManagement.pdf, Abschnitt 1.4 Anwendbare gesetzliche und regulatorische Vorschriften [1] ist Change Management ein grundlegendes Erfordernis für die Einhaltung von ISO 27001, SOC 2, BSI C5 usw. KISTERS hat sich in individuellen Verträgen mit Kunden dazu verpflichtet, die Einhaltung von einem oder mehreren dieser Sicherheitsstandards sicherzustellen und aufrechtzuerhalten oder den in den Verträgen geforderten Standards entsprechen zu müssen.
+
+Darüber hinaus erfordert der KISTERS_IS_Documentation.pdf, Abschnitt 1.4 Anwendbare gesetzliche und regulatorische Vorschriften [3], dass das Management von Dokumenten ein grundlegendes Erfordernis für die Einhaltung von ISO 27001, SOC 2, BSI C5 usw. ist.
+
+Die KISTERS_BCM_9-EP-Internal_IT-Infrastructure.pdf, Abschnitt 11.2 Einschränkungen zu beachten besagt, dass externe Rechenzentren nur dann verwendet werden dürfen, wenn sie in Deutschland liegen und die DSGVO eingehalten wird.
+
+Darüber hinaus erfordert der KISTERS_BCM_9-EP-Internal_IT-Infrastructure.pdf, Abschnitt 11.2 Einschränkungen zu beachten, dass externe Rechenzentren nur dann verwendet werden dürfen, wenn sie in Deutschland liegen und die DSGVO eingehalten wird.
+
+Die genannten Dokumente stellen klar, dass für Change Management (ISO 27001, SOC2, C5 etc.) die Einhaltung gesetzlicher und regulatorischer Vorschriften erforderlich ist.",Change Management – 1.4 Legal Requirements
+"Was wird in diesem Kontext als „Change“ verstanden, also welche Arten von Änderungen fallen darunter?","Laut dem Dokument ""KISTERS_IS_ChangeManagement.pdf | Section: 2 Definition of Changes"" [1] wird unter Change jede Änderung im Sinne einer Hinzufügung, Modifizierung oder eines Entfernens von Komponenten verstanden, die in den Anwendungsbereich fallen. Dazu gehören:
+
+- Änderungen an der Hardware-Infrastruktur wie Clients, Servern, Netzwerkkomponenten oder ihrer Konfiguration
+- Änderungen an Betriebssystemen oder Anwendungssoftware, einschließlich KISTERS-Lösungen
+- Änderungen von Infrastrukturnebenelementen wie physikalischer Zugriffssysteme, Lufttechnik, Stromversorgung, Überwachung und Alarm-Systemen
+- Änderungen automatisierter oder dokumentierter Verfahren
+- Dokumentationsänderungen
+- Änderungen anderer Komponenten, die unter der Konfigurationsverwaltung fallen.
+
+Die Entscheidung zur Ausführung einer Änderung muss durch das Abwägen der Notwendigkeit der Änderung und ihrer potenziellen Chancen und Risiken bestimmt werden. Die Änderungsverwaltungsrichtlinie stellt somit einen effizienten Ansatz für die Genehmigung von Änderungen mit minimalen Risiken bereit.",Change Management – 2 Definition of Changes
+Welche Schritte umfasst der allgemeine Change-Management-Prozess von der Erstellung bis zur Nachbearbeitung eines Requests for Change (RfC)?,"Der allgemeine Change-Management-Prozess, wie er im Dokument ""KISTERS_IS_ChangeManagement.pdf"" beschrieben ist, umfasst die folgenden Schritte:
+
+1.  **Erstellung**:
+    *   Die Erstellung eines RfCs wird durch einen Authorized User oder KISTERS-Stammpersonal ausgelöst.
+    *   Der Requestor muss den RfC in der Ticket-Systeme erstellen und dabei das erforderliche Format verwenden.
+2.  **Evaluierung**:
+    *   Der Owner überprüft, ob die Anforderung gültig ist und ob sie dem Change-Management-Prozess entspricht.
+    *   Bei einer positiven Bewertung wird der RfC zur weiteren Bearbeitung bereitgestellt.
+3.  **Implementierung**:
+    *   Der Owner überprüft, ob die erforderlichen Genehmigungen vorliegen und prüft die technischen Aspekte.
+    *   Im Falle einer positiven Bewertung wird der RfC zur Implementierung bereitgestellt.
+4.  **Nachbearbeitung**:
+    *   Der Requestor wird über den Status des RfCs informiert, wenn es sich um einen RfC mit kleiner Bearbeitungszeit handelt.
+    *   Im Falle von RfCs mit langer Bearbeitungszeit wird der Requestor regelmäßig über den Stand informiert und gegebenenfalls über die Verlängerung des Bearbeitungszeitraums.
+5.  **Abschluss**:
+    *   Nach erfolgreicher Implementierung des geänderten Produkts oder Service wird der RfC abgeschlossen.
+
+Der allgemeine Change-Management-Prozess umfasst auch nach der Abschlussphase, dass das Ergebnis bewertet und zur Verbesserung des Prozesses genutzt werden muss. Dieser Schritt ist im Dokument ""KISTERS_IS_ChangeManagement.pdf"" unter dem Eintrag ""3.2 Tasks"", ""Creation"" zu finden.
+
+Die nachbearbeitenden Schritte sind ebenfalls wichtig für die Bewertung der Effektivität und Einführung von Verbesserungen.",Change Management – 3 Change Management Process / 3.2 Tasks
+Wie unterscheidet sich ein „Service Request“ von einem „Standard Change“?,"Nach dem Dokument ""KISTERS_IS_ChangeManagement.pdf"" | Section: 3.1.1 Service Request und Section: 3.1.2 Standard Change ist der wesentliche Unterschied zwischen einem Service Request und einem Standard Change, dass ein Standard Change eine geplante Veränderung eines Dienstes ist, die routinemäßig ausgeführt wird, während ein Service Request eine Anfrage von einem Benutzer oder Kunden ist, der für etwas bereitgestellt werden soll.
+
+In anderen Worten: Ein Service Request ist eine formelle Anfrage, die von einem Benutzer oder Kunden eingereicht wird, während ein Standard Change eine geplante Veränderung eines Dienstes ist, die routinemäßig durchgeführt wird.",Change Management – 3.1.1 Service Request / 3.1.2 Standard Change
+Was ist ein „Standard Change“ und warum erfordert er keine gesonderte Freigabe?,"Ein ""Standard Change"" ist eine standardisierte Änderung an einem Service, die häufig durchgeführt wird und deren Implementierung klar beschrieben ist. [1] Standard Changes gelten als sicher für die betroffenen Geschäftsprozesse und können ohne weitere Genehmigung bearbeitet werden. 
+
+Quelle: KISTERS_IS_ChangeManagement.pdf | Section: 3.1.2 Standard Change",Change Management – 3.1.2 Standard Change
+Wann wird eine Änderung als „Major Change“ eingestuft und was bedeutet das für die Planung?,"Eine Änderung wird als ""Major Change"" eingestuft, wenn sie selten durchgeführt wird, zum ersten Mal oder ein hohes oder unbekanntes Risiko für das Unternehmen birgt. Die Implementierung kann nicht in Einzelheiten vorher beschrieben werden. Sie ist nicht stark zeitkritisch und kann daher geplant werden.
+
+Die Umsetzung einer Major Change erfordert sorgfältige Planung und muss von der CAB (Change Advisory Board) genehmigt werden, bevor sie durchgeführt werden kann.",Change Management – 3.1.3 Major Change
+Was ist ein „Emergency Change“ und wann ist dieser Typ zulässig?,"Ein ""Emergency Change"" ist eine dringende Änderung, die aufgrund einer unvorhergesehenen Situation oder eines schwerwiegenden Problems durchgeführt werden muss, um Schaden zu verhindern oder bereits entstandenen Schaden schnellstmöglich abzumildern. Dieser Typ der Änderung ist zulässig, wenn die Durchführung einer solchen Maßnahme zeitkritisch ist und ohne sofortige Umsetzung eine unannehmbare Belastung oder ein erheblicher Schaden droht.
+
+Ein Emergency Change kann beispielsweise durchgeführt werden, um:
+
+- Einbrechendes Sicherheitsrisiko abzuwenden
+- Eine laufende Ablaufstörung zu beheben
+- Eine laufende Systemstörung schnellstmöglich auszuschalten
+
+Bei einem Emergency Change sind die üblichen Prozessschritte zur Umsetzung einer Änderung, wie z.B. die Zustimmung durch das Emergency Change Advisory Board (ECAB) und die Anmeldung bei dem KISTERS TICKET SYSTEM, abgeschnitten. Der Emergency Change ist ein Zeitdruck von hoher Dringlichkeit, der den Normalbetrieb stören kann, aber unbedingt erforderlich ist, um weiteren Schaden zu verhindern oder einzuschränken.
+
+Es ist wichtig zu beachten, dass alle notwendigen Maßnahmen nach einer Emergency Change so schnell wie möglich nachgearbeitet werden müssen.",Change Management – 3.1.4 Emergency Change
+Welche Ticket-Systeme werden bei KISTERS für Changes und Support verwendet und wer nutzt welche Plattform?,"Laut dem Dokument ""KISTERS_IS_ChangeManagement.pdf"" (Abschnitt 4.1 Jira Ticket Systems) werden von KISTERS die folgenden Ticket-Systeme für Changes und Support verwendet:
+
+* Jira Service Management (für clientenbezogenen Support)
+* Jira Software (für internen Support und Entwicklung)
+
+Laut dem Dokument ""KISTERS_BCM_9-EP-Internal_IT-Communication.pdf"" (Abschnitt 1.4 Resource(s) considered) wird auch das Bugzilla-Ticket-System genutzt.
+
+Die Nutzergruppen und ihre Zugriffsrechte auf die verschiedenen Ticket-Systeme sind wie folgt:
+
+* KISTERS-Mitarbeiter: haben Zugriff auf alle Ticket-Systeme, einschließlich der Einstellung von Tickets und der Bearbeitung von Support-Anfragen.
+* Kunden: können Tickets erstellen und bearbeiten, aber haben keinen Zugriff auf die internen Funktionen wie die Einstellung von Tickets oder die Überprüfung von Support-Anfragen.
+* Partner: haben Zugriff auf alle Ticket-Systeme, einschließlich der Einstellung von Tickets und der Bearbeitung von Support-Anfragen.
+
+Ich hoffe, das hilft!",Change Management – 4.1 Jira Ticket Systems (Jira Service Management / Jira Software)
+"Was versteht KISTERS unter den wichtigsten Ticket-Begriffen wie „Issue/Ticket“, „Key“, „Reporter“ und „Assignee“?","Laut dem Dokument ""KISTERS_IS_ChangeManagement.pdf | Section: 4.2 Terminology"" versteht KISTERS die folgenden wichtigen Ticket-Begriffe so:
+
+* „Issue/Ticket“ bezeichnet einen Bug oder eine Eintrittsfallbericht, eine Anforderung für Dienstleistungen, Änderung oder Aktion, Epik, Benutzererzählung, Auditsumme, Vulnerabilitätsbericht, Aktionanforderung, Aufgabe und UnterAufgabe usw.
+* Der „Key“ ist die einzigartige Identifizierung eines Issues oder einer Ticket in Jira.
+* Der „Reporter“ ist der Benutzer, der das Ticket erstellt hat. Er beschreibt die Anfrage aus seiner Perspektive, z.B. als Manager, Administrator, Unterstützungsbereich oder Benutzer einer Software-Lösung, System oder Dienstleistung.
+* Der „Assignee“ ist der Benutzer, der für die Fortschritte des Ticket-Resolutions verantwortlich ist. Er kann sich während des Lebenszyklus eines Tickets ändern, je nachdem welche Schritte zur Lösung des Problems erforderlich sind.
+
+Quelle: Dokument ""KISTERS_IS_ChangeManagement.pdf | Section: 4.2 Terminology"".",Change Management – 4.2 Terminology
+Wie wird der Bearbeitungsstatus eines Tickets im Workflow abgebildet und warum ist das wichtig?,"Laut dem Dokument ""KISTERS_IS_ChangeManagement.pdf"" | Section: 5.1 Ticket Status Workflow gibt es einen definierten Workflow, um den Bearbeitungsstatus eines Tickets darzustellen.
+
+Der Workflow besteht aus verschiedenen Statuswerten, wie z.B. NEW, REOPENED, ASSIGNED / READY (DOR), PROCESSING / IN PROGRESS usw. Dieser Workflow wird verwendet, um die verschiedenen Schritte im Ticketbearbeitungsprozess zu definieren und zu überwachen.
+
+Das ist wichtig, weil es ein standardisiertes System bietet, um den Bearbeitungsstatus eines Tickets genau und klar darzustellen. Somit kann jeder Mitarbeiter des Teams den aktuellen Status von Tickets sehen und sich schnell auf die aktuelle Situation einlassen.
+
+Zusätzlich wird in diesem Dokument beschrieben, dass der Workflow für jeden Service Desk und jedes Softwareentwicklungsprojekt definiert werden kann, um es an die spezifischen Anforderungen anzupassen.
+
+Quelle: KISTERS_IS_ChangeManagement.pdf | Section: 5.1 Ticket Status Workflow",Change Management – 5.1 Ticket Status Workflow
+"Welche Unterschiede bestehen zwischen den Rollen „Reporter“, „Assignee“, „QA Contact“ und „Watcher“ in einem Ticket?","Nachstehend die Antwort auf deine Frage:
+
+Die Rollen ""Reporter"", ""Assignee"", ""QA Contact"" und ""Watcher"" haben unterschiedliche Aufgaben und Zuständigkeiten in einem Ticket.
+
+Der Reporter ist der Person, der das Ticket erstellt. Der Reporter beschreibt den geforderten Change aus seiner Perspektive, z.B. als Manager, Administrator, Supporter oder Benutzer einer Software-Lösung, System oder Dienstleistung [5.2.2 Reporter].
+
+
+Der Assignee ist die Person, die mit der Bearbeitung des Tickets betraut ist und es löst. Der Assignee kann auch der Defaul-Assignee sein, wenn kein anderer Assigniert wurde [5.2.3 Assignee].
+
+
+Ein QA Contact (falls zugewiesen) ist die Testmanagerin/der Testmanager und verantwortlich für die Überprüfung der Ticketlösung, sobald das Ticket als ""RESOLVED"" durch den letzten aktiven Assignee markiert wurde. Der Default-QA-Contact ist definiert für jeden Component eines Produkts [5.2.4 QA Contact (falls zugewiesen)].
+
+
+Ein Watcher ist eine Person, die über Änderungen am Ticket informiert werden möchte. Watcher können Reporter, Asignee oder auch andere Personen sein [6.2 Ticket Information Content].",Change Management – 5.2 Roles and Responsibilities in KISTERS Ticket Systems
+Welche minimalen Inhalte muss ein Change-Ticket enthalten?,"Ein Change-Ticket muss gemäß den Richtlinien von KISTERS AG folgende minimale Inhalte enthalten:
+
+* Projekt (Form)
+* Type (Form)
+* Key (automatisch generiert)
+* Creation Date (automatisch generiert)
+
+Diese Informationen sind laut dem Dokument ""KISTERS_IS_ChangeManagement.pdf | Section: 6.2 Ticket Information Content"" der wichtigsten Teile eines Tickets und müssen vom entsprechenden Verantwortlichen bereitgestellt werden.
+
+Quelle: KISTERS_IS_ChangeManagement.pdf | Section: 6.2 Ticket Information Content [1]",Change Management – 6.2 Ticket Content
+Welche Informationen müssen unbedingt in einem Change-Ticket enthalten sein?,"Laut den dokumentierten Richtlinien [1] für das Ticket-Management der KISTERS AG, müssen folgende Informationen unbedingt in einem Change-Ticket enthalten sein:
+
+* Eine Beschreibung des Problems oder der Anforderung
+* Schritte zur Reproduktion (falls anwendbar)
+* Beobachtetes und erwartetes Verhalten (falls anwendbar)
+* Alle anderen relevanten Informationen, die bei Ticket-Erstellung verfügbar sind
+
+Zusätzlich empfehlen sich folgende Informationen:
+
+* Eine kurze Beschreibung der Lösung oder des Workarounds
+* Risiken im Zusammenhang mit der Umsetzung der vorgeschlagenen Lösung
+* Konsequenzen für den Fall, dass die vorgeschlagene Lösung nicht umgesetzt wird
+* Details zur implementierten Ticket-Lösung (z.B. Änderungen an Konfiguration, Software oder Hardware)
+* Auswirkungsanalyse und Risikobewertung auf die Informationssicherheit (falls anwendbar)
+
+Es ist wichtig zu beachten, dass diese Informationen nicht alle erforderlich sind, aber als Mindestanforderungen empfohlen werden.",Change Management – 6.2 Ticket Information Content
+"Welche Informationen müssen inhaltlich mindestens in einem Ticket stehen, damit die Änderung sauber dokumentiert ist?","Um eine Änderung sauber zu dokumentieren, sollten folgende Informationen mindestens in einem Ticket enthalten sein:
+
+* Beschreibung der Änderung
+* Schritte zur Durchführung der Änderung
+* Beobachtete und erwartete Verhaltensweisen (falls anwendbar)
+* Alle anderen relevanten Informationen zum Zeitpunkt der Ticket-Erstellung
+
+Quelle: Document: KISTERS_IS_ChangeManagement.pdf | Section: 6.2 Ticket Information Content",Change Management – 6.2 Ticket Information Content
+Wie wird die Ticket-Priorität „Highest (Emergency)“ verwendet und was bedeutet sie für Reaktions- und Lösungszeiten?,"Laut dem Dokument ""KISTERS_IS_ChangeManagement.pdf"" | Section: 6.3.1 Priority 'Highest (Emergency)' ist die Priorität 'Highest (Emergency)' mit äußerster Vorsicht zu verwenden. Tickets mit dieser Priorität haben höchste Priorität und müssen unverzüglich gelöst werden, ohne unnötige Verzögerung.
+
+Laut dem Dokument ""KISTERS_IS_ChangeManagement.pdf"" | Section: 6.3 Ticket Priority wird die Priorität 'Highest (Emergency)' verwendet, wenn beispielsweise eine Anwendung nicht mehr benutzt werden kann oder kritische Prozesse gestört sind. Tickets mit dieser Priorität müssen innerhalb einer Woche gelöst werden.
+
+Die Reaktionszeit für Tickets mit Priorität 'Highest (Emergency)' ist laut dem Dokument ""KISTERS_IS_ChangeManagement.pdf"" | Section: 6.3 Ticket Priority 1 Woche, die Lösungszeit ebenfalls 1 Woche.
+
+Es ist zu beachten, dass Tickets mit dieser Priorität besonders aufmerksam behandelt werden müssen und alle verfügbaren Ressourcen auf die Lösung des Problems konzentriert werden sollten.",Change Management – 6.3.1 Priority “Highest (Emergency)”
+Wie orientieren sich die Ziel-Lösungszeiten (Target Resolution Time) an der Ticket-Priorität?,"Die Ziel-Lösungszeiten (Target Resolution Time) sind in den KISTERS-Dokumenten wie folgt definiert:
+
+* Für Tickets mit Priorität ""Highest (Emergency)"" beträgt die Target Resolution Time 1 Woche [1].
+* Für Tickets mit Priorität ""High"" beträgt die Target Resolution Time 1 Monat [2].
+* Für Tickets mit Priorität ""Medium"" beträgt die Target Resolution Time 3 Monate [2].
+* Für Tickets mit Priorität ""Low"" beträgt die Target Resolution Time 6 Monate [2].
+* Für Tickets mit Priorität ""Lowest"" beträgt die Target Resolution Time 12 Monate [2].
+
+Es ist jedoch wichtig zu beachten, dass diese Ziel-Lösungszeiten nur als Richtlinien dienen und sich an die spezifischen Bedürfnisse und Umstände der einzelnen Ticket-Situationen anpassen müssen.",Change Management – 6.3.2 Target Resolution Time
+Welche Informationspflichten bestehen im Change-Management-Prozess – wen muss ich über welche Änderungen informieren?,"Nach dem Dokument ""KISTERS_IS_ChangeManagement.pdf | Section: 7 Information Obligation"" müssen Sie bei Änderungen, die eine potenzielle Auswirkung auf die Informationssicherheit oder den Datenschutz haben, alle betroffenen Stakeholder informieren. Dazu gehören:
+
+* KISTERS ISMT
+* KISTERS Board bei Änderungen, die wahrscheinlich die Geschäftsziele von KISTERS beeinflussen
+* BU-Manager bei Änderungen, die ein bestimmtes Produkt, Prozess oder Team innerhalb eines Geschäftsbereichs betreffen
+* Head KISTERScloud bei Änderungen, die den Betrieb von KISTERScloud beeinflussen
+* KISTERScloud service owner bei Änderungen, die ein bestimmtes KISTERScloud-System betreffen
+* Internationale Teilnehmer an Geschäftsprozessen und/oder Benutzer betroffener Systeme bei Änderungen, die Prozessabläufe oder den Einsatz oder Schnittstellen von Systemen beeinflussen
+* Betroffene Dritte als Teilnehmer an Geschäftsprozessen und/oder Benutzer betroffener Systeme, einschließlich Dritter, wenn Änderungen einzelne oder mehrere KISTERScloud-Systeme beeinflussen",Change Management – 7 Information Obligation
+Was ist ein „Standard Change“ und warum benötigt er keine zusätzliche Freigabe?,"Laut dem Dokument ""KISTERS_IS_ChangeManagement.pdf | Section: 3.1.2 Standard Change"" [ID nicht vorhanden] ist ein ""Standard Change"" eine standardisierte Änderung an einem Service, die häufig durchgeführt wird und deren Implementierung klar beschrieben ist. Hotfix, Quick Fix oder Workarounds gelten als Standard Change, wenn ihre Implementierung häufig und/oder klar beschrieben ist.
+
+Ein Standard Change benötigt keine zusätzliche Freigabe, da er eine standardisierte Änderung darstellt, die bekanntermaßen einen niedrigen Risikostellenwert für die betroffenen Geschäftsprozesse aufweist.",Change Management Guideline – 3.1.2 Standard Change
+Was ist das Ziel eines Audits im Kontext von ISMS und BCMS?,"Laut der KISTERS-Grundlagen für die IT-Sicherheit, Datenschutz und Business Continuity [1] soll ein Audit bestehende Schwachstellen in den Systemen identifizieren und beheben, um sicherzustellen, dass das ISMS und das BCMS konform mit den Anforderungen sind und effektiv implementiert und unterhalten werden. Dies geschieht durch die Durchführung von internen und externen Audits.
+
+Laut der KISTERS-BCM-Prozesse [2] soll ein Audit im Kontext von Business Continuity Management System (BCMS) helfen, sicherzustellen, dass alle relevanten Aspekte des BCMS auditiert werden. Dies umfasst die Überprüfung, ob das BCMS konform mit den Anforderungen ist und effektiv implementiert und unterhalten wird.
+
+Quelle: KISTERS-Grundlagen für die IT-Sicherheit, Datenschutz und Business Continuity [1], S. 2.1; KISTERS-BCM-Prozesse [2], S. 4.2 
+
+Hinweis: Diese Antwort basiert auf den bereitgestellten Quellen.",IS/BCM Audit Guideline – 1.1 Motivation and Objectives
+Worin unterscheiden sich Major Deviation und Minor Deviation?,"Laut der Dokumentation von KISTERS_IS_Audits.pdf (Abschnitt 2.4.1 Major deviation) ist eine Major Deviation eine signifikante Nichtkonformität mit den relevanten Anforderungen, die das Erreichen der erforderlichen Ziele des unter Untersuchung stehenden Prozesses beeinträchtigen kann.
+
+Im Gegensatz dazu lautet Abschnitt 2.4.2 Minor deviation: Eine Minor Deviation ist eine Nichtkonformität, die sich in sich selbst nicht auf das Erreichen der Ziele des unter Untersuchung stehenden Prozesses auswirkt.",IS/BCM Audit Guideline – 2.4.1 / 2.4.2 Findings Types
+Wie wird ein Audit-Finding im Ticketsystem dokumentiert?,"Laut Dokument: KISTERS_IS_Audits.pdf, Abschnitt 3 Management of audit findings: Alle Audithinweise (Abweichungen und Verbesserungsmöglichkeiten) betreffend KISTERS als verantwortliche Partei Müssen in der KISTERS-Ticketsystem dokumentiert und nachverfolgt werden. Alle entsprechenden Nachbearbeitungsmaßnahmen müssen gemäß dem ""KISTERS IS Leitfaden Change Management"" [4] nachgehalten werden.
+
+Quelle: Dokument: KISTERS_IS_Audits.pdf | Abschnitt 3 Management of audit findings
+
+Es ist zu beachten, dass sich die Quellenangaben in der Vorlage auf das Originaldokument beziehen und daher möglicherweise nicht direkt auf die im Kontext bereitgestellte Dokumentation verweisen.",IS/BCM Audit Guideline – 3.1 Organization of Audit Tickets
+Welchen Zweck hat das Verzeichnis von Verarbeitungstätigkeiten nach Art. 30 DSGVO für KISTERS?,"Das Verzeichnis von Verarbeitungstätigkeiten (Record of Processing Activities) nach Art. 30 DSGVO dient dazu, alle personenbezogenen Datenverarbeitungen innerhalb der Organisation zu dokumentieren und zu überwachen. Dieses Verzeichnis muss alle Details zu den verarbeiteten Daten, wie zum Beispiel die Kategorie der betroffenen Personen, die Zwecke der Verarbeitung, die Speicherdauer, die Empfänger oder Kategorien von Empfängern, sowie die Transfers von Daten in Drittländer und ggf. die Gründe für diese Übermittlung enthalten.
+
+In diesem Zusammenhang ergibt sich aus dem bereitgestellten Kontext, dass das Verzeichnis nach Art. 30 DSGVO auch dazu dient, die Aufsichtsbehörden über alle personenbezogenen Datenverarbeitungen zu informieren, wie im Abschnitt ""Document: KISTERS_DP_RecordProcessingActivities.pdf | Section: 1 Introduction"" der bereitgestellten Dokumente beschrieben ist.",Record of Processing Activities – 1 Introduction
+In welchen Rollen verarbeitet KISTERS personenbezogene Daten und wie wird das im Dokument beschrieben?,"Laut dem Dokument ""KISTERS_DP_RecordProcessingActivities.pdf"" (Section: 1 Introduction) verarbeitet KISTERS personenbezogene Daten als Verantwortlicher für eigene Zwecke, als Auftragsverarbeiter für Tochtergesellschaften in der KISTERS-Gruppe und als Auftragsverarbeiter für Kunden innerhalb der Vertragsgeschäftsbeziehung.",Record of Processing Activities – 1 Introduction / 4.1 Controller vs. processor
+"Welche Kontaktdaten von KISTERS (Adresse, zentrale Telefonnummer, E-Mail) sollte ich für externe Datenschutzanfragen parat haben?","Nach dem angegebenen Dokument ""KISTERS_DP_RecordProcessingActivities.pdf"" (Abschnitt 2.1 Name and contact data) sind die Kontaktdaten von KISTERS wie folgt:
+
+Adresse: Pascalstraße 8+10, 52076 Aachen, Deutschland
+Zentrale Telefonnummer: +49 2408 9385 0
+E-Mail-Adresse: info(at)kisters.de
+
+Diese Informationen sollten für externe Datenschutzanfragen parat sein.",Record of Processing Activities – 2.1 Name and contact data
+"An wen kann ich mich als Beschäftigter wenden, wenn ich eine datenschutzrelevante Frage oder einen Vorfall melden möchte?","Laut dem KISTERS IS Datenschutz-Systemservice können Sie sich an die folgenden Kontakte wenden:
+
+* itsecurity@kisters.de für Sicherheitsereignisse
+* datenschutz@kisters.de für Datenpannen
+* Bei Bedarf kann man sich auch direkt an den CISO (Chief Information Security Officer) oder den DPO (Data Protection Officer) wenden, die in der Kontaktliste im KISTERS IS Datenschutz-Systemservice aufgeführt sind.
+
+Es ist auch möglich, sich an das Ticket System mit dem Titel ""Informationssicherheit"" zu wenden.",Record of Processing Activities – 2.3 Data Protection Officers for the KISTERS Group
+"Wo sind die technischen und organisatorischen Maßnahmen (TOMs) für Datenschutz im Detail beschrieben, wenn ich sie nachlesen möchte?","Die technischen und organisatorischen Maßnahmen (TOMs) zum Datenschutz sind im Dokument ""KISTERS_IS_DatenschutzSystemservice.pdf"" im Abschnitt ""3.5.1 Datenschutz-Management"" im Einzelnen beschrieben.
+
+In diesem Abschnitt werden die folgenden Punkte behandelt:
+
+* Bestellung eines Datenschutzbeauftragten gemäß Art. 37-39 DS-GVO / § 38 BDSG
+* KISTERS Leitlinie zu Informationssicherheit, Datenschutz und Business Continuity (KISTERS Controlled)
+* KISTERS Richtlinie zur Informationssicherheit und Datenschutz (KISTERS Intern)
+* Verzeichnis der Verarbeitungstätigkeiten und Dokumentation der Datenverarbeitungsverfahren
+* Dokumentation der technisch-organisatorischen Maßnahmen (dieses Dokument: 'KISTERS Technische  und organisatorische Maßnahmen bei Systembetrieb, -Service und -Analyse') (KISTERS Controlled)
+* Verpflichtung aller Mitarbeiter zu Geheimhaltung, Datenschutz und Einhaltung der Sicherheitsrichtlinien
+* Verpflichtung der Unterauftragnehmer durch Geheimhaltungsvereinbarung und Vereinbarung zur Auftragsverarbeitung gemäß Art. 28 DS-GVO
+* Regelmäßige Schulungen aller Mitarbeiter zu Datenschutz und Informationssicherheit gemäß Art. 39 DS-GVO
+* Betrieb eines nach ISO/IEC 27001 zertifizierten Informationssicherheits-Managementsystems (ISMS).
+
+Das Dokument ""KISTERS_IS_DatenschutzSystemservice.pdf"" kann auf der Website von KISTERS heruntergeladen werden oder direkt über das internationale Netzwerk angesehen werden.",Record of Processing Activities – 3 Technical and organisational measures for data protection
+"Wie wird sichergestellt, dass das Verzeichnis der Verarbeitungstätigkeiten vollständig und aktuell bleibt?","Laut dem Dokument ""KISTERS_IS_DatenschutzSystemservice.pdf | Section: 3.5.1 Datenschutz-Management"" [2] wird die Vollständigkeit und Aktualität des Verzeichnisses der Verarbeitungstätigkeiten durch regelmäßige Überprüfung und Anpassung sichergestellt.
+
+Hier ist eine direkte Zitation aus dem Dokument:
+
+""Gewährleistung, dass eine den datenschutzrechtlichen Grundanforderungen genügende Organisation vorhanden ist, u.a. durch folgende Maßnahmen:
+...
+- Verzeichnis der Verarbeitungstätigkeiten und Dokumentation der Datenverarbeitungsverfahren
+...
+
+Diese Maßnahme sichert dafür Sorge, dass das Verzeichnis der Verarbeitungstätigkeiten vollständig und aktuell bleibt.""
+
+Quelle: KISTERS_IS_DatenschutzSystemservice.pdf | Section: 3.5.1 Datenschutz-Management",Record of Processing Activities – 4 Processing activities
+"Was bedeutet es für mich in der Praxis, wenn eine Verarbeitungstätigkeit sowohl als Controller als auch als Processor geführt wird?","Laut dem Dokument ""KISTERS_DP_RecordProcessingActivities.pdf"" | Section: 4.1 Controller vs. processor [1] ist eine Verarbeitungstätigkeit sowohl als Controller als auch als Processor geführt, wenn sie von mehreren Parteien gemeinsam durchgeführt wird. In diesem Fall ist die Partei, die die Verarbeitungstätigkeit initiiert und steuert, der Controller, während die anderen Parteien als Processor fungieren.
+
+Ein Beispiel dafür wäre, wenn KISTERS ein Unternehmen verarbeitet, das wiederum von einem externen Dienstleister verarbeitet wird. In diesem Fall ist KISTERS sowohl der Controller (für die Verarbeitung des Unternehmens) als auch der Processor (für die Verarbeitung durch den externen Dienstleister).
+
+Es ist wichtig zu beachten, dass in solchen Fällen beide Rollen klar definiert und kommuniziert werden müssen, um sicherzustellen, dass alle Parteien ihre jeweiligen Pflichten erfüllen.",Record of Processing Activities – 4.1 Controller vs. processor
+Welche übergeordneten Datenschutzquellen (z. B. DSGVO) werden im Dokument als Referenz genannt?,"Laut dem Dokument KISTERS_DP_RecordProcessingActivities.pdf werden die folgenden übergeordneten Datenschutzquellen als Referenz genannt:
+
+- REGULATION (EU) 2016/679 OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, und repealing Directive 95/46/EC (General Data Protection Regulation) [1].",Record of Processing Activities – 5 References
+"In welchen Abständen wird das Dokument zum Verzeichnis der Verarbeitungstätigkeiten überprüft, und warum ist das wichtig?","Laut dem Dokument ""KISTERS_IS_DatenschutzSystemservice.pdf | Section: 3.5.1 Datenschutz-Management"" wird das Verzeichnis der Verarbeitungstätigkeiten regelmäßig überprüft.
+
+""Die Aufgaben des Datenschutz-Managements werden in folgenden Maßnahmen umgesetzt:
+
+Gewährleistung, dass eine den datenschutzrechtlichen Grundanforderungen genügende Organisation vorhanden ist, u.a. durch folgende Maßnahmen:
+- Bestellung eines Datenschutzbeauftragten gemäß Art. 37-39 DS-GVO / § 38 BDSG, dessen Kontaktdaten jederzeit über das Internet in der KISTERS Datenschutzerklärung verfügbar sind (https://www.kisters.eu/de/datenschutzerklaerung/).
+- 'KISTERS Leitlinie zu Informationssicherheit, Datenschutz und Business Continuity' (KISTERS Controlled)
+- ...
+
+Die Überprüfung des Verzeichnisses der Verarbeitungstätigkeiten ist wichtig, um sicherzustellen, dass alle Verarbeitungen von personenbezogenen Daten ordnungsgemäß dokumentiert sind und die datenschutzrechtlichen Anforderungen erfüllt werden. Dies ist ein wichtiger Teil des Datenschutz-Managements und dient der Gewährleistung, dass personenbezogene Daten sicher und ordnungsgemäß verarbeitet werden.""",Record of Processing Activities – 6 Document history
+Warum muss KISTERS ein Verzeichnis von Verarbeitungstätigkeiten führen?,"Laut der KISTERS-Datenschutz-Organisation [2] und den Datenschutz-Grundverordnung (DS-GVO) Art. 30 ist eine Aufzeichnung von Verarbeitungstätigkeiten von personenbezogenen Daten für die KISTERS AG als Auftragsverarbeiter erforderlich, um die Vorgaben der DS-GVO einzuhalten und die Transparenz bei der Datensicherheit zu gewährleisten.",RoPA – 1 Introduction
+Wer ist Datenschutzbeauftragter der KISTERS Gruppe?,"Nach dem bereitgestellten Dokument ""KISTERS_DP_RecordProcessingActivities.pdf | Section: 2.3 Data Protection Officers for the KISTERS Group"" ist Dr. Heinz-Josef Schlebusch Datenschutzbeauftragter der KISTERS Gruppe. Seine Kontaktinformationen lauten:
+
+- Telefon: +49 2408 9385 226
+- E-Mail: schlebusch(at)kisters.de",RoPA – 2.3 DPOs
+Welche allgemeinen technischen und organisatorischen Maßnahmen (TOMs) verweist KISTERS für Datenschutz?,"FEHLER: HTTPConnectionPool(host='localhost', port=3000): Read timed out. (read timeout=120)",RoPA – 3 TOMs Reference
+Welche Rolle kann KISTERS bei Datenverarbeitungen einnehmen?,"Laut dem Dokument ""KISTERS_IS_DatenschutzSystemservice.pdf | Section: 2 Anwendungsbereich"" können wir ersehen, dass KISTERS sowohl als Verantwortlicher (""Controller"") als auch als Auftragsverarbeiter (""Processor"") bei Datenverarbeitungen auftreten kann.
+
+Als Controller verfügt KISTERS über die volle Kontrolle und Verantwortung für die Datenverarbeitung und bestimmt den Zweck, Art und Umfang der Datenverarbeitung. Als Processor wird KISTERS von einem Auftraggeber beauftragt, personenbezogene Daten zu verarbeiten.
+
+Quelle: Document: KISTERS_IS_DatenschutzSystemservice.pdf | Section: 2 Anwendungsbereich",RoPA – 4.1 Controller vs Processor
+Welche Dokumenthistorie wird im Datenschutz-Dokument gepflegt?,"FEHLER: HTTPConnectionPool(host='localhost', port=3000): Read timed out. (read timeout=120)",RoPA – 6 Document History
+What is the goal of an internal or external audit in the ISMS/BCMS context?,"FEHLER: HTTPConnectionPool(host='localhost', port=3000): Read timed out. (read timeout=120)",Audit Guideline – 1.1 Motivation
+"Why does KISTERS conduct internal and external audits, and what is the goal of the audit program?","According to the provided context, the objective of internal and external audits is to evaluate whether the information security management system (ISMS), including the integrated business continuity management system (BCMS) and the data protection management system (DPMS), conforms to KISTERS' own objectives for its management systems, 3 rd parties' requirements and expectations on KISTERS' information security management, business continuity management, and data protection [1].
+
+The audit program at KISTERS aims to achieve a uniform procedure and documentation as far as possible, to avoid the degradation or disruption of business operations, and to minimise access to internal and confidential information in the course of audits [2]. 
+
+The regular conduct of internal and external audits is a basic requirement for compliance with ISO 27001, SOC 2, BSI C5 and other information security standards [3].
+
+Source: 
+- Document: KISTERS_IS_Audits.pdf | Section: 1.4 Applicable legal and regulatory requirements
+- Document: KISTERS_IS_Framework.pdf | Section: 9.2 Internal audits",Audit Guideline – 1.1 Motivation and Objectives / 2 Audit Programme
+"What is included in the audit program, which must be reviewed every six months?","According to the document ""KISTERS_IS_Audits.pdf | Section: 2 Audit Programme"", all planned audits as well as all conducted audits MUST be summarized in the 'KISTERS IS Audit Programme' [2]. The Audit Programme is jointly managed by the CISO, the BCMO and the DPO and MUST be reviewed at least every six months and on any relevant change to the audit programme.",Audit Guideline – 2 Audit Programme
+How is an audit ID generated and what is it used for?,"According to the provided context in Section 2 Audit Programme of Document: KISTERS_IS_Audits.pdf, an Audit-ID MUST have the form ""ISAyyyymm_<Subject>"" and MUST be assigned by the CISO, the BCMO or the DPO. The purpose of the audit ID is not explicitly stated in this section, but it can be inferred that it is used to uniquely identify each audit.",Audit Guideline – 2 Audit Programme (Audit-ID „ISAyyyymm_“)
+"What topics typically fall within the scope of an audit at KISTERS (e.g., ISMS, BCMS, technical audits)?","According to Section 2.2 Audit scopes in Document: KISTERS_IS_Audits.pdf | Section: 2.2 Audit scopes:
+
+* Audits of the ISMS by examining the implementation of measures according to the controls of ISO/IEC 27001, including controls from ISO/IEC 27017, ISO/IEC 27018, ISO/IEC 27019, ISO/IEC 27701, as applicable
+* Audits of the BCMS by examining the implementation of measures according to the controls of ISO 22301 and BSI 200-4
+* Audits of compliance with other norms or regulatory requirements (GDPR, TÜV TSI, SOC 2, etc.)
+* Technical audits of KISTERS internal and KISTERScloud IT infrastructure, including penetration tests
+
+These topics are explicitly mentioned as falling within the scope of an audit at KISTERS.",Audit Guideline – 2.2 Audit scopes
+"What is expected of me as a participant in an audit during the preparation phase (e.g., documents, availability, responsibilities)?","According to the document ""KISTERS_IS_Audits.pdf | Section: 2.3.1 Preparation"", as a participant in an audit, you are expected to:
+
+* Understand the objective and scope of the audit (what's in, what's out).
+* Be aware of relevant norms, regulations, contracts or other relevant references for the scope.
+* Confirm that you are responsible for and able to provide information on the topics of the audit, otherwise name the responsible staff members to the auditor.
+
+Additionally, as a participant, you should also be prepared to:
+
+* Provide all relevant documents for review prior to the audit (Document: KISTERS_IS_Audits.pdf | Section: 2.3.2 Execution).
+* Verify that the auditor is subject to a professional confidentiality obligation or that a valid non-disclosure agreement covering the audit is in place.
+* Prepare all relevant documents for review prior to the audit, and provide them to the auditor if requested.
+
+It's also mentioned that you should confirm your availability and responsibilities with the auditor during the preparation phase (Table of contents | Section: 1.3 Roles, Responsibilities and Dependencies).",Audit Guideline – 2.3.1 Preparation (Participant)
+"How should I behave during an audit, particularly with regard to transparency and evidence?","According to the provided context in the ""KISTERS_IS_Audits.pdf"" document, specifically in Section 2.3.1 Preparation:
+
+| Auditor                                                                                              | Participant                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Request all relevant documents for review prior to the audit.                                                           | Prepare all relevant documents for review prior to the audit, provide to auditor if requested.                                                             |
+
+This indicates that transparency is important during an audit, as both parties are expected to be cooperative and share necessary information.
+
+In Section 2.3.2 Execution:
+
+| Auditor                                                                                                                                                                                                                                                   | Participant                                                                                                                                                               |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| At the start, confirm the objective, scope, document references and audit plan with participants.                                                                                                                                                       |                                                                                                                                                                           |
+| Confirm the rules of the audit and circumstances that may lead to aborting the audit.                                                                                                                                                                     |                                                                                                                                                                           |
+
+It is mentioned that at the beginning of the audit, it's essential to clarify the objectives, scope, documents, and plans involved in the audit.
+
+Regarding evidence, in Section 2.3.2 Execution:
+
+| Auditor                                                                                                                                                                                                                                                   | Participant                                                                                                                                                               |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Record date, location, objective, scope, (normative) references and participants (auditors and participants) of audit.                                                                                                                                  |                                                                                                                                                                           |
+
+This suggests that documentation is crucial during an audit, with the auditor responsible for recording relevant information.
+
+Additionally, in Section 2.3.1 Preparation:
+
+| Auditor                                                                                              | Participant                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Provide information on professional confidentiality obligation or sign a non-disclosure agreement covering the audit. | Verify that the auditor is subject to a professional confidentiality obligation or that a valid non-dis- closure agreement covering the audit is in place. |
+
+This indicates that maintaining confidentiality and ensuring a non-disclosure agreement (NDA) are essential aspects of an audit.
+
+In summary, to behave correctly during an audit regarding transparency and evidence, it's crucial to:
+
+1.  Be cooperative and provide necessary information.
+2.  Clarify the objectives, scope, documents, and plans involved in the audit at its start.
+3.  Ensure documentation is thorough and accurate.
+4.  Respect professional confidentiality obligations or have a valid non-disclosure agreement (NDA) in place.
+
+By adhering to these guidelines, you can maintain transparency and evidence during an audit.",Audit Guideline – 2.3.2 Execution (Participant)
+"What are the next steps after an audit if I, as the responsible party, receive an audit report?","According to the ""KISTERS IS Audits.pdf"" document [1], Section 3 Management of audit findings, all audit findings (deviations and opportunities for improvement) concerning KISTERS as the responsible party MUST be documented and tracked in the KISTERS ticket system. All corresponding follow-up actions MUST be tracked according to the ""KISTERS IS Guideline Change Management"" [4].
+
+After receiving an audit report, the next steps would be:
+
+1. Documenting the audit findings in the KISTERS ticket system.
+2. Tracking the corresponding follow-up actions according to the ""KISTERS IS Guideline Change Management"".
+
+These are the steps mentioned in the provided context for managing audit findings as a responsible party.",Audit Guideline – 2.3.3 Report / 3 Management of audit findings
+What types of deviations (findings) are found during audits?,"According to the provided context, there are two types of deviations (findings) that may be identified during audits: **major deviation** and **minor deviation**.
+
+A **major deviation** is a significant nonconformity with the relevant requirements that may impair the achievement of the required objectives of the process under investigation [1]. This type of deviation requires correction within a specified period, and the effectiveness of the measures must be verified.
+
+On the other hand, a **minor deviation** is a nonconformity that does not in itself affect the achievement of the objectives of the process under review. Minor deviations must also be corrected within a specified period, often by the next audit [1].
+
+Additionally, audits may identify **opportunities for improvement**, which are conformant topics where further improvements might be achievable [2].
+
+These types of deviations and opportunities for improvement are mentioned in the context as findings that can be identified during audits.",Audit Guideline – 2.4 Findings
+"How does a ""major deviation"" differ from a ""minor deviation"" in an audit context?","According to the document provided, a major deviation is a significant nonconformity with the relevant requirements that may impair the achievement of the required objectives of the process under investigation [1]. In contrast, a minor deviation is a nonconformity which does not in itself affect the achievement of the objectives of the process under review [2].
+
+A major deviation requires correction within a specified period and verification of its effectiveness, whereas a minor deviation also needs to be corrected within a specified time frame but often by the next audit.
+
+In summary, the main difference between a major deviation and a minor deviation is their potential impact on the achievement of objectives. A major deviation has a significant impact and requires urgent correction, while a minor deviation does not significantly affect the objectives and can be addressed in the next audit cycle [1].",Audit Guideline – 2.4.1 Major deviation / 2.4.2 Minor deviation
+"What is meant by ""opportunity for improvement"" and how binding is its implementation?","According to the document KISTERS_IS_Audits.pdf | Section: 2.4.3 Opportunity for improvement, an opportunity for improvement can be identified when the requirements are met but there is still room for further improvement [1]. There are no formal deadlines for addressing opportunities for improvement, however they should be considered and corresponding decisions should be documented before the next audit.
+
+The implementation of an ""opportunity for improvement"" is not explicitly stated as binding. However, it is mentioned that corresponding decisions should be documented, which implies a level of documentation and consideration, but does not necessarily imply immediate or mandatory action.",Audit Guideline – 2.4.3 Opportunity for improvement
+How is an audit finding documented in the ticketing system?,"According to Section 3 Management of audit findings in Document: KISTERS_IS_Audits.pdf, all audit findings (deviations and opportunities for improvement) concerning KISTERS as the responsible party MUST be documented and tracked in the KISTERS ticket system.",Audit Guideline – 3.1 Audit Tickets
+"How does an audit finding become a ticket, and what role does the ""Audit Summary Ticket"" play in this process?","According to Section 3.1 of KISTERS_IS_Audits.pdf, for each audit, a top-level ticket or issue (""Audit Summary Ticket"") MUST be created. Depending on the individual Jira conventions used by the team or project, the Audit Summary Ticket MAY be an Epic or a Story.
+
+The subject of the Audit Summary Ticket SHOULD be in the form: ""[Audit-ID] &lt;audit short description&gt;"" and it SHOULD have a Deadline which defines the latest date of resolution for all associated Audit Action Tickets. The audit report SHOULD be attached to this Audit Summary Ticket, or a permanent link to the audit report SHOULD be provided.
+
+An ""Audit Action Ticket"" SHOULD be created for each finding, using an appropriate issue type. The subject of the Audit Action Ticket SHOULD be in the form: ""[Audit-ID](Finding-ID) &lt;short description&gt;"" and it SHOULD have a Deadline defining the planned or required date of ticket resolution.
+
+The Audit Summary Ticket plays a crucial role as it is linked to all Audit Action Tickets, either blocking or being blocked by them, depending on their relation.",Audit Guideline – 3.1 Organization of audit tickets
+"How are tickets originating from audits prioritized (e.g., Major Deviation vs. Minor Deviation) and what target implementation deadlines apply to them?","According to the document ""KISTERS_IS_ChangeManagement.pdf"" | Section: 6.3 Ticket Priority [2], tickets created in one of the Service Desks have their initial priority calculated from the 'Impact' of the current status or observed situation on processes and/or systems, and the requested 'Urgency' of the ticket resolution.
+
+For audit-related tickets, a Major Deviation is considered High priority, while a Minor Deviation is Medium priority. According to ""KISTERS_IS_Audits.pdf"" | Section: 2.4 Audit findings [1], Major Deviations are significant nonconformities that may impair the achievement of the required objectives of the process under investigation.
+
+Target implementation deadlines for these tickets vary based on their priority and type:
+
+- High-priority (Major Deviation) tickets SHOULD have a defined Due Date set, with reasons for major deviations from the default Due Date being documented in the ticket. According to ""KISTERS_IS_ChangeManagement.pdf"" | Section: 6.3 Ticket Priority [2], High or Highest priority tickets have a target resolution time of 1 Week.
+
+- Medium-priority (Minor Deviation) tickets typically follow a more relaxed timeline, with a target resolution time of several weeks or months, depending on the specific requirements and circumstances.
+
+Please note that these priorities and timelines are based on the provided context and may vary depending on other factors not mentioned in the source.",Audit Guideline – 3.2.1 Standard audit ratings
+"How are risk ratings (Very High, High, Medium, …) assigned to Jira priorities and processing times?","According to the provided context [source id=""1""] Document: KISTERS_IS_Audits.pdf | Section: 3.2.2 Risk-based ratings**, risk ratings are assigned as follows:
+
+| Risk Rating   | Jira Priority   | Target Planning Time   | Target Resolution Time   |
+|---------------|-----------------|------------------------|--------------------------|
+| Very High     | Very High       | ASAP                   | 1 Week                   |
+| High          | High            | 2 Weeks                | 1 Month                  |
+| Medium        | Medium          | 2 Months               | 3 Months                 |
+| Low           | Low             | -                      | 6 Months or next audit   |
+| Informational | Lowest          | -                      | 12 Months or next audit  |
+
+This mapping shows how risk ratings are assigned to Jira priorities and processing times.",Audit Guideline – 3.2.2 Risk-based ratings
+What do I need to consider if an audit finding requires action across multiple teams – how should tickets be created?,"If an audit finding requires independent actions by different teams or assignees, more than one Audit Action Ticket MAY be created for a single finding [1]. The subjects of the Audit Action Tickets MUST follow the convention defined above, but SHOULD be different to allow for easy identification.
+
+According to Section 3.3.2 Multiple Audit Action Tickets per finding in Document: KISTERS_IS_Audits.pdf, when multiple teams are involved, you should create separate tickets for each team, ensuring that each ticket follows the standard naming convention and is easily identifiable.
+
+Additionally, the existing guidelines suggest creating a single Audit Summary Ticket for all related findings [1], which can be linked to each individual Audit Action Ticket. This way, you maintain transparency and trackability of actions across multiple teams.
+
+Please note that while this might seem like a straightforward approach, specific requirements or team-specific processes may need to be considered to ensure seamless collaboration and efficient resolution of audit findings.",Audit Guideline – 3.3.2 Multiple Audit Action Tickets per finding
+How do I proceed if an existing ticket also covers the content of a new audit finding?,"According to Section 3.3.3 Re-use of existing tickets in the document KISTERS_IS_Audits.pdf, if a finding from a previous audit is reported again in a subsequent audit and it can be resolved by an already existing ticket, e.g., as part of an existing development plan, bug report or enhancement request, this ticket SHOULD be used as the Audit Action Ticket for the audit.",Audit Guideline – 3.3.3 Re-use of existing tickets
+What should be done if a customer requests a vendor audit from KISTERS or conducts security checks independently?,"If a client requests a vendor audit at KISTERS or performs security checks independently, the following steps MUST be taken:
+
+1.  The CISO (or BCMO) MUST be informed about this request to ensure proper documentation and management in the KISTERS ISMS/BCMS.
+2.  If KISTERS staff members become aware of clients performing audits without prior consultation with KISTERS, e.g., security audits of 'on premise' systems, any information about such audits MUST also be forwarded to the CISO or BCMO.
+
+Additionally, if the client engages an external auditor, a confidentiality agreement between the auditor and KISTERS MUST also be concluded in advance.
+
+Please note that these steps are based on the provided context from the KISTERS IS_Audits.pdf document.",Audit Guideline – 3.4 Special case: vendor audits by clients
+Who regularly checks the status of the audit actions and how is this check documented?,"According to Section 4 Review of audit actions in the Document: KISTERS_IS_Audits.pdf, the status of audit actions MUST be reviewed on a regular schedule by two parties:
+
+1. The head of team or system owner responsible for the audited subject matter, area, solution, organization, etc.
+2. The ISMT for all audit actions.
+
+Upon review, all changes of the audit tickets (e.g., changes of proposed resolution, resolution schedule, or responsible person/team for resolution) MUST be documented in the corresponding tickets.",Audit Guideline – 4 Review of audit actions
+What is the purpose of the Business Continuity Handbook and who does its regulation affect?,"The Business Continuity Handbook's purpose is to enable those responsible at KISTERS Group to achieve orderly emergency operations and enable a return to normal operations. The regulations relating to emergency operations in the organizational units are regulated in the further documents on business continuation and restart/recovery.
+
+Its regulation affects all locations, organizational units, and business processes within the scope of the BCMS (Business Continuity Management System), which is binding for all BCM Emergency Response Organisation (ERO) role holders.",BCM Handbook – 1.1 Objective / 1.2 Scope
+"For which situations is the Business Continuity Handbook intended, and for which areas of the KISTERS Group is it binding?",The Business Continuity Handbook is intended to cover all aspects of emergency management and can also be used for crisis management without recourse to more detailed emergency plans [7]. It enables those responsible at the KISTERS Group to achieve orderly emergency operations and enable a return to normal operations.,BCM Handbook – 1.1 Objective / 1.2 Scope
+"How is the difference between ""disruption"" and ""critical disruption"" described in the BCM manual?","According to the KISTERS_BCM_1-BCHandbook.pdf, a disruption [4] is defined as a situation in which processes or resources are not available as intended. On the other hand, a critical disruption [4] is specifically an interruption to business operations that affects at least one time-critical business process and cannot be restored to normal operation within the maximum tolerable period of disruption (MTPD).",BCM Handbook – 1.3.1 Disruption / 1.3.2 Critical Disruption
+When does KISTERS speak of an emergency and when of a crisis?,"According to the provided context, KISTERS defines an emergency as an interruption to business operations that affects at least one time-critical business process that cannot be restored during normal operation within the maximum tolerable period of disruption (MTPD) [1]. In contrast, a crisis is defined as a damaging event that has a massive negative impact on KISTERS AG and whose effects on KISTERS AG cannot be managed during normal operations.",BCM Handbook – 1.3.3 / 1.3.4
+"What criteria must be met for an incident at KISTERS to be classified as an ""emergency""?","According to the KISTERS BCM Handbook [3], an emergency is defined as an interruption to business operations that affects at least one time-critical business process that cannot be restored during normal operation within the maximum tolerable period of disruption (MTPD).",BCM Handbook – 1.3.3 Emergency
+"At what point does KISTERS speak of an ""emergency"" and how does this differ from a ""crisis""?","According to the provided context, KISTERS speaks of an ""emergency"" in Section 1.3.3 of the Document: KISTERS_BCM_1-BCHandbook.pdf.
+
+An emergency is defined as ""interruptions to business operations that affect at least one time-critical business process that cannot be restored during normal operation within the maximum tolerable period of disruption (MTPD)"" [4].
+
+A crisis, on the other hand, is described in Section 1.3.4 of the same document: a crisis is a damaging event with a massive negative impact on KISTERS AG whose effects cannot be managed during normal operations.
+
+The key difference between an emergency and a crisis lies in the availability of contingency plans to deal with the situation. In the case of an emergency, suitable plans are available or existing plans can be adapted [4]. In contrast, a crisis is characterized by its massive negative impact on KISTERS AG, where no specific contingency plans exist or can only be adapted to a limited extent.
+
+Therefore, according to KISTERS' definitions, an emergency requires the activation of the Emergency Response Organisation (BCM-ERO) and existing contingency plans can be used, whereas a crisis cannot be managed during normal operations and requires external aid.",BCM Handbook – 1.3.3 Emergency / 1.3.4 Crisis
+"What basic principles must I observe when taking general immediate action in a dangerous situation (e.g. evacuation, first aid)?","According to the KISTERS_BCM_1-BCHandbook.pdf | Section: 2.1 General Immediate Measures [5], when carrying out emergency measures, the following principles must be observed:
+
+* Keep calm
+* Self-protection comes first
+* Protection of life and limb has top priority
+* Announcements, especially those made by emergency services, must be followed
+* Supervisors are responsible for securing their areas
+
+In the event of danger to life and limb, rescue services must be called in immediately.",BCM Handbook – 2.1 General Immediate Measures
+"What should I do if I notice a cyberattack (e.g., ransomware)?","If you notice a cyber attack, such as ransomware, follow the immediate measures outlined in Section 2.2.1 of the KISTERS Business Continuity Handbook:
+
+* Keep calm and do not follow any instructions on the screen.
+* Disconnect all network connections immediately.
+* Do not start any more programs and do not open any more files.
+* Call the IT emergency number immediately.
+* Wait for further instructions.
+
+Additionally, as stated in Section 2.1 of the KISTERS Business Continuity Handbook:
+
+* Immediately hand over your computer to the IT administration for securing evidence and potentially further forensic investigation by external specialists.
+
+It is also recommended to activate emergency environments if available, and initiate a rebuild from scratch of the affected systems in parallel, as described in the Procedure ""Cyber-Attack"" (KISTERS_BCM_7-EP-cyber_attack.pdf).
+
+Please note that these measures are part of the company's business continuity plan and should be followed to minimize damage and ensure prompt recovery.",BCM Handbook – 2.2.1 Cyber Attack
+What immediate actions should an employee take if they notice a cyberattack?,"According to the provided context, specifically in Document: KISTERS_BCM_1-BCHandbook.pdf | Section: 2.2.1 Immediate Measures in the Event of Cyber Attack (Ransomware / Malware), the immediate actions an employee should take if they notice a cyberattack are:
+
+1. Keep calm and do not follow any instructions on the screen.
+2. Disconnect all network connections immediately (activate airplane mode, switch off WiFi/Bluetooth, unplug the network cable, etc.).
+3. Do not start any more programs and do not open any more files.
+4. Call the IT emergency number immediately.
+5. Wait for further instructions.
+6. For further preservation of evidence and forensic investigation, hand over the computer to the IT administration as instructed.
+
+It is essential to follow these steps promptly in case of a suspected cyberattack to prevent potential damage and enable swift response from the IT team.",BCM Handbook – 2.2.1 Cyber Attack Immediate Measures
+"What should I, as an employee, do specifically if a ransomware message appears on my screen?","According to the KISTERS_IS_Guideline.pdf | Section: 13.2 Measures in case of suspected malware attack (reactive), if you suspect that your computer has been infected with a virus, including ransomware, you should follow these steps:
+
+1. Stay calm and never follow messages that appear on the screen.
+2. Immediately disconnect all network connections: Activate airplane mode, switch off WiFi/Bluetooth, unplug the network cable.
+3. Do not start any further programmes and do not open any further files!
+4. Inform your IT administrators by phone(!) or via another channel that is independent of the affected device. Have the following information ready:
+   - What device are we talking about, where is it and how was it and/or is it currently incorporated into the corporate network?
+   - How was the virus detected (virus scanner, messages/comments in documents, crashes, error messages, etc.)?
+   - If detected by virus scanners: What kind of virus has been detected?
+   - What was the possible virus source (email, website, download, network, USB stick, CD, etc.)?
+   - Could it be that the virus has been transferred to others (via email, USB stick, network, CD, etc.)?
+5. Wait for further instructions from your IT administrator.
+6. Hand over your computer to the IT administration for securing of evidence and potentially further forensic investigation by external specialists.
+
+Please note that these steps are provided as a general guideline and might be subject to change based on specific circumstances or more recent guidelines. If you are unsure, it is always best to follow the instructions provided by your company's IT department.",BCM Handbook – 2.2.1 Immediate Measures in the Event of Cyber Attack (Ransomware/Malware)
+"What should I do if I, as an employee, notice a prolonged power outage in the building? Whom should I inform?","According to the KISTERS Business Continuity Management Handbook (Document: KISTERS_BCM_1-BCHandbook.pdf | Section: 2.2.4 Immediate Measures in the Event of Power Failure), if you notice a prolonged power outage, you should report it by telephone to the facility management or head office with a request for immediate forwarding to the facility management [5].",BCM Handbook – 2.2.4 Immediate Measures in the Event of Power Failure
+Whom should I inform in the event of a prolonged power outage?,"According to the document ""KISTERS_BCM_1-BCHandbook.pdf | Section: 2.2.4 Immediate Measures in the Event of Power Failure"", you should inform the BCMO (Business Continuity Management Officer) or CISO (Chief Information Security Officer), depending on the risk situation, as soon as possible after noticing a power failure.
+
+Additionally, if it is a prolonged power outage, you should also inform the affected clients and other stakeholders according to your organization's incident management process.",BCM Handbook – 2.2.4 Power Failure
+Who should I contact if the power goes out in the building?,"According to Document: KISTERS_BCM_9-EP-Internal_IT-DC.pdf | Section: 5.3 Organizational prerequisites, if there is a power failure, you should report it by telephone to the facility management or head office with a request for immediate forwarding to the facility management.",BCM Handbook – 2.2.4 Power Failure
+What is my responsibility if I experience an internet connection failure – and who decides on further steps?,"According to the provided context, specifically in Document: KISTERS_BCM_1-BCHandbook.pdf | Section: 2.2.6 Immediate Measures in the Event of Internet Connectivity Failure [6], your responsibility is to notice the internet connection failure and report it to IT administration or via the head office.
+
+The responsible person for further steps is the IT administration, as stated in the same section:
+
+|   No. | Activity                                                                                                                                        | Responsible       |
+|-------|-------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|
+|     1 | Internet failure noticed: Report to IT administrationor via the head office with the request for immediate forward- ing to IT administration | Reporting person  |
+|     2 | Troubleshooting and damage limitation                                                                                                        | IT administration |
+
+In case of an internet connection failure, it is essential to report the issue promptly to ensure timely resolution.",BCM Handbook – 2.2.6 Immediate Measures in the Event of Internet Connectivity Failure
+What steps are planned if many colleagues are absent due to illness at the same time and my department is at risk of becoming unable to function?,"According to the provided context, in the event of a staff shortage due to illness [6], the following measures should be taken:
+
+1. In the case of symptoms of infectious diseases: work from home if possible.
+2. Clarify suspected infection promptly (visit a doctor, self-test if necessary). If infection is confirmed: Report to krankmeldung@kisters.de or the head office.
+3. Notification to supervisor / BU management of sickness-related absence of the person with expected duration of staff absence.
+4. Notify the OHS representative if a high level of sick leave is suspected.
+
+If these measures are not sufficient, and your department is at risk of becoming unable to function, the following steps can be taken:
+
+* The emergency management team (EMT) should be informed.
+* Staff shortages are to be resolved by prioritizing and restructuring within the KISTERS Group at Business Unit level, with the final decision resting with the EMT.
+* Employees can be recalled from other business units to deal with the crisis.
+* Known personnel service providers can also be used to resolve bottlenecks.
+
+Please note that these measures are part of the Business Continuity Management (BCM) plan and should be followed in the event of a significant staff shortage due to illness.",BCM Handbook – 2.2.9 Immediate Measures in the event of Staff Shortages due to Illness
+Who is the “Manager of Duty” (MoD) and what role does this function play in the escalation process?,"According to Section 1.2 Stakeholders in Document: KISTERS_BCM_9-EP-Internal_IT-Infrastructure.pdf | Section: 1.3 Activation process, the ""Responsible manager"" or ""Manager of Duty"" (MoD) is responsible for decision-making authority in a case of a critical incident. They can be the responsible manager of affected service or the manager of duty.
+
+In terms of escalation, they play a crucial role in initiating the activation of the emergency plan when necessary, as mentioned in Document: KISTERS_IS_IncidentManagement.pdf | Section: 5.3 Remedy (*3) and Document: KISTERS_BCM_9-EP-Internal_IT-Infrastructure.pdf | Section: 1.3 Activation process.
+
+Their role is essential in making timely decisions to mitigate the impact of an incident, and they work closely with other stakeholders such as the Emergency Response Team (ERT), System owners, SysAdmins, and KISTERScloud SOS to ensure effective escalation and recovery processes are followed.",BCM Handbook – 3.1 Detection and Reporting (Manager of Duty)
+"Who is ""Manager of Duty"" and what decisions does he make?","According to the provided context, specifically in Document: KISTERS_BCM_1-BCHandbook.pdf | Section: Manager of Duty (*5), the ""Manager of Duty"" (MoD) is:
+
+* The highest authorized Manager of Duty of KISTERS Group is the CEO.
+* Individual organizational units can introduce their own Managers of Duty for their area in their business continuity plans, who report to the next Manager of Duty at the higher level.
+
+The MoD makes decisions such as:
+
+* Alerting the Emergency Response Organisation (ERO) after reporting an incident (*5).
+* Convening the Emergency Management Team (EMT) if necessary.
+* Taking charge of coordinating the emergency response and decision-making process.",BCM Handbook – 3.1 MoD
+"What questions should IT helpdesk staff ask to identify a potential ""emergency""?","According to the KISTERS_BCM_1-BCHandbook.pdf, for IT Help Desk (1st / 2nd Level Support) to identify a potential emergency, they should answer at least one of the following key questions with YES:
+
+* Is the affected IT system or application an essential part of the security infrastructure (virus management, firewall, etc.)?
+* Does the failure of the affected IT system or application have an impact on a large group of users or the essential business operations at KISTERS?
+* Is there a strong suspicion of intentional data or system manipulation (data leakage), unauthorized exercise of rights or a targeted attack (physical or virtual) on IT components?
+* General: Is it to be expected that the effects of the reported incident will exceed a period of > 24 hours? If necessary, ask 2nd level support for the information.
+* Is a critical business process affected by the failure? Is it to be expected that the effects of the reported event will exceed a period > MTD of the business process? If necessary, ask 2nd level support for the information.
+* Does the failure of the affected IT system or application have an impact on external stakeholders, such as customers, media, supervisory authorities? If necessary, ask the user for information.
+
+As soon as at least one question can be answered with YES, please alert the Manager of Duty immediately.",BCM Handbook – 3.1.2 Key Questions IT Help Desk
+"What guiding questions does the IT Help Desk, for example, use to assess whether an incident has the potential to become an emergency or crisis?","According to the KISTERS_BCM_1-BCHandbook.pdf document, Section: 3.1.2 Report Recipient: IT Help Desk (1st / 2nd Level Support), the guiding questions for assessing whether an incident has the potential to become an emergency or crisis are:
+
+| Key questions for incidents with emergency or crisis potential - IT                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Yes/No   |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+
+The document states that if at least one question can be answered with YES, the Manager of Duty should be alerted immediately.",BCM Handbook – 3.1.2 Report Recipient: IT Help Desk (1st / 2nd Level Support)
+Where is the EMT room located in the headquarters and through which alternative channels can the EMT team meet?,"According to the KISTERS BCM 1-BCHandbook [6], the location of the EMT Room (KISTERS Headquarter) is as follows:
+
+* Aachen: Pascalstraße 8-10, Room D013 [6]
+* Microsoft 365 Teams: KISTERS BCM-ERO [4]",BCM Handbook – 3.3.1 Accessibility and Locations of EMT Rooms
+Where is the EMT room located in the headquarters?,"According to the KISTERS_BCM_1-BCHandbook.pdf, specifically Section 3.3.1 Accessibility and Locations of EMT Rooms, the EMT room at the KISTERS Headquarter can be found at:
+
+Aachen: Pascalstraße 8-10, Room D013
+
+Additionally, there is a Microsoft 365 Teams link (KISTERS BCM-ERO) and a Microsoft 365 Sharepoint link (KISTERS BCM-ERO) available for remote access.
+
+The room's accessibility is regulated via company ID/access card.",BCM Handbook – 3.3.1 EMT Rooms
+What preparatory steps are planned in the EMT room?,"According to Document: KISTERS_BCM_1-BCHandbook.pdf | Section: 3.3.2 Equipment and Preparation, the following preparatory steps are planned in the EMT room:
+
+- Unlock and ventilate the room
+- Provide visualization surfaces such as action tracking or event timeline
+- Set up tables and chairs in a U-shape in the direction of the visualization areas
+- Set up name and role cards
+- Prepare emergency manual, start emergency notebooks and connect to the network
+- Provide conference call connection
+- Test communication equipment and technology for operational readiness
+- Provide catering and drinks",BCM Handbook – 3.3.2 Equipment
+What points need to be considered when preparing the EMT room before an emergency meeting can start?,"According to the KISTERS_BCM_1-BCHandbook.pdf, Section: 3.3.2 Equipment and Preparation, the following activities should be carried out in the EMT room depending on the situation:
+
+- Unlock and ventilate the room
+- Provide visualization surfaces such as action tracking or event timeline
+- Set up tables and chairs in a U-shape in the direction of the visualization areas
+- Set up name and role cards
+- Prepare emergency manual, start emergency notebooks and connect to the network
+- Provide conference call connection
+- Test communication equipment and technology for operational readiness
+- Provide catering and drinks",BCM Handbook – 3.3.2 Equipment and Preparation
+"What are the responsibilities of the Emergency Management Team in decision-making (e.g., facts, options, risks)?","According to the KISTERS_BCM_1-BCHandbook.pdf document, Section 9.1.3 Authority to Make Decision, the head of EMT has authority to lead and make decisions relating to the emergency or crisis. The head of EMT should incorporate the recommendations and assessments of EMT members in decision-making process.
+
+The Emergency Management Team's responsibilities in decision-making are:
+
+*   To identify facts about the situation.
+*   To analyze options for resolving the situation.
+*   To assess risks associated with each option.
+*   To use decision-making methods, such as RICE scoring, to make a decision.
+
+Additionally, according to the same document (KISTERS_BCM_1-BCHandbook.pdf), Section 9.1.4 Code of Conduct, all members of EMT must advise and support the head of EMT in the decision-making process.
+
+Please let me know if you need any further information.","BCM Handbook – 4.1–4.4 Facts / Options / Expenses, Opportunities and Risks / Decision"
+"How is the process generally planned to restore operations after a major IT outage (emergency operation, restart, return to normal operation)?","According to the provided context, specifically from Document: KISTERS_BCM_6-BCP-GEN-SharedIT-Internal_IT.pdf | Section: 2.1 BC Strategies and Document: KISTERS_BCM_9-EP-Internal_IT-DC.pdf | Section: 5.8 Returning to normal operation:
+
+The process for restoring operations after a major IT outage involves the following steps:
+
+1. Emergency Operation:
+   - The objective is to maintain critical business processes and client availability by shifting functions to auxiliary resources, keeping the IT infrastructure in operation as far as possible.
+
+2. Restart Process (Recovery):
+   - Evaluate damage
+   - Recover resources
+   - Provide replacement resources if necessary
+   - Resumption of business processes
+
+3. Return to Normal Operation:
+   - Switch back power supply of additional areas.
+   - The additional areas that have been switched to emergency power must be manually switched back to normal power.
+
+The process aims to provide a fallback or replacement environment and restore original functions after a failure, ensuring minimal disruption to critical business operations and client services.",BCM Handbook – 6.3 Failure of IT (Restart and recovery)
+"What phases does the return to normal operations after an emergency involve, and who decides on de-escalation?","The return to normal operations after an emergency involves three phases: Measures required for transfer, De-escalation, and Analysis and evaluation of emergency response.
+
+According to Document: KISTERS_BCM_1-BCHandbook.pdf | Section: 7 Transfer to Normal Operation:
+
+*   **Measures required for transfer**: Before de-escalation by EMT, it must be checked whether the serious challenges of the incident have been resolved, whether other follow-up work can be carried out during normal operations and thus whether a transfer to normal operations is possible in principle.
+*   **De-escalation**: Only EMT can de-escalate the emergency or crisis. All special powers of the roles within BCM-ERO end at the time of de-escalation.
+*   **Analysis and evaluation of emergency response**: After return to normal operations, the experience gained from emergency and crisis management must be followed up using the documentation and reported to the institution's management.
+
+According to Document: KISTERS_BCM_1-BCHandbook.pdf | Section: 7.2 De-escalation:
+
+*   The following instructions must be observed for de-escalation:
+    *   Only EMT can de-escalate the emergency or crisis.
+    *   All special powers of the roles within BCM-ERO end at the time of de-escalation.
+    *   The following departments must be informed for de-escalation: Employees (by e-mail), Customers (by e-mail, web pages), and Media (by press release).",BCM Handbook – 7 Transfer to Normal Operation (7.1 Measures Required for Transfer / 7.2 De-escalation / 7.3 Analysis and Evaluation)
+"How often does the continuity manual need to be reviewed, and who is responsible for this?","According to Document: KISTERS_BCM_1-BCHandbook.pdf | Section: 8 Reviewing ad Updating of Contingency Manual, the Business Continuity Management Officer (BCMO) must review the contingency manual at least once a year to ensure it is up-to-date and appropriate.",BCM Handbook – 8 Reviewing and Updating of Contingency Manual
+Under what conditions can the BCM-ERO be set up and then dissolved?,"The Business Continuity Management Emergency Response Organisation (BCM-ERO) can be set up by the Head of EMT declaring an emergency or crisis at a constituent meeting, as stated in section 9.1.1 Establishment and Dissolution of BCM-ERO of KISTERS_BCM_1-BCHandbook.pdf [6].
+
+The termination of the emergency or crisis must be actively decided by the head of EMT and communicated to the entire institution. Upon termination, the BCM-ERO is repealed and all responsibilities of the KISTERS Group apply again as before the emergency or crisis.
+
+This means that the BCM-ERO can be set up when an emergency or crisis occurs, and it can be dissolved when the situation has been resolved and normal operation can be resumed.",BCM Handbook – 9.1.1 Establishment and Dissolution of BCM-ERO
+What rules apply to the establishment and dissolution of the BCM-ERO?,"According to Section 9.1.1 Establishment and Dissolution of BCM-ERO in Document: KISTERS_BCM_1-BCHandbook.pdf, the head of EMT may declare an emergency or crisis at the constituent meeting and thus bring the BCM-ERO into force [7]. The termination of the emergency or crisis must be actively decided by the head of EMT and communicated to the entire institution. Upon termination, the BCM-ERO is repealed and all responsibilities of the KISTERS Group apply again as before the emergency or crisis [7].
+
+Additionally, Section 9.1 Rules of Procedure in Document: KISTERS_BCM_1-BCHandbook.pdf provides more information on the rules for the establishment and dissolution of the BCM-ERO.
+
+However, it's worth noting that the provided context does not specify detailed rules for the establishment and dissolution of the BCM-ERO beyond what is mentioned in Section 9.1.1 Establishment and Dissolution of BCM-ERO [7]",BCM Handbook – 9.1.1 Rules of Procedure
+What special powers does the BCM-ERO have regarding financial resources in an emergency?,"According to Document: KISTERS_BCM_1-BCHandbook.pdf | Section: 9.1.2 Disposal of Financial Resources, there is no mention of any specific ""special powers"" regarding financial resources for the BCM-ERO during an emergency.
+
+However, Document: KISTERS_BCM_1-BCHandbook.pdf | Section: 7.2 De-escalation states that when de-escalating an emergency or crisis, all special powers of the roles within BCM-ERO end at the time of de-escalation. This implies that during the emergency, these special powers are active.
+
+Therefore, I am unsure about what specific ""special powers"" regarding financial resources the BCM-ERO has in an emergency and cannot provide a clear answer based on the provided context.
+
+To clarify this, could you please provide more information or context regarding your question?",BCM Handbook – 9.1.2 Disposal of Financial Resources
+What are the basic rules of conduct (code of conduct) for members of the Emergency Response Organisation?,"According to the provided context, in section 9.1.4 Code of Conduct[3] of the KISTERS_BCM_1-BCHandbook.pdf document, the basic rules of conduct for members of the Emergency Response Organisation are as follows:
+
+1. EMT should base its working methods on the existing emergency plan. If there are no emergency plans or if they are not effective, the working methods must be based on the FOR-DEC management cycle.
+2. EMT has work and meeting phases (situation meetings). These must be clearly defined and communicated to all EMT members.",BCM Handbook – 9.1.4 Code of Conduct
+What communication methods does KISTERS use in an emergency?,"According to the provided context, KISTERS uses various communication methods in an emergency. The following communication media can be used:
+
+1. Microsoft Teams (for videoconferencing)
+2. Phone system
+3. Email (using MS M365 Exchange or Mimecast Email Security)
+4. Ticket system (Atlassian Cloud JIRA)
+5. Public website (Google Cloud KISTERS Main Web Page)
+
+Additionally, alternative communication methods include mobile communications and virtual working environments.
+
+Please refer to Document: KISTERS_BCM_1-BCHandbook.pdf | Section: 9.2 Communication Media for more information.",BCM Handbook – 9.2 Communication Media
+Which communication media are intended for emergency communication and where can I find an overview of them?,"According to the KISTERS BCM Handbook, the following communication media can be used in an emergency or crisis: 
+
+* Videoconference (MS M365 Teams)
+* E-Mail (MS M365 Exchange)
+* Ticket system (Atlassian Cloud JIRA)
+* Public website (Google Cloud KISTERS Main Web Page)
+
+You can find a detailed overview of these tools and their alternatives in the KISTERS BCM 1-BCHandbook.pdf, Section: 9.2 Communication Media",BCM Handbook – 9.2 Communication Media
+Why does KISTERS need a formal change management process and what goals are being pursued with it?,"According to the document ""KISTERS_IS_ChangeManagement.pdf | Section: 1.1 Motivation and Objectives"", KISTERS needs a formal change management process because the management and control of change requires a methodology and process to plan and execute changes in a controlled way with minimum possible risk [1]. The goals being pursued with it are:
+
+* To prevent any degradation of the level of information security of the organisations and IT systems affected by a change,
+* To avoid unwanted overlaps of changes and subsequent corrections of inconsistent changes by coordinated planning and execution of changes,
+* To enhance KISTERS overall efficiency and agility in responding predictably and reliably to new business demands,
+* To ensure that KISTERS can execute changes with a small investment in time, people, and other limited resources.
+
+This aligns with the requirements for compliance with ISO 27001, SOC 2, BSI C5 and other information security standards [3].",Change Management – 1.1 Motivation and Objectives
+To which systems and processes does the change management policy (scope) refer?,"According to section 1.2 of the Change Management Guideline [Document: KISTERS_IS_ChangeManagement.pdf], the change management policy applies to:
+
+- IT systems (servers, networks, workstations)
+- Software applications
+- Services and processes which are utilized to provide services internally and externally within the infrastructure operated or used by KISTERS.
+This includes:
+- IT infrastructure and services for KISTERScloud, for KISTERS Support Services and for software development at KISTERS.
+
+[1] Document: KISTERS_IS_ChangeManagement.pdf | Section: 1.2 Scope of this Guideline",Change Management – 1.2 Scope of this Guideline
+What role does the (E)CAB play in major changes?,"According to the provided context, specifically from ""Document: KISTERS_IS_ChangeManagement.pdf | Section: 3.1.4 Emergency Change"", [id] **an Emergency Change** is a Major Change whose implementation is time-critical and cannot wait because any delay would cause an unacceptable high damage or loss. The (E)CAB, which stands for Emergency Change Advisory Board, plays a crucial role in the approval process of emergency changes. Although it's specifically mentioned that the (E)CAB only requires approval retroactively by the ECAB as soon as possible after an emergency change is implemented, there is no mention of their involvement in major changes.",Change Management – 1.3 Roles (E)CAB
+What tasks does the (E)CAB perform during major changes?,"According to Document: KISTERS_IS_ChangeManagement.pdf | Section: 3.2 Tasks, the (E)CAB's tasks during major changes are:
+
+- Review RfC and implementation with Manager
+- Perform and document risk assessment (in the Ticket) if a known vulnerability cannot be resolved
+- Approve or reject the implementation of the change
+
+These tasks are part of the overall Change Management process for Major Changes.","Change Management – 1.3 Roles, Responsibilities (E)CAB"
+"Who can initiate a ""Request for Change"" and what role does the ""System owner"" play in this?","According to Document: KISTERS_IS_ChangeManagement.pdf | Section: 5.2.1 External 3rd Parties, an RfC may be initiated by a KISTERS client, partner or service provider [1]. 
+
+Additionally, the same document states that the change manager is usually the system owner unless additional coordinating and supervising functions are required [3].
+
+So, to answer your question: A ""Request for Change"" can be initiated by a KISTERS client, partner or service provider. The System Owner plays a crucial role in this process, being responsible for evaluating and implementing the requested change, unless additional coordination is needed.
+
+Let me know if I can help you with anything else!","Change Management – 1.3 Roles, Responsibilities and Dependencies"
+What role does the (E)CAB play in major and emergency changes?,"According to Document: KISTERS_IS_ChangeManagement.pdf | Section: 3.3.1.2 Emergency Change Advisory Boards, the Emergency Change Advisory Board (ECABs) are teams consisting of members of the Change Advisory Boards, called in by the Change Manager on short notice in emergency cases, who make decisions about high impact emergency changes. Additionally, Document: KISTERS_IS_ChangeManagement.pdf | Section: 3.2 Tasks states that the (E)CAB is responsible for approving or rejecting the implementation of a major change and is also involved in the review and approval process for emergency changes.","Change Management – 1.3 Roles, Responsibilities and Dependencies (E)CAB"
+"What legal requirements apply to change management (ISO 27001, SOC2, C5 etc.)?","According to the document ""KISTERS_IS_ChangeManagement.pdf | Section: 1.4 Applicable Legal and Regulatory Requirements,"" [1] change management is a basic requirement for compliance with ISO 27001, SOC 2, BSI C5, and other information security standards. In individual contracts with clients, KISTERS has committed itself to ensure and maintain compliance with one or more of these security standards or equivalent individual client requirements.
+
+Additionally, adequate management of risks is also required by national and international legislation on information security [3].
+
+Therefore, the legal requirements applicable to change management include:
+
+* Compliance with ISO 27001, SOC 2, BSI C5, and other information security standards
+* Adequate management of risks as per national and international legislation on information security
+
+These requirements are based on various sources including [1] and [3].",Change Management – 1.4 Legal Requirements
+"What is meant by ""change"" in this context, i.e., what types of changes fall under this category?","According to the document KISTERS_IS_ChangeManagement.pdf | Section: 2 Definition of Changes, a change in the context of this guideline means any addition, modification or removal of components within the scope, including but not limited to:
+
+* Changes in hardware infrastructure, such as clients, servers, network components or their configuration
+* Changes of operating systems or application software, incl. KISTERS solutions
+* Changes of infrastructure components such as physical access systems, air conditioning, energy supply, monitoring and alarm systems
+* Changes of automated or documented procedures
+* Changes of documentation
+* Changes of other components which are subject to configuration management
+
+These changes fall under the category of change management and require a formal approval process for implementation.",Change Management – 2 Definition of Changes
+"What steps does the general change management process include, from the creation to the follow-up of a Request for Change (RfC)?","FEHLER: HTTPConnectionPool(host='localhost', port=3000): Read timed out. (read timeout=120)",Change Management – 3 Change Management Process / 3.2 Tasks
+"How does a ""Service Request"" differ from a ""Standard Change""?","According to the provided context, a Service Request and a Standard Change are two types of changes as defined in the KISTERS IS Change Management document.
+
+A **Service Request** is a formal request from a user or a customer for something to be provided, such as a request for information or advice, to reset a password, or to install a workstation for a new user. These types of requests are frequent and their processing is routine and well known, as well as documented [1]. Service Requests MAY be processed as described without further authorization.
+
+On the other hand, a **Standard Change** is a standardized change to a service. In this case, standardized means that it is carried out frequently and the implementation is clearly described. Hot Fix, Quick Fix or Workarounds are considered as Standard Change if their implementation is frequent and/or clearly described. Standard Changes bear known low risks for the affected business processes [2]. Standard Changes MAY be processed as described without further authorization.
+
+In summary, while both Service Requests and Standard Changes can be processed without further authorization, a Service Request is more of an ad-hoc request from a user or customer, whereas a Standard Change is a pre-defined, standardized change that is frequently implemented with known low risks.",Change Management – 3.1.1 Service Request / 3.1.2 Standard Change
+"What is a ""Standard Change"" and why does it not require separate approval?","According to the provided guidelines, specifically Section 3.1.2 Standard Change in Document: KISTERS_IS_ChangeManagement.pdf:
+
+""A Standard Change is a standardized change to a service. In this case, standardized means that it is carried out frequently and the implementation is clearly described.""
+
+""Hot Fix, Quick Fix or Workarounds are considered as Standard Change if their implementation is frequent and/or clearly described.""
+
+""Standard Changes MAY be processed as described without further authorization.""
+
+This implies that a ""Standard Change"" is one that is well-documented, commonly executed, and has a low risk of affecting business processes. Due to its predictable nature and minimal potential impact, it does not require separate approval before implementation.",Change Management – 3.1.2 Standard Change
+"When is a change classified as a ""Major Change"" and what does that mean for planning?","A Major Change is defined in the document KISTERS_IS_ChangeManagement.pdf, Section 3.1.3 Major Change:
+
+""A Major Change to a service is a change that is performed infrequently, for the first time or bears a high or unknown risk for the business. Its implementation may not be described in detail upfront.""
+
+According to this definition, a change is classified as a ""Major Change"" if it meets one of the following conditions:
+- The change is performed infrequently.
+- It's being implemented for the first time.
+- It bears a high or unknown risk for the business.
+
+As for planning, Major Changes require careful planning and MUST be approved by the CAB (Change Advisory Board) before they can be carried out.",Change Management – 3.1.3 Major Change
+"What is an ""emergency change"" and when is this type permissible?","An Emergency Change is a Major Change whose implementation is time-critical and cannot wait because any delay would cause an unacceptable high damage or loss [1]. This could include breaches of contractual obligations, legal obligations, potential damage to equipment, or effects on life and limb. Hot Fix, Quick Fix, or Workarounds are considered as Emergency Changes if their implementation is carried out for the first time and is not clearly described.
+
+An Emergency Change MAY be carried out without prior approval [1]. However, an Emergency Change MUST be approved retroactively by the ECAB as soon as possible.",Change Management – 3.1.4 Emergency Change
+"Which ticketing systems are used at KISTERS for changes and support, and who uses which platform?","According to the provided documents, KISTERS uses Jira Service Management and Jira Software as their primary ticketing systems for changes and support. 
+
+- **Jira Service Management** is used for client support, service desks, and internal and external service desks for special cross-cutting topics (IT administration, information security).
+- **Jira Software** supports and manages software development with a focus on agile development processes.
+
+The users of these platforms are:
+- Jira Service Management: accessible to authorized clients and partners and the KISTERS support teams.
+- Jira Software: used by KISTERS staff and internal users for managing software development, client support (help desk), and day-to-day operations.
+
+Please note that although Bugzilla is mentioned in some of the documents, it has been phased out and replaced by Jira systems.",Change Management – 4.1 Jira Ticket Systems (Jira Service Management / Jira Software)
+"What does KISTERS understand by the most important ticket terms such as ""Issue/Ticket"", ""Key"", ""Reporter"" and ""Assignee""?","According to the provided context, specifically from Document: KISTERS_IS_ChangeManagement.pdf | Section: 4.2 Terminology:
+
+| Term               | Meaning                                                                                                                                                       |
+|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Issue/Ticket       | Bug or incident report, request for service, change or action, epic, user story, audit summary, vulnerability report, action request, task and sub-task, etc. |
+| Key                | Unique identifier of an Issue or a Ticket in Jira                                                                                                             |
+| Reporter           | Jira Software user who created an Issue                                                                                                                       |
+| Assignee           | Jira Software user who is responsible for resolving an Issue/Ticket                                                                                           |
+
+Therefore, according to KISTERS' terminology, ""Issue/Ticket"" refers to any bug report, incident report, request for service, change or action, etc., and includes epic, user story, audit summary, vulnerability report, action request, task, and sub-task. The term ""Key"" is used to uniquely identify an Issue or a Ticket in Jira. The reporter is the person who created an issue, while the assignee is responsible for resolving it.",Change Management – 4.2 Terminology
+How is the processing status of a ticket represented in the workflow and why is this important?,"According to Document: KISTERS_IS_ChangeManagement.pdf | Section: 5.1 Ticket Status Workflow, the processing status of a ticket is represented by a series of status values that define a set of possible transitions between these statuses.
+
+The following table lists the common status values used across all projects:
+
+| Status                                    | Description                                                                                                    |
+|-------------------------------------------|----------------------------------------------------------------------------------------------------------------|
+| NEW                                       | Ticket has been created                                                                                        |
+| REOPENED                                  | Ticket has been reopened after initial resolution                                                              |
+| ASSIGNED / READY (DOR)                    | Ticket has been reviewed and is accepted by assignee for processing                                            |
+| PROCESSING / IN PROGRESS                  | Assignee works on Ticket                                                                                       |
+| NEED INTERNAL INFORMATION / NEEDS INPUT    | Assignee is waiting for (KISTERS-) internal information                                                        |
+| WAIT FOR CUSTOMER / NEEDS INPUT           | Assignee is waiting for information from partner or client                                                     |
+| RESOLVED                                  | Ticket has been resolved by assignee, to be verified                                                           |
+| VERIFIED                                  | Ticket resolution has been verified                                                                            |
+| SHIPPED                                   | Artefacts of Ticket resolution have been shipped to client or have been deployed to internal production system |
+| CLOSED / APPROVED                         | Ticket closed after confirmation by reporter or final assignee                                                 |
+
+The processing status is important because it helps track the progression of a ticket through its lifecycle, from creation to closure. This facilitates effective management and prioritization of tickets, enabling teams to allocate resources accordingly and ensure timely resolution.
+
+In addition, the representation of the processing status allows stakeholders to quickly understand the current state of each ticket, making it easier to communicate with team members and external parties about the progress and status of specific tickets.
+
+The importance of representing the processing status in a workflow is highlighted by its inclusion as one of the key elements in the change management process (Document: KISTERS_IS_ChangeManagement.pdf | Section: 5 Process Mapping).",Change Management – 5.1 Ticket Status Workflow
+"What are the differences between the roles ""Reporter"", ""Assignee"", ""QA Contact"" and ""Watcher"" in a ticket?","The roles of Reporter, Assignee, QA Contact, and Watcher are defined in the provided context from Document: KISTERS_IS_ChangeManagement.pdf.
+
+- The **Reporter** is responsible for creating the Ticket, describing the requested change from their perspective. They act as the Change Requestor.
+- The **Assignee**, if a Default Assignee is defined within a project, acts as the initial assignee and first person notified on Ticket creation. Alternatively, they may be assigned to a 'TeamQ', which is a list of potential Assignees. The actual assignment management is done by the team leader. The Assignee has various responsibilities, such as evaluating the Ticket, requesting further information from the Reporter if needed, deciding on acceptance or rejection of the Ticket, setting the Due date (required for Tickets with Priority High and Highest), providing a quick fix or workaround if necessary and possible, planning the execution of the Ticket resolution, creating additional Tickets as blockers, coordinating the Ticket resolution with other Tickets, re-assigning the Ticket to other assignees for further processing, adding all other stakeholders to the Watchers of the Ticket, and closing the Ticket if not done by Reporter.
+- The **QA Contact** is responsible for the verification of the Ticket resolution once the Ticket has been marked as RESOLVED by the last active Assignee. They are involved in ensuring that changes made through Tickets meet quality standards and are properly implemented.
+- A **Watcher** is someone who is interested in a particular Ticket but may not be directly involved in its resolution. This could include other stakeholders, partners, or team members who need to stay informed about the progress of the Ticket.
+
+In summary, while all four roles have some involvement with Tickets, their responsibilities and focus differ significantly:
+
+* The Reporter creates the Ticket and describes the requested change.
+* The Assignee is responsible for managing the Ticket's resolution process, including evaluation, planning, execution, and coordination.
+* The QA Contact ensures that the Ticket resolution meets quality standards.
+* A Watcher is someone who is interested in a particular Ticket but may not be directly involved in its resolution.
+
+Each role has distinct responsibilities and focuses to ensure efficient and effective management of Tickets within the KISTERS ticket system.",Change Management – 5.2 Roles and Responsibilities in KISTERS Ticket Systems
+What is the minimum content a change ticket must contain?,"According to Document: KISTERS_IS_ChangeManagement.pdf | Section: 6.2 Ticket Information Content, the following information must be contained in a change ticket:
+
+- Description of the incident/problem/bug, enhancement or service request
+- Steps to reproduce (if applicable)
+- Observed behaviour and expected behaviour (if applicable)
+- All other relevant information available at Ticket creation time
+
+Additionally, the description of the proposed resolution, details of implemented changes, impact analysis, risk assessment on information security (if applicable), back-out plan and measures for risk reduction must be included.",Change Management – 6.2 Ticket Content
+What information must be included in a change ticket?,"According to the KISTERS_IS_ChangeManagement.pdf document, Section 6.2 Ticket Information Content, the following table provides an overview of the most important pieces of information contained in a Ticket, their type and the role which is the main responsible for providing the information:
+
+| Information   | Type   | Responsible   | Comment                                      |
+|---------------|--------|---------------|----------------------------------------------|
+| Project       | Form   | Assignee      | ServiceDesk, development project             |
+| Type          | Form   | Assignee      | Type of ticket as pre-defined by the Project |
+| Key           | Form   | Generated     | Unique identifier                            |
+
+Additionally, the following information should also be included in a change ticket:
+
+* Effort Estimation
+* Target Milestone
+* Plan Date
+
+These pieces of information are essential for effective change management and should be provided by the assignee responsible for the ticket.",Change Management – 6.2 Ticket Information Content
+What information must be included in a ticket at a minimum to ensure the change is properly documented?,"According to the KISTERS IS ChangeManagement.pdf document, Section 6.2 Ticket Information Content, the following information MUST be included in a ticket at a minimum to ensure the change is properly documented:
+
+* A description of the incident/problem/bug, enhancement or service request
+* Steps to reproduce (if applicable)
+* Observed behaviour and expected behaviour (if applicable)
+* All other relevant information available at Ticket creation time
+
+Additionally, for Tickets with High or Highest Priority, the Due Date MUST be included.
+
+Please note that this is a minimum requirement, and it's recommended to include more information as necessary for the specific change.",Change Management – 6.2 Ticket Information Content
+"How is the ticket priority ""Highest (Emergency)"" used and what does it mean for response and resolution times?","According to the Document: KISTERS_IS_ChangeManagement.pdf | Section: 6.3.1 Priority 'Highest (Emergency)', the Priority 'Highest (Emergency)' SHOULD be used with extreme care. Tickets with this priority have highest priority as they represent absolute emergencies and MUST be resolved without undue delay. All available resources MUST be focused on the resolution of this Ticket to the exclusion of any other work. Consequently, Tickets with Priority 'Highest (Emergency)' are extremely disruptive to the overall business process.
+
+In terms of response and resolution times, the Target Resolution Time for tickets with priority ""Highest (Emergency)"" is not explicitly stated in the provided context. However, it can be inferred that the resolution time should be as short as possible, given the emergency nature of these tickets.
+
+For tickets created in a Service Desk, the initial Priority is calculated from the 'Impact' of the current status or observed situation on processes and/or systems, and the requested 'Urgency' of the Ticket resolution [4]. The priority MAY be modified after the initial entry based on new internal or external information on the associated business impact.
+
+In the context of BCM documents, the Recovery Time Objective (RTO) is defined as the period from the time a resource or business process fails until the time when the emergency solution is required to be put into operation [2]. This concept may be relevant for understanding the priority and resolution times of tickets in an emergency situation.",Change Management – 6.3.1 Priority “Highest (Emergency)”
+How are the target resolution times aligned with the ticket priority?,"According to the document ""KISTERS_IS_ChangeManagement.pdf"" | Section: 6.3 Ticket Priority, the target resolution times for Tickets with different priorities are as follows:
+
+| Priority              | Situation                                                                                                                                                                                                                 | Actions                                                                             | Target Resolution Time   |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|--------------------------|
+| Highest (Emer- gency) | • application not usable • application not ""fit for purpose"" • critical process stuck • no workaround available • bug in production system • customer/user ""dead in the water"" • major missing feature in deployed system | • MUST be resolved with- out undue delay (same day, ASAP, requires emergency patch) | 1 Week                   |
+
+For Tickets with priority High or Highest, a defined Due Date SHOULD have a Due Date set; reasons for major deviations from the default Due Date SHOULD be documented in the Ticket.
+
+In Section 3.2.2 Risk-based ratings of ""KISTERS_IS_Audits.pdf"", it is mentioned that:
+
+| Risk Rating   | Jira Priority   | Target Planning Time   | Target Resolution Time   |
+|---------------|-----------------|------------------------|--------------------------|
+| Very High     | Very High       | ASAP                   | 1 Week                   |
+
+This table suggests a similar alignment between target resolution times and ticket priority.
+
+However, it's essential to note that the document does not explicitly state a direct relationship between the target resolution time and ticket priority. The provided tables seem to focus on specific audit ratings rather than general Ticket priorities.
+
+If you could provide more context or clarify which type of priority (e.g., from ""KISTERS_IS_ChangeManagement.pdf"" or ""KISTERS_IS_Audits.pdf"") you are referring to, I would be happy to try and provide a more precise answer.",Change Management – 6.3.2 Target Resolution Time
+What information obligations exist in the change management process – who do I need to inform about which changes?,"According to the Change Management Process guidelines, the following stakeholders must be informed about specific types of changes:
+
+- All RfCs with potential impact on information security or data protection: KISTERS ISMT
+- RfCs which are likely to affect significant KISTERS business issues: KISTERS Board
+- RfCs affecting a particular solution, process, or team within a Business Unit: KISTERS BU Managers
+- RfCs affecting KISTERScloud operation: Head KISTERScloud
+- RfCs affecting a particular KISTERScloud system for which the KISTERScloud service owner is responsible: KISTERScloud service owner [1]
+- RfCs changing process workflows or the usage or interfaces of systems: Internal participants in business processes and/or users of affected systems
+- RfCs affecting individual or multiple KISTERScloud systems, users of external interfaces, partners, etc.: Affected 3rd parties as participants in business processes and/or users of af-fected systems [1]
+
+These information obligations are outlined in the Change Management Process guidelines to ensure that all relevant stakeholders are informed about changes that may impact them.",Change Management – 7 Information Obligation
+"What is a ""Standard Change"" and why does it not require additional approval?","According to the provided context, a ""Standard Change"" is defined in Section 3.1.2 of KISTERS_IS_ChangeManagement.pdf as follows:
+
+""A Standard Change is a standardized change to a service. In this case, standardized means that it is carried out frequently and the implementation is clearly described. Hot Fix, Quick Fix or Workarounds are considered as Standard Change if their implementation is frequent and/or clearly described.""
+
+Further, Section 3.1.2 states: ""Standard Changes MAY be processed as described without further authorization.""",Change Management Guideline – 3.1.2 Standard Change
+What is the goal of an audit in the context of ISMS and BCMS?,"According to the KISTERS_IS_Framework.pdf, Section 9.2 Internal audits:
+
+""The audits are conducted to verify that the ISMS conforms to the KISTERS requirements for its ISMS and the requirements of ISO/IEC 27001, and that the ISMS is effectively implemented and maintained."" [3]
+
+Therefore, the goal of an audit in the context of ISMS and BCMS is to ensure compliance with established standards and policies.",IS/BCM Audit Guideline – 1.1 Motivation and Objectives
+What is the difference between major deviation and minor deviation?,"According to Document: KISTERS_IS_Audits.pdf | Section: 2.4.1 Major deviation, a major deviation is a significant nonconformity with the relevant requirements that may impair the achievement of the required objectives of the process under investigation.
+
+A minor deviation, on the other hand, is defined in Document: KISTERS_IS_Audits.pdf | Section: 2.4.2 Minor deviation as a nonconformity which does not in itself affect the achievement of the objectives of the process under review.
+
+In summary, a major deviation has a significant impact and can potentially lead to system failure, whereas a minor deviation is less critical and does not significantly affect the process objectives.",IS/BCM Audit Guideline – 2.4.1 / 2.4.2 Findings Types
+How is an audit finding documented in the ticketing system?,"According to Section 3 Management of audit findings from the document KISTERS_IS_Audits.pdf, all audit findings (deviations and opportunities for improvement) concerning KISTERS as the responsible party MUST be documented and tracked in the KISTERS ticket system. [1]",IS/BCM Audit Guideline – 3.1 Organization of Audit Tickets
+What is the purpose of the record of processing activities pursuant to Article 30 GDPR for KISTERS?,"According to the provided context, specifically from the document ""KISTERS_DP_RecordProcessingActivities.pdf"" (Section: 1 Introduction), the purpose of the record of processing activities is as follows:
+
+""Art. 30 GDPR (European General Data Protection Regulation [1]) stipulates that data controllers must keep a record of processing activities of personal data that fall under their responsibility. Similarly, processors must keep a record of processing activities carried out on behalf of a controller.""
+
+This implies that the purpose of the record of processing activities for KISTERS is to comply with Article 30 GDPR by maintaining a record of all processing activities related to personal data within its control as a controller or processor.",Record of Processing Activities – 1 Introduction
+In which roles does KISTERS process personal data and how is this described in the document?,"According to the provided context, specifically in Document: KISTERS_IS_DataProtectionSystemService.pdf | Section: 1 Introduction, it is stated that ""KISTERS AG is the parent company of the KISTERS Group, which includes national and international subsidiaries. Due to our global business activities, the divisions and business units are also organized internationally.
+
+The services contractually commissioned by clients and the support of our own business operations regularly include the installation and operation of hardware and software systems (""system operation""), support, maintenance and servicing of IT systems (""system service""), as well as professional and technical advice, analysis and troubleshooting (""system analysis""). During the performance of this work, employees of the KISTERS Group (""KISTERS employees"") and, if applicable, employees of third companies ('contractors' or ""subcontractors"") are given access to the clients' IT systems (""client sy stems""), IT systems operated by KISTERS for clients (""KISTERScloud systems""), and internal KISTERS IT systems.
+
+During this work, personal data is processed or at least access to personal data cannot be excluded. For this data, KISTERS is either a controller (""KISTERS Data"") or a processor (""Client Data"") within the meaning of Art. 4 GDPR [European Data Protection Regulation]. 
+
+Therefore, according to the document, KISTERS processes personal data in two roles:
+
+1. As Controller (KISTERS Data): This refers to the situation where KISTERS has control over the personal data and determines its collection, processing or use.
+2. As Processor (Client Data): In this case, KISTERS is acting on behalf of a client and processes their personal data.
+
+These roles are described in more detail in Document: KISTERS_IS_DataProtectionSystemService.pdf | Section: 4.2.1 KISTERS as Controller and Section: 4.2.2 KISTERS as Processor.",Record of Processing Activities – 1 Introduction / 4.1 Controller vs. processor
+"What contact details for KISTERS (address, main telephone number, email) should I have readily available for external data protection inquiries?","According to the provided context in document [4] **KISTERS_DP_RecordProcessingActivities.pdf**, Section: 2.1 Name and contact data, the contact details for KISTERS are:
+
+* Address: Pascalstraße 8+10, 52076 Aachen, Germany
+* Main telephone number: +49 2408 9385 0
+* Email: info(at)kisters.de",Record of Processing Activities – 2.1 Name and contact data
+Who can I contact as an employee if I have a data protection-related question or incident to report?,"According to the KISTERS Information Security Policy, as an employee, you can contact the Data Protection Officer (DPO) with any data protection-related questions or incidents. The DPO is responsible for advising the Executive Board and supporting the implementation of data protection regulations.
+
+You can find the contact details for the DPO in the KISTERS Intranet under 'IS Emergency Contacts' [6].
+
+Additionally, you can also report data breaches to the supervisory authorities, as mandated by the European General Data Protection Directive (GDPR) and the Federal Data Protection Act (BDSG). You should notify the CISO in consultation with the KISTERS Board for any official communication with these authorities.
+
+It's worth noting that if a notifiable Security Incident is reported by clients or partners, it must be documented in the KISTERS ticket system, its priority set to Highest, and the CISO must be appointed as Assignee.",Record of Processing Activities – 2.3 Data Protection Officers for the KISTERS Group
+Where are the technical and organizational measures (TOMs) for data protection described in detail if I want to read them?,"The technical and organisational measures for data protection are described in detail in the document ""KISTERS Technical and Organisational Measures for System Operation, Service and Analysis"" [2].",Record of Processing Activities – 3 Technical and organisational measures for data protection
+How is it ensured that the record of processing activities remains complete and up-to-date?,"According to Document: KISTERS_DP_RecordProcessingActivities.pdf | Section: 4 Processing activities, the records are regularly checked for completeness with regard to all processing activities used; missing process descriptions are supplemented, the process descriptions of processing activities used are checked for validity and topicality and, if necessary, adapted.",Record of Processing Activities – 4 Processing activities
+What does it mean for me in practice if a processing activity is managed as both a controller and a processor?,"When a processing activity is managed as both a controller and a processor, according to the document <source id=""1"">KISTERS_DP_RecordProcessingActivities.pdf | Section: 4.1 Controller vs. processor</source>, it means that:
+
+""The documented processing activities are carried out as controller, processor or in both roles.""
+
+In this scenario, KISTERS is acting as a controller for its own purposes and as a processor for subsidiaries in the KISTERS Group and clients within the scope of contractual obligations.
+
+When managed as both controller and processor, the following applies:
+
+*   ""The controllers are either explicitly listed or reference is made to separately maintained directories or lists.""
+*   This approach is particularly relevant when processing activities are carried out in a similar manner for more than one customer of the KISTERS Group in the context of contractually agreed services.
+
+In practical terms, this means that KISTERS will have two roles: controller and processor. As a controller, they would be responsible for their own purposes, while as a processor, they would work on behalf of other entities, such as subsidiaries or clients, and follow the guidelines specified in the documents.
+
+It's worth noting that this dual role requires careful management to ensure compliance with data protection regulations and to maintain transparency in processing activities.",Record of Processing Activities – 4.1 Controller vs. processor
+"Which overarching data protection sources (e.g., GDPR) are mentioned as references in the document?","The documents mention the following overarching data protection sources:
+
+* The European General Data Protection Regulation (GDPR), which is specifically mentioned in sections 3, 5.1, and 10 of the provided context.
+* Other regulations and normative frameworks include:
+	+ GDPR (European General Data Protection Regulation)
+	+ DS-GVO (German Data Protection Act)
+	+ BDSG (Federal Data Protection Act)
+
+These sources are mentioned as references in various documents within the context:
+
+* Document: KISTERS_IS_Framework.pdf | Section: 3 Normative references
+* Document: KISTERS_DP_RecordProcessingActivities.pdf | Section: 1 Introduction, 2 General Information
+* Document: KISTERS_BCM_9-EP-Internal_IT-Infrastructure.pdf | Section: 11.2 Restrictions to be observed",Record of Processing Activities – 5 References
+"At what intervals is the document relating to the record of processing activities reviewed, and why is this important?","According to Document: KISTERS_DP_RecordProcessingActivities.pdf | Section: 6 Document history [1], the document relating to the record of processing activities is revised for topicality and potentially adapted at least annually. This ensures that the document remains up-to-date with any changes in processing activities, data protection regulations, or other relevant factors.
+
+The review of this document is crucial because it allows the company to stay compliant with Article 30 GDPR, which requires data controllers to keep a record of processing activities. Regular review and adaptation of this document also help identify and address potential data protection risks, ensuring that personal data is processed in accordance with applicable laws and regulations.",Record of Processing Activities – 6 Document history
+Why does KISTERS have to keep a record of processing activities?,"According to the document ""KISTERS_DP_RecordProcessingActivities.pdf | Section: 1 Introduction"", KISTERS AG processes personal data as the controller for its own purposes, as a processor for subsidiaries in the KISTERS Group and as a processor for clients within the scope of contractual obligations. Art. 30 GDPR stipulates that data controllers must keep a record of processing activities of personal data that fall under their responsibility. Similarly, processors must keep a record of processing activities carried out on behalf of a controller.",RoPA – 1 Introduction
+Who is the data protection officer of the KISTERS Group?,"According to Document: KISTERS_DP_RecordProcessingActivities.pdf | Section: 2.3 Data Protection Officers for the KISTERS Group [1], the Data Protection Officer (DPO) for the KISTERS Group is Dr. Heinz-Josef Schlebusch. 
+
+Dr. Heinz-Josef Schlebusch's contact details are:
+Phone: +49 2408 9385 -226
+Email: schlebusch(at)kisters.de",RoPA – 2.3 DPOs
+What general technical and organizational measures (TOMs) does KISTERS refer to for data protection?,"According to the provided context, specifically in <source id=""3"">Document: KISTERS_DP_RecordProcessingActivities.pdf | Section: 3 Technical and organisational measures for data protection</source>, it is stated that:
+
+""The latest status of the general technical and organisational measures to ensure data protection security in accordance with Article 32 GDPR are described in the document ""KISTERS technical and organisational measures for system operation, service and analysis"" [2].""
+
+However, this source does not explicitly list the measures. To find more information about these specific measures, we should refer to another document. In <source id=""1"">Document: KISTERS_IS_DataProtectionSystemService.pdf | Section: 3.5.1 Data Protection Management</source>, it is mentioned that:
+
+""Guarantee that there is an organisation in place that meets basic data protection requirements, by the following measures, among others:
+- Appointment of a data protection officer pursuant to Art. 37-39 GDPR / § 38 BDSG, whose contact details are available at all times via the Internet in the KISTERS data protection declaration (https://www.kisters.eu/privacy-policy/).
+- 'KISTERS Policy on Information Security, Data Protection and Business Continuity' (KISTERS Controlled)
+- 'KISTERS Guideline on Information Security and Data Protection' (KISTERS Internal)
+- Record of processing activities and documentation of data processing procedures
+- Documentation of the technical and organisational measures on data protection (this document: ""KISTERS Technical and Organisational Measures for System Operation, Service and Analysis"") (KISTERS Controlled)
+- Obligation of all employees to secrecy, data protection and compliance with security guidelines
+- Obligation of subcontractors by non-disclosure agreement and agreement on order processing in accordance with Art. 28 GDPR
+- Regular training of all employees on data protection and information security in accordance with Art. 39 GDPR
+- Operation of an information security management system (ISMS) certified according to ISO/IEC 27001. The ISMS includes all aspects of data protection and data security.""
+
+These measures are referred to as the general technical and organisational measures for data protection by KISTERS.",RoPA – 3 TOMs Reference
+What role can KISTERS play in data processing?,"According to the provided context, KISTERS can play two roles in data processing:
+
+1. **Controller** (KISTERS Data): As specified in Document: KISTERS_IS_DataProtectionSystemService.pdf | Section: 2 Scope [id=""4""], KISTERS is a controller for its own purposes and as a processor for subsidiaries in the KISTERS Group.
+2. **Processor** (Client Data): Similarly, as mentioned in Document: KISTERS_IS_DataProtectionSystemService.pdf | Section: 4.2.2 KISTERS as Processor [id=""4""], KISTERS acts as a processor for clients within the scope of contractual obligations.
+
+In both cases, KISTERS is responsible for ensuring the proper processing and protection of personal data in accordance with applicable laws and regulations, such as the General Data Protection Regulation (GDPR) and the Federal Data Protection Act (BDSG).",RoPA – 4.1 Controller vs Processor
+What document history is maintained in the data protection document?,"According to the provided context, specifically from Document: KISTERS_DP_RecordProcessingActivities.pdf | Section: 6 Document history [1], it is stated that:
+
+""This document shall be revised for topicality and potentially adapted at least annually. The official version of this document will be maintained on-line.""
+
+Therefore, the document history in the data protection document is maintained online, with revisions being made at least annually.
+
+Additionally, from Document: KISTERS_IS_Policy.pdf | Section: 9 Document history [4], it can be seen that the document has undergone several versions and revisions over time:
+
+|   Version | Date       | Editor           | Action                                                                                                                                                                                                                                                     |
+|-----------|------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|       3.2 | 2019-02-14 | H.-J. Schlebusch                | Additions for software development                                                           |
+|       3.1 | 2018-05-20 | Klaus Kisters                   | Review and Release                                                                           |
+|       3.1 | 2018-05-10 | H.-J. Schlebusch                | Error corrections                                                                            |
+|       3   | 2018-03-20 | Klaus Kisters                   | Review and Release                                                                           |
+|       3   | 2018-01-31 | H.-J. Schlebusch                | Extensive rework under specific consideration of the protection of personal data             |
+|       2   | 2016-11-04 | Klaus Kisters                   | Review and Release                                                                           |
+|       2   | 2016-09-15 | H.-J. Schlebusch                | Extensions and Adaptations: KISTERS AG -> KISTERS Group; IT-Security -> Information Security |
+|       1   | 2015-09-01 | Klaus Kisters                   | Review and Release                                                                           |
+|       1   | 2015-08-21 | Klaus Kisters H.-J. Schlebusch  | Creation                                                                                     |
+
+This indicates that the data protection document has undergone revisions and updates over time, with the latest version being Version 4.1, dated 2025-08-22 [1].
+
+It is worth noting that another document, Document: KISTERS_BCM_6-BCP-GEN-SharedIT-Internal_IT.pdf | Section: 6 Document history [10], also mentions that this document is checked at least once a year to ensure it is up-to-date and amended if necessary.
+
+Therefore, to answer the question, the document history in the data protection document is maintained online with revisions being made at least annually, as stated in both documents.",RoPA – 6 Document History

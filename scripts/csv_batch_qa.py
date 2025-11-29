@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import os
 import sys
 import time
@@ -149,6 +150,57 @@ def ask_model(
     return message.get("content", "").strip()
 
 
+def fetch_contexts(
+    base_url: str,
+    headers: Dict[str, str],
+    knowledge_ids: List[str],
+    query: str,
+    top_k: int,
+) -> list[dict]:
+    """
+    Ruft die Top-k Treffer pro Knowledge ab und liefert sie inkl. Score/Metadata zurück.
+    """
+    contexts: list[dict] = []
+    url = f"{base_url.rstrip('/')}/api/v1/retrieval/query/collection"
+
+    for collection_name in knowledge_ids:
+        payload = {
+            "collection_names": [collection_name],
+            "query": query,
+            "k": top_k,
+        }
+        resp = requests.post(url, headers=headers, json=payload, timeout=60)
+        try:
+            resp.raise_for_status()
+            result = resp.json()
+        except Exception as exc:  # noqa: BLE001
+            body_preview = resp.text[:500] if hasattr(resp, "text") else ""
+            raise SystemExit(
+                f"Fehler bei /retrieval/query/collection ({resp.status_code}): {exc}\n"
+                f"Antwort-Ausschnitt: {body_preview}"
+            ) from exc
+
+        documents = result.get("documents", [])
+        metadatas = result.get("metadatas", [])
+        distances = result.get("distances", [])
+
+        docs = documents[0] if documents else []
+        metas = metadatas[0] if metadatas else []
+        dists = distances[0] if distances else []
+
+        for idx, text in enumerate(docs):
+            contexts.append(
+                {
+                    "collection": collection_name,
+                    "text": text,
+                    "score": dists[idx] if idx < len(dists) else None,
+                    "metadata": metas[idx] if idx < len(metas) else {},
+                }
+            )
+
+    return contexts
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description=(
@@ -215,6 +267,23 @@ def main() -> None:
         action="store_true",
         help="Knowledge-Collection komplett als Kontext schicken (anstatt Vektor-Suche).",
     )
+    parser.add_argument(
+        "--contexts-column",
+        help="Optionaler Spaltenname, um gefundene Kontext-Chunks (JSON) zu speichern.",
+    )
+    parser.add_argument(
+        "--contexts-top-k",
+        type=int,
+        default=5,
+        help="Anzahl der Kontext-Treffer pro Knowledge für die Ausgabespalte (Standard: 5).",
+    )
+    parser.add_argument(
+        "--contexts-split-fields",
+        help=(
+            "Optionale, komma-getrennte Liste von Feldern, die zusätzlich in eigene Spalten geschrieben "
+            "werden sollen (z. B. 'text,score,source,file_id'). Werte werden zeilenweise zusammengeführt."
+        ),
+    )
     args = parser.parse_args()
 
     if not args.api_key:
@@ -226,6 +295,9 @@ def main() -> None:
         "Authorization": f"Bearer {args.api_key}",
         "Content-Type": "application/json",
     }
+    contexts_split_fields = (
+        parse_multi([args.contexts_split_fields]) if args.contexts_split_fields else []
+    )
     knowledge_ids = resolve_knowledge_ids(
         args.base_url,
         headers,
@@ -247,6 +319,13 @@ def main() -> None:
         fieldnames = list(reader.fieldnames or [])
     if args.answer_column not in fieldnames:
         fieldnames.append(args.answer_column)
+    if args.contexts_column and args.contexts_column not in fieldnames:
+        fieldnames.append(args.contexts_column)
+
+    for field in contexts_split_fields:
+        col_name = f"contexts_{field}"
+        if col_name not in fieldnames:
+            fieldnames.append(col_name)
 
     with output_path.open("w", newline="", encoding="utf-8") as f_out:
         writer = csv.DictWriter(f_out, fieldnames=fieldnames)
@@ -256,10 +335,24 @@ def main() -> None:
             question = (row.get(args.question_column) or "").strip()
             if not question:
                 row[args.answer_column] = ""
+                if args.contexts_column:
+                    row[args.contexts_column] = ""
+                for field in contexts_split_fields:
+                    row[f"contexts_{field}"] = ""
                 writer.writerow(row)
                 continue
 
             try:
+                contexts: list[dict] = []
+                if args.contexts_column or contexts_split_fields:
+                    contexts = fetch_contexts(
+                        base_url=args.base_url,
+                        headers=headers,
+                        knowledge_ids=knowledge_ids,
+                        query=question,
+                        top_k=args.contexts_top_k,
+                    )
+
                 answer = ask_model(
                     base_url=args.base_url.rstrip("/"),
                     headers=headers,
@@ -271,9 +364,40 @@ def main() -> None:
                     timeout=args.timeout,
                 )
                 row[args.answer_column] = answer
+                if args.contexts_column:
+                    row[args.contexts_column] = json.dumps(
+                        contexts, ensure_ascii=False
+                    )
+                if contexts_split_fields:
+                    for field in contexts_split_fields:
+                        col_name = f"contexts_{field}"
+                        values = []
+                        for ctx in contexts:
+                            meta = ctx.get("metadata") or {}
+                            if field in ctx:
+                                values.append(str(ctx[field]))
+                            elif field in meta:
+                                values.append(str(meta.get(field)))
+                            elif field == "source":
+                                values.append(
+                                    str(
+                                        meta.get("source")
+                                        or meta.get("name")
+                                        or ctx.get("collection")
+                                    )
+                                )
+                            elif field == "file_id":
+                                values.append(str(meta.get("file_id", "")))
+                            else:
+                                values.append("")
+                        row[col_name] = "\n".join(values)
                 print(f"[{idx}/{len(rows)}] OK")
             except Exception as exc:  # noqa: BLE001
                 row[args.answer_column] = f"FEHLER: {exc}"
+                if args.contexts_column:
+                    row[args.contexts_column] = ""
+                for field in contexts_split_fields:
+                    row[f"contexts_{field}"] = ""
                 print(f"[{idx}/{len(rows)}] Fehler: {exc}", file=sys.stderr)
 
             writer.writerow(row)
